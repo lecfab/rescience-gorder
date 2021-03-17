@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-rand.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 911		ms=7911	clock:7907185/1000000 = 7907ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 606		ms=606	clock:605848/1000000 = 605ms
+Total	- Time = 0h 0m 8s 519		ms=8519	clock:8513398/1000000 = 8513ms
+NQ	- Time = 0h 0m 0s 609		ms=609	clock:608810/1000000 = 608ms
+Total	- Time = 0h 0m 9s 128		ms=9128	clock:9122298/1000000 = 9122ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-rand-nq.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-rand.txt -a nq -o ../results/r4410/time-flickr-rand-nq.txt -l 10

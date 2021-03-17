@@ -1,0 +1,17 @@
+# started on Sat Feb 27 04:17:37 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-dfs.txt -a tarjan -o ../results/r4410/time-wiki-dfs-tarjan.txt -l 10':
+
+      99202.766500      task-clock (msec)         #    0.999 CPUs utilized          
+   277,759,715,433      cpu-cycles                #    2.800 GHz                    
+   468,179,802,027      instructions              #    1.69  insns per cycle        
+   166,955,360,148      L1-dcache-loads           # 1682.971 M/sec                  
+     3,292,293,446      L1-dcache-load-misses     #    1.97% of all L1-dcache hits  
+     1,758,551,907      LLC-loads                 #   17.727 M/sec                  
+       639,480,613      LLC-load-misses           #   36.36% of all LL-cache hits   
+    73,093,435,415      cycle_activity_cycles_l1d_pending #  736.808 M/sec                  
+    87,630,500,221      cycle_activity_cycles_l2_pending #  883.347 M/sec                  
+
+      99.272458989 seconds time elapsed
+

@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-ldg.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 59s 258		ms=59258	clock:59211718/1000000 = 59211ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 37		ms=3037	clock:3035655/1000000 = 3035ms
+Total	- Time = 0h 1m 2s 296		ms=62296	clock:62247715/1000000 = 62247ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 856		ms=7856	clock:7849366/1000000 = 7849ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 875		ms=7875	clock:7867298/1000000 = 7867ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 779		ms=7779	clock:7772982/1000000 = 7772ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 869		ms=7869	clock:7863499/1000000 = 7863ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 840		ms=7840	clock:7832559/1000000 = 7832ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 7s 800		ms=7800	clock:7793967/1000000 = 7793ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 8s 50		ms=8050	clock:8042636/1000000 = 8042ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 8s 20		ms=8020	clock:8014164/1000000 = 8014ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 8s 35		ms=8035	clock:8028614/1000000 = 8028ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 8s 99		ms=8099	clock:8092227/1000000 = 8092ms
+Total	- Time = 0h 2m 21s 524		ms=141524	clock:141404838/1000000 = 141404ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-ldg-tarjan.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-ldg.txt -a tarjan -o ../results/r4410/time-wiki-ldg-tarjan.txt -l 10

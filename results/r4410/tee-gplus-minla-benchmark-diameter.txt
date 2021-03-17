@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-minla.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 1s 156		ms=121156	clock:121132104/1000000 = 121132ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 233		ms=6233	clock:6232313/1000000 = 6232ms
+Total	- Time = 0h 2m 7s 390		ms=127390	clock:127364742/1000000 = 127364ms
+	Info: Approximate diameter (100 runs): 19
+Diam	- Time = 0h 23m 57s 456		ms=1437456	clock:1437078528/1000000 = 1437078ms
+Total	- Time = 0h 26m 4s 846		ms=1564846	clock:1564443255/1000000 = 1564443ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-minla-diameter.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-minla.txt -a diameter -o ../results/r4410/time-gplus-minla-diameter.txt -l 10

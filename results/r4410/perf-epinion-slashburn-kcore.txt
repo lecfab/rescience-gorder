@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:48:42 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-slashburn.txt -a kcore -o ../results/r4410/time-epinion-slashburn-kcore.txt -l 10':
+
+        288.999192      task-clock (msec)         #    0.992 CPUs utilized          
+       808,985,259      cpu-cycles                #    2.799 GHz                    
+     1,293,768,858      instructions              #    1.60  insns per cycle        
+       409,072,273      L1-dcache-loads           # 1415.479 M/sec                  
+        17,511,307      L1-dcache-load-misses     #    4.28% of all L1-dcache hits  
+         5,944,862      LLC-loads                 #   20.571 M/sec                  
+            78,783      LLC-load-misses           #    1.33% of all LL-cache hits   
+       190,917,637      cycle_activity_cycles_l1d_pending #  660.617 M/sec                  
+       214,156,642      cycle_activity_cycles_l2_pending #  741.029 M/sec                  
+
+       0.291314457 seconds time elapsed
+

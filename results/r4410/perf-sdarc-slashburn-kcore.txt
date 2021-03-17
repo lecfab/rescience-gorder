@@ -1,0 +1,17 @@
+# started on Fri Mar  5 01:24:33 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-slashburn.txt -a kcore -o ../results/r4410/time-sdarc-slashburn-kcore.txt -l 10':
+
+    3002439.090016      task-clock (msec)         #    0.999 CPUs utilized          
+ 8,406,832,114,313      cpu-cycles                #    2.800 GHz                    
+ 4,792,294,078,528      instructions              #    0.57  insns per cycle        
+ 1,506,738,177,546      L1-dcache-loads           #  501.838 M/sec                  
+   136,564,105,736      L1-dcache-load-misses     #    9.06% of all L1-dcache hits  
+    98,088,225,551      LLC-loads                 #   32.670 M/sec                  
+    38,721,693,827      LLC-load-misses           #   39.48% of all LL-cache hits   
+ 6,058,665,652,970      cycle_activity_cycles_l1d_pending # 2017.915 M/sec                  
+ 5,960,623,882,359      cycle_activity_cycles_l2_pending # 1985.261 M/sec                  
+
+    3004.178835846 seconds time elapsed
+

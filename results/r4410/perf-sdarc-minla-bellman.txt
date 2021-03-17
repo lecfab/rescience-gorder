@@ -1,0 +1,17 @@
+# started on Wed Mar  3 18:56:03 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-minla.txt -a bellman -o ../results/r4410/time-sdarc-minla-bellman.txt -l 10':
+
+     963493.429581      task-clock (msec)         #    0.998 CPUs utilized          
+ 2,697,810,527,495      cpu-cycles                #    2.800 GHz                    
+ 3,656,431,478,406      instructions              #    1.36  insns per cycle        
+ 1,148,474,989,017      L1-dcache-loads           # 1191.990 M/sec                  
+    39,984,904,976      L1-dcache-load-misses     #    3.48% of all L1-dcache hits  
+    30,583,750,138      LLC-loads                 #   31.743 M/sec                  
+    12,924,968,837      LLC-load-misses           #   42.26% of all LL-cache hits   
+ 1,106,852,680,140      cycle_activity_cycles_l1d_pending # 1148.791 M/sec                  
+ 1,121,025,001,754      cycle_activity_cycles_l2_pending # 1163.500 M/sec                  
+
+     965.771905823 seconds time elapsed
+

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:47:12 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-rand.txt -a bellman -o ../results/r4410/time-epinion-rand-bellman.txt -l 10':
+
+        159.002689      task-clock (msec)         #    0.982 CPUs utilized          
+       444,989,403      cpu-cycles                #    2.799 GHz                    
+       752,478,253      instructions              #    1.69  insns per cycle        
+       240,767,998      L1-dcache-loads           # 1514.239 M/sec                  
+         7,642,001      L1-dcache-load-misses     #    3.17% of all L1-dcache hits  
+         4,186,177      LLC-loads                 #   26.328 M/sec                  
+            87,543      LLC-load-misses           #    2.09% of all LL-cache hits   
+        90,895,622      cycle_activity_cycles_l1d_pending #  571.661 M/sec                  
+        97,074,228      cycle_activity_cycles_l2_pending #  610.519 M/sec                  
+
+       0.161837125 seconds time elapsed
+

@@ -1,0 +1,14 @@
+read	7200	7198583
+adjlist	411	410630
+prepare	7611	369
+dominatingset	2009	2009390
+dominatingset	2054	2053613
+dominatingset	2081	2080701
+dominatingset	2079	2079304
+dominatingset	2089	2088991
+dominatingset	2088	2087416
+dominatingset	2076	2076089
+dominatingset	2068	2068271
+dominatingset	2060	2060147
+dominatingset	2061	2061566
+total	28282	171

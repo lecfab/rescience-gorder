@@ -1,0 +1,14 @@
+read	101	100771
+adjlist	7	7229
+prepare	108	151
+kcore	17	17927
+kcore	16	16813
+kcore	17	17251
+kcore	17	17188
+kcore	17	17192
+kcore	17	17205
+kcore	17	17178
+kcore	17	17208
+kcore	17	17202
+kcore	17	17143
+total	280	15

@@ -1,0 +1,17 @@
+# started on Mon Mar  1 09:34:42 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-twitter-61M-1G-minla.txt -a bfs -o ../results/r4410/time-twitter-minla-bfs.txt -l 10':
+
+     580016.841463      task-clock (msec)         #    1.000 CPUs utilized          
+ 1,624,043,411,451      cpu-cycles                #    2.800 GHz                    
+ 2,800,669,031,650      instructions              #    1.72  insns per cycle        
+   860,631,613,219      L1-dcache-loads           # 1483.805 M/sec                  
+    20,007,366,975      L1-dcache-load-misses     #    2.32% of all L1-dcache hits  
+    12,809,877,750      LLC-loads                 #   22.085 M/sec                  
+     3,522,977,419      LLC-load-misses           #   27.50% of all LL-cache hits   
+   406,340,483,402      cycle_activity_cycles_l1d_pending #  700.567 M/sec                  
+   419,726,998,068      cycle_activity_cycles_l2_pending #  723.646 M/sec                  
+
+     580.123534818 seconds time elapsed
+

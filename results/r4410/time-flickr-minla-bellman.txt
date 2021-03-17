@@ -1,0 +1,14 @@
+read	7255	7249710
+adjlist	447	446393
+prepare	7703	343
+bellman	379	379920
+bellman	377	376623
+bellman	378	378291
+bellman	375	375974
+bellman	377	376306
+bellman	375	375733
+bellman	379	379001
+bellman	380	379299
+bellman	377	377302
+bellman	377	376265
+total	11481	285

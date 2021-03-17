@@ -1,0 +1,17 @@
+# started on Sat Feb 27 04:51:07 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-slashburn.txt -a bellman -o ../results/r4410/time-wiki-slashburn-bellman.txt -l 10':
+
+     123024.060051      task-clock (msec)         #    0.999 CPUs utilized          
+   344,459,028,508      cpu-cycles                #    2.800 GHz                    
+   423,613,972,985      instructions              #    1.23  insns per cycle        
+   134,100,291,989      L1-dcache-loads           # 1090.033 M/sec                  
+     6,928,431,289      L1-dcache-load-misses     #    5.17% of all L1-dcache hits  
+     4,093,630,348      LLC-loads                 #   33.275 M/sec                  
+     1,980,960,116      LLC-load-misses           #   48.39% of all LL-cache hits   
+   171,794,235,037      cycle_activity_cycles_l1d_pending # 1396.428 M/sec                  
+   173,882,057,047      cycle_activity_cycles_l2_pending # 1413.399 M/sec                  
+
+     123.101612655 seconds time elapsed
+

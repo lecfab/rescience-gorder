@@ -1,0 +1,17 @@
+# started on Sun Feb 28 04:24:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-minla.txt -a bellman -o ../results/r4410/time-pldarc-minla-bellman.txt -l 10':
+
+     332944.260723      task-clock (msec)         #    0.999 CPUs utilized          
+   932,217,649,751      cpu-cycles                #    2.800 GHz                    
+ 1,177,074,257,432      instructions              #    1.26  insns per cycle        
+   370,393,879,004      L1-dcache-loads           # 1112.480 M/sec                  
+    14,742,058,969      L1-dcache-load-misses     #    3.98% of all L1-dcache hits  
+    11,276,667,977      LLC-loads                 #   33.870 M/sec                  
+     5,986,924,135      LLC-load-misses           #   53.09% of all LL-cache hits   
+   410,630,475,715      cycle_activity_cycles_l1d_pending # 1233.331 M/sec                  
+   416,117,277,054      cycle_activity_cycles_l2_pending # 1249.811 M/sec                  
+
+     333.209809886 seconds time elapsed
+

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:47:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-minloga.txt -a bellman -o ../results/r4410/time-flickr-minloga-bellman.txt -l 10':
+
+      11430.830728      task-clock (msec)         #    0.999 CPUs utilized          
+    32,005,025,272      cpu-cycles                #    2.800 GHz                    
+    50,464,123,197      instructions              #    1.58  insns per cycle        
+    16,110,355,227      L1-dcache-loads           # 1409.377 M/sec                  
+       544,518,147      L1-dcache-load-misses     #    3.38% of all L1-dcache hits  
+       339,072,718      LLC-loads                 #   29.663 M/sec                  
+       112,704,310      LLC-load-misses           #   33.24% of all LL-cache hits   
+     9,905,214,551      cycle_activity_cycles_l1d_pending #  866.535 M/sec                  
+    10,202,663,753      cycle_activity_cycles_l2_pending #  892.557 M/sec                  
+
+      11.442492053 seconds time elapsed
+

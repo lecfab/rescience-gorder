@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-dfs.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 1s 693		ms=121693	clock:121670621/1000000 = 121670ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 200		ms=6200	clock:6198753/1000000 = 6198ms
+Total	- Time = 0h 2m 7s 894		ms=127894	clock:127869685/1000000 = 127869ms
+PR	- Time = 0h 10m 46s 601		ms=646601	clock:646447434/1000000 = 646447ms
+Total	- Time = 0h 12m 54s 496		ms=774496	clock:774317412/1000000 = 774317ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-dfs-pr.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-dfs.txt -a pr -o ../results/r4410/time-gplus-dfs-pr.txt -l 10

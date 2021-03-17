@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-deg-.txt
+	Info: Number of nodes: 75888
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 96		ms=96	clock:96759/1000000 = 96ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7398/1000000 = 7ms
+Total	- Time = 0h 0m 0s 104		ms=104	clock:104304/1000000 = 104ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2969/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2699/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2703/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2675/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2686/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2698/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2674/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2680/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2706/1000000 = 2ms
+SP	- Time = 0h 0m 0s 2		ms=2	clock:2671/1000000 = 2ms
+Total	- Time = 0h 0m 0s 131		ms=131	clock:131330/1000000 = 131ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-deg--bellman.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-deg-.txt -a bellman -o ../results/r4410/time-epinion-deg--bellman.txt -l 10

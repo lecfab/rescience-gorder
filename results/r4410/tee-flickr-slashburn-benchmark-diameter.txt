@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-slashburn.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 6s 922		ms=6922	clock:6918228/1000000 = 6918ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 459		ms=459	clock:457978/1000000 = 457ms
+Total	- Time = 0h 0m 7s 382		ms=7382	clock:7376560/1000000 = 7376ms
+	Info: Approximate diameter (100 runs): 19
+Diam	- Time = 0h 0m 33s 219		ms=33219	clock:33189491/1000000 = 33189ms
+Total	- Time = 0h 0m 40s 601		ms=40601	clock:40565922/1000000 = 40565ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-slashburn-diameter.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-slashburn.txt -a diameter -o ../results/r4410/time-flickr-slashburn-diameter.txt -l 10

@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 58s 885		ms=178885	clock:178850801/1000000 = 178850ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 8s 452		ms=8452	clock:8450781/1000000 = 8450ms
+Order	- Time = 0h 0m 14s 340		ms=14340	clock:14336705/1000000 = 14336ms
+	Info: Output into file ord.tmp-dfs.txt
+Output	- Time = 0h 0m 4s 840		ms=4840	clock:4839993/1000000 = 4839ms
+Total	- Time = 0h 3m 26s 518		ms=206518	clock:206478289/1000000 = 206478ms

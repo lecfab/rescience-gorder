@@ -1,0 +1,17 @@
+# started on Sun Feb 28 10:00:50 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-rcm.txt -a kcore -o ../results/r4410/time-pldarc-rcm-kcore.txt -l 10':
+
+     984692.817774      task-clock (msec)         #    0.999 CPUs utilized          
+ 2,757,071,046,638      cpu-cycles                #    2.800 GHz                    
+ 1,705,529,396,563      instructions              #    0.62  insns per cycle        
+   533,596,436,027      L1-dcache-loads           #  541.891 M/sec                  
+    42,645,365,605      L1-dcache-load-misses     #    7.99% of all L1-dcache hits  
+    30,425,055,596      LLC-loads                 #   30.898 M/sec                  
+    13,653,880,542      LLC-load-misses           #   44.88% of all LL-cache hits   
+ 1,903,773,892,743      cycle_activity_cycles_l1d_pending # 1933.368 M/sec                  
+ 1,881,840,109,269      cycle_activity_cycles_l2_pending # 1911.094 M/sec                  
+
+     985.452868567 seconds time elapsed
+

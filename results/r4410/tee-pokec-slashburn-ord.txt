@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 299		ms=7299	clock:7293971/1000000 = 7293ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 423		ms=423	clock:423891/1000000 = 423ms
+	Info: Directed slashburn
+Order	- Time = 0h 0m 5s 329		ms=5329	clock:5326292/1000000 = 5326ms
+	Info: Output into file ord.tmp-slashburn.txt
+Output	- Time = 0h 0m 0s 180		ms=180	clock:180120/1000000 = 180ms
+Total	- Time = 0h 0m 13s 233		ms=13233	clock:13224285/1000000 = 13224ms

@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 17s 103		ms=17103	clock:17091246/1000000 = 17091ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 941		ms=941	clock:939581/1000000 = 939ms
+	Info: Minla order
+	Alert: Recovered energy is 3.17031e+13 instead of 2.58813e+13
+	Info: Energy decreased from 5.09444e+13 to 2.58813e+13
+Order	- Time = 0h 0m 55s 375		ms=55375	clock:55352936/1000000 = 55352ms
+	Info: Output into file ord.tmp-minla.txt
+Output	- Time = 0h 0m 0s 519		ms=519	clock:518892/1000000 = 518ms
+Total	- Time = 0h 1m 13s 939		ms=73939	clock:73902667/1000000 = 73902ms

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 22:53:43 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-minloga.txt -a pr -o ../results/r4410/time-livejournal-minloga-pr.txt -l 10':
+
+      94114.105821      task-clock (msec)         #    0.999 CPUs utilized          
+   263,511,432,065      cpu-cycles                #    2.800 GHz                    
+   179,726,029,576      instructions              #    0.68  insns per cycle        
+    63,380,906,629      L1-dcache-loads           #  673.447 M/sec                  
+    10,043,704,320      L1-dcache-load-misses     #   15.85% of all L1-dcache hits  
+     6,723,623,078      LLC-loads                 #   71.441 M/sec                  
+     2,636,049,873      LLC-load-misses           #   39.21% of all LL-cache hits   
+   190,608,594,735      cycle_activity_cycles_l1d_pending # 2025.293 M/sec                  
+   191,974,206,404      cycle_activity_cycles_l2_pending # 2039.803 M/sec                  
+
+      94.191116074 seconds time elapsed
+

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:29:55 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pokec-1M-30M-gorder.txt -a tarjan -o ../results/r4410/time-pokec-gorder-tarjan.txt -l 10':
+
+      15316.406950      task-clock (msec)         #    1.000 CPUs utilized          
+    42,885,686,198      cpu-cycles                #    2.800 GHz                    
+    60,252,963,121      instructions              #    1.40  insns per cycle        
+    21,911,204,636      L1-dcache-loads           # 1430.571 M/sec                  
+       693,919,334      L1-dcache-load-misses     #    3.17% of all L1-dcache hits  
+       464,777,067      LLC-loads                 #   30.345 M/sec                  
+       140,502,993      LLC-load-misses           #   30.23% of all LL-cache hits   
+    17,510,102,119      cycle_activity_cycles_l1d_pending # 1143.225 M/sec                  
+    19,396,900,234      cycle_activity_cycles_l2_pending # 1266.413 M/sec                  
+
+      15.321181375 seconds time elapsed
+

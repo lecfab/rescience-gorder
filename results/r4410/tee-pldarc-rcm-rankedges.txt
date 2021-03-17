@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read edges	- Time = 0h 2m 59s 822		ms=179822	clock:179795795/1000000 = 179795ms
+	Info: Reading rank from file ord.tmp-rcm.txt
+Read rank	- Time = 0h 0m 6s 52		ms=6052	clock:6051360/1000000 = 6051ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 1m 4s 496		ms=64496	clock:64484181/1000000 = 64484ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 1m 15s 858		ms=75858	clock:75845286/1000000 = 75845ms
+	Info: Output into file ../datasets/edgelist-pldarc-42M-623M-rcm.txt
+Output	- Time = 0h 2m 32s 998		ms=152998	clock:152957890/1000000 = 152957ms
+Total	- Time = 0h 7m 59s 228		ms=479228	clock:479134526/1000000 = 479134ms

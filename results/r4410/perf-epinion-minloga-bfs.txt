@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:47:37 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-minloga.txt -a bfs -o ../results/r4410/time-epinion-minloga-bfs.txt -l 10':
+
+        154.824583      task-clock (msec)         #    0.985 CPUs utilized          
+       433,311,649      cpu-cycles                #    2.799 GHz                    
+       722,504,285      instructions              #    1.67  insns per cycle        
+       224,912,069      L1-dcache-loads           # 1452.690 M/sec                  
+         3,394,512      L1-dcache-load-misses     #    1.51% of all L1-dcache hits  
+         1,758,083      LLC-loads                 #   11.355 M/sec                  
+            77,412      LLC-load-misses           #    4.40% of all LL-cache hits   
+        53,266,055      cycle_activity_cycles_l1d_pending #  344.041 M/sec                  
+        73,829,177      cycle_activity_cycles_l2_pending #  476.857 M/sec                  
+
+       0.157125175 seconds time elapsed
+

@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-slashburn.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 882		ms=6882	clock:6879504/1000000 = 6879ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 414		ms=414	clock:414723/1000000 = 414ms
+Total	- Time = 0h 0m 7s 297		ms=7297	clock:7294587/1000000 = 7294ms
+BFS	- Time = 0h 0m 0s 360		ms=360	clock:360754/1000000 = 360ms
+BFS	- Time = 0h 0m 0s 354		ms=354	clock:353786/1000000 = 353ms
+BFS	- Time = 0h 0m 0s 351		ms=351	clock:351705/1000000 = 351ms
+BFS	- Time = 0h 0m 0s 352		ms=352	clock:352554/1000000 = 352ms
+BFS	- Time = 0h 0m 0s 352		ms=352	clock:351120/1000000 = 351ms
+BFS	- Time = 0h 0m 0s 349		ms=349	clock:349428/1000000 = 349ms
+BFS	- Time = 0h 0m 0s 350		ms=350	clock:350245/1000000 = 350ms
+BFS	- Time = 0h 0m 0s 350		ms=350	clock:350230/1000000 = 350ms
+BFS	- Time = 0h 0m 0s 353		ms=353	clock:353524/1000000 = 353ms
+BFS	- Time = 0h 0m 0s 355		ms=355	clock:354553/1000000 = 354ms
+Total	- Time = 0h 0m 10s 828		ms=10828	clock:10822646/1000000 = 10822ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-slashburn-bfs.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-slashburn.txt -a bfs -o ../results/r4410/time-pokec-slashburn-bfs.txt -l 10

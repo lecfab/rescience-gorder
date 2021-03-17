@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read edges	- Time = 0h 7m 3s 941		ms=423941	clock:423677945/1000000 = 423677ms
+	Info: Reading rank from file ord.tmp-deg-.txt
+Read rank	- Time = 0h 0m 8s 487		ms=8487	clock:8482472/1000000 = 8482ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 2m 21s 736		ms=141736	clock:141709023/1000000 = 141709ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 2m 56s 758		ms=176758	clock:176724562/1000000 = 176724ms
+	Info: Output into file ../datasets/edgelist-twitter-61M-1G-deg-.txt
+Output	- Time = 0h 5m 35s 592		ms=335592	clock:335426592/1000000 = 335426ms
+Total	- Time = 0h 18m 6s 516		ms=1086516	clock:1086020605/1000000 = 1086020ms

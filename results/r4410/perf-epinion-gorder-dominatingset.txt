@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:49:09 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-gorder.txt -a ds -o ../results/r4410/time-epinion-gorder-ds.txt -l 10':
+
+        261.906645      task-clock (msec)         #    0.992 CPUs utilized          
+       733,191,120      cpu-cycles                #    2.799 GHz                    
+     1,063,745,350      instructions              #    1.45  insns per cycle        
+       340,198,042      L1-dcache-loads           # 1298.929 M/sec                  
+        13,938,338      L1-dcache-load-misses     #    4.10% of all L1-dcache hits  
+         7,853,810      LLC-loads                 #   29.987 M/sec                  
+            80,334      LLC-load-misses           #    1.02% of all LL-cache hits   
+       192,610,011      cycle_activity_cycles_l1d_pending #  735.415 M/sec                  
+       216,168,470      cycle_activity_cycles_l2_pending #  825.365 M/sec                  
+
+       0.263956898 seconds time elapsed
+

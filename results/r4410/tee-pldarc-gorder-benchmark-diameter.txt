@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-gorder.txt
+	Info: Number of nodes: 39497204
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 36s 725		ms=156725	clock:156598627/1000000 = 156598ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 470		ms=8470	clock:8463068/1000000 = 8463ms
+Total	- Time = 0h 2m 45s 196		ms=165196	clock:165062166/1000000 = 165062ms
+	Info: Approximate diameter (100 runs): 48
+Diam	- Time = 0h 15m 20s 265		ms=920265	clock:919431767/1000000 = 919431ms
+Total	- Time = 0h 18m 5s 461		ms=1085461	clock:1084493812/1000000 = 1084493ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-gorder-diameter.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-gorder.txt -a diameter -o ../results/r4410/time-pldarc-gorder-diameter.txt -l 10

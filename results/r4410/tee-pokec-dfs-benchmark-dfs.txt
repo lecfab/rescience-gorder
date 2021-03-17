@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-dfs.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 942		ms=6942	clock:6938474/1000000 = 6938ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 410		ms=410	clock:410274/1000000 = 410ms
+Total	- Time = 0h 0m 7s 352		ms=7352	clock:7349122/1000000 = 7349ms
+DFS	- Time = 0h 0m 0s 331		ms=331	clock:330629/1000000 = 330ms
+DFS	- Time = 0h 0m 0s 319		ms=319	clock:319673/1000000 = 319ms
+DFS	- Time = 0h 0m 0s 307		ms=307	clock:307649/1000000 = 307ms
+DFS	- Time = 0h 0m 0s 309		ms=309	clock:309716/1000000 = 309ms
+DFS	- Time = 0h 0m 0s 310		ms=310	clock:310133/1000000 = 310ms
+DFS	- Time = 0h 0m 0s 310		ms=310	clock:310571/1000000 = 310ms
+DFS	- Time = 0h 0m 0s 310		ms=310	clock:310978/1000000 = 310ms
+DFS	- Time = 0h 0m 0s 313		ms=313	clock:311968/1000000 = 311ms
+DFS	- Time = 0h 0m 0s 309		ms=309	clock:309135/1000000 = 309ms
+DFS	- Time = 0h 0m 0s 308		ms=308	clock:308426/1000000 = 308ms
+Total	- Time = 0h 0m 10s 484		ms=10484	clock:10477935/1000000 = 10477ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-dfs-dfs.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-dfs.txt -a dfs -o ../results/r4410/time-pokec-dfs-dfs.txt -l 10

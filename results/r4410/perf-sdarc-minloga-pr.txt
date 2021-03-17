@@ -1,0 +1,17 @@
+# started on Thu Mar  4 04:19:40 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-minloga.txt -a pr -o ../results/r4410/time-sdarc-minloga-pr.txt -l 10':
+
+    4390973.054961      task-clock (msec)         #    1.000 CPUs utilized          
+12,294,817,428,948      cpu-cycles                #    2.800 GHz                    
+ 5,372,787,977,713      instructions              #    0.44  insns per cycle        
+ 1,885,659,066,874      L1-dcache-loads           #  429.440 M/sec                  
+   390,904,861,232      L1-dcache-load-misses     #   20.73% of all L1-dcache hits  
+   330,617,213,223      LLC-loads                 #   75.295 M/sec                  
+   130,232,676,689      LLC-load-misses           #   39.39% of all LL-cache hits   
+10,192,275,893,820      cycle_activity_cycles_l1d_pending # 2321.188 M/sec                  
+10,150,503,086,366      cycle_activity_cycles_l2_pending # 2311.675 M/sec                  
+
+    4392.449369510 seconds time elapsed
+

@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-dfs.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 1s 527		ms=121527	clock:121504436/1000000 = 121504ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 217		ms=6217	clock:6216533/1000000 = 6216ms
+Total	- Time = 0h 2m 7s 746		ms=127746	clock:127721292/1000000 = 127721ms
+	Info: Approximate diameter (100 runs): 18
+Diam	- Time = 0h 18m 41s 42		ms=1121042	clock:1120749724/1000000 = 1120749ms
+Total	- Time = 0h 20m 48s 788		ms=1248788	clock:1248470964/1000000 = 1248470ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-dfs-diameter.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-dfs.txt -a diameter -o ../results/r4410/time-gplus-dfs-diameter.txt -l 10

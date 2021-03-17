@@ -1,0 +1,9 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 1m 0s 624		ms=60624	clock:60579695/1000000 = 60579ms
+	Info: Transfering degrees instead of recomputing
+Order	- Time = 0h 0m 44s 40		ms=44040	clock:44005654/1000000 = 44005ms
+	Info: Output into file ord.tmp-rcm.txt
+Output	- Time = 0h 0m 1s 91		ms=1091	clock:1090567/1000000 = 1090ms
+Total	- Time = 0h 1m 45s 756		ms=105756	clock:105675931/1000000 = 105675ms

@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-dfs.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 16s 134		ms=16134	clock:16124134/1000000 = 16124ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 938		ms=938	clock:938304/1000000 = 938ms
+Total	- Time = 0h 0m 17s 73		ms=17073	clock:17062793/1000000 = 17062ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 943		ms=1943	clock:1941600/1000000 = 1941ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 947		ms=1947	clock:1945649/1000000 = 1945ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 943		ms=1943	clock:1942373/1000000 = 1942ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 952		ms=1952	clock:1950952/1000000 = 1950ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 955		ms=1955	clock:1954463/1000000 = 1954ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 974		ms=1974	clock:1972573/1000000 = 1972ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 976		ms=1976	clock:1975144/1000000 = 1975ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 972		ms=1972	clock:1970728/1000000 = 1970ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 977		ms=1977	clock:1975945/1000000 = 1975ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 1s 976		ms=1976	clock:1975061/1000000 = 1975ms
+Total	- Time = 0h 0m 36s 694		ms=36694	clock:36667076/1000000 = 36667ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-dfs-tarjan.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-dfs.txt -a tarjan -o ../results/r4410/time-livejournal-dfs-tarjan.txt -l 10

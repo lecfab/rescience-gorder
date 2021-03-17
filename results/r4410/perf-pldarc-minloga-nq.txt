@@ -1,0 +1,17 @@
+# started on Sun Feb 28 06:56:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-minloga.txt -a nq -o ../results/r4410/time-pldarc-minloga-nq.txt -l 10':
+
+     200126.233759      task-clock (msec)         #    0.999 CPUs utilized          
+   560,337,000,569      cpu-cycles                #    2.800 GHz                    
+ 1,090,211,760,871      instructions              #    1.95  insns per cycle        
+   343,352,017,838      L1-dcache-loads           # 1715.677 M/sec                  
+     2,950,146,973      L1-dcache-load-misses     #    0.86% of all L1-dcache hits  
+     1,606,819,693      LLC-loads                 #    8.029 M/sec                  
+       980,220,984      LLC-load-misses           #   61.00% of all LL-cache hits   
+    68,697,387,225      cycle_activity_cycles_l1d_pending #  343.270 M/sec                  
+    73,118,890,002      cycle_activity_cycles_l2_pending #  365.364 M/sec                  
+
+     200.275283143 seconds time elapsed
+

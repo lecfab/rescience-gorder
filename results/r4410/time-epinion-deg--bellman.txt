@@ -1,0 +1,14 @@
+read	96	96812
+adjlist	7	7354
+prepare	104	149
+bellman	2	2963
+bellman	2	2700
+bellman	2	2702
+bellman	2	2675
+bellman	2	2688
+bellman	2	2696
+bellman	2	2674
+bellman	2	2680
+bellman	2	2707
+bellman	2	2671
+total	131	14

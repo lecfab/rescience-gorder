@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-slashburn.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 55s 62		ms=55062	clock:55020015/1000000 = 55020ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 37		ms=3037	clock:3034663/1000000 = 3034ms
+Total	- Time = 0h 0m 58s 100		ms=58100	clock:58055174/1000000 = 58055ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 682		ms=9682	clock:9672560/1000000 = 9672ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 570		ms=9570	clock:9563841/1000000 = 9563ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 673		ms=9673	clock:9666906/1000000 = 9666ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 581		ms=9581	clock:9574232/1000000 = 9574ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 636		ms=9636	clock:9629486/1000000 = 9629ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 633		ms=9633	clock:9625606/1000000 = 9625ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 698		ms=9698	clock:9691276/1000000 = 9691ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 858		ms=9858	clock:9851307/1000000 = 9851ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 749		ms=9749	clock:9742494/1000000 = 9742ms
+	Info: Dominating set 6530551
+DS	- Time = 0h 0m 9s 865		ms=9865	clock:9858794/1000000 = 9858ms
+Total	- Time = 0h 2m 35s 51		ms=155051	clock:154931287/1000000 = 154931ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-slashburn-ds.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-slashburn.txt -a ds -o ../results/r4410/time-wiki-slashburn-ds.txt -l 10

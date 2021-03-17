@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-minloga.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 40s 843		ms=400843	clock:400558648/1000000 = 400558ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 245		ms=19245	clock:19232574/1000000 = 19232ms
+Total	- Time = 0h 7m 0s 89		ms=420089	clock:419791498/1000000 = 419791ms
+	Info: Approximate diameter (100 runs): 17
+Diam	- Time = 0h 51m 42s 515		ms=3102515	clock:3100912319/1000000 = 3100912ms
+Total	- Time = 0h 58m 42s 605		ms=3522605	clock:3520703738/1000000 = 3520703ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-minloga-diameter.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-minloga.txt -a diameter -o ../results/r4410/time-twitter-minloga-diameter.txt -l 10

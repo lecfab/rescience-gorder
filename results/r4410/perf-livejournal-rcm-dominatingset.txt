@@ -1,0 +1,17 @@
+# started on Fri Feb 26 23:05:30 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-rcm.txt -a ds -o ../results/r4410/time-livejournal-rcm-ds.txt -l 10':
+
+      62645.543459      task-clock (msec)         #    1.000 CPUs utilized          
+   175,406,430,770      cpu-cycles                #    2.800 GHz                    
+   155,235,708,921      instructions              #    0.89  insns per cycle        
+    49,333,232,041      L1-dcache-loads           #  787.498 M/sec                  
+     2,378,944,979      L1-dcache-load-misses     #    4.82% of all L1-dcache hits  
+     1,656,566,125      LLC-loads                 #   26.443 M/sec                  
+       831,849,773      LLC-load-misses           #   50.22% of all LL-cache hits   
+    99,085,067,404      cycle_activity_cycles_l1d_pending # 1581.678 M/sec                  
+   103,166,357,130      cycle_activity_cycles_l2_pending # 1646.827 M/sec                  
+
+      62.659525374 seconds time elapsed
+

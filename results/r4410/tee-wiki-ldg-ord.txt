@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 1m 0s 742		ms=60742	clock:60699420/1000000 = 60699ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 23s 844		ms=23844	clock:23824884/1000000 = 23824ms
+	Info: Applying BFS order
+	Info: Reordering adjacency list
+	Info: Applying LDG
+Order	- Time = 0h 0m 44s 371		ms=44371	clock:44347742/1000000 = 44347ms
+	Info: Output into file ord.tmp-ldg.txt
+Output	- Time = 0h 0m 1s 92		ms=1092	clock:1091612/1000000 = 1091ms
+Total	- Time = 0h 2m 10s 51		ms=130051	clock:129963670/1000000 = 129963ms

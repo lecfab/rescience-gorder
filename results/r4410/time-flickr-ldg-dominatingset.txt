@@ -1,0 +1,14 @@
+read	7927	7923019
+adjlist	455	455525
+prepare	8383	373
+dominatingset	1945	1944341
+dominatingset	1940	1938526
+dominatingset	1934	1932641
+dominatingset	1924	1922995
+dominatingset	1916	1915136
+dominatingset	1921	1920436
+dominatingset	1921	1919872
+dominatingset	1924	1923200
+dominatingset	1933	1931828
+dominatingset	1933	1932235
+total	27678	126

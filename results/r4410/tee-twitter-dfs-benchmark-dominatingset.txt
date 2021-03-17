@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-dfs.txt
+	Info: Number of nodes: 61578034
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 14s 698		ms=374698	clock:374438360/1000000 = 374438ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 137		ms=19137	clock:19125371/1000000 = 19125ms
+Total	- Time = 0h 6m 33s 836		ms=393836	clock:393564000/1000000 = 393564ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 5s 213		ms=125213	clock:125169444/1000000 = 125169ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 4s 625		ms=124625	clock:124590950/1000000 = 124590ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 663		ms=120663	clock:120625108/1000000 = 120625ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 587		ms=120587	clock:120553901/1000000 = 120553ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 571		ms=120571	clock:120534835/1000000 = 120534ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 705		ms=120705	clock:120671019/1000000 = 120671ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 509		ms=120509	clock:120476330/1000000 = 120476ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 600		ms=120600	clock:120562082/1000000 = 120562ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 518		ms=120518	clock:120486984/1000000 = 120486ms
+	Info: Dominating set 35185772
+DS	- Time = 0h 2m 0s 659		ms=120659	clock:120622633/1000000 = 120622ms
+Total	- Time = 0h 26m 48s 491		ms=1608491	clock:1607857243/1000000 = 1607857ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-dfs-ds.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-dfs.txt -a ds -o ../results/r4410/time-twitter-dfs-ds.txt -l 10

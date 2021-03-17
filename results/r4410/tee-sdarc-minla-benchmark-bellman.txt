@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G-minla.txt
+	Info: Number of nodes: 94946569
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 8m 57s 353		ms=537353	clock:537282267/1000000 = 537282ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 25s 452		ms=25452	clock:25448840/1000000 = 25448ms
+Total	- Time = 0h 9m 22s 806		ms=562806	clock:562731414/1000000 = 562731ms
+SP	- Time = 0h 0m 39s 532		ms=39532	clock:39526147/1000000 = 39526ms
+SP	- Time = 0h 0m 39s 469		ms=39469	clock:39462652/1000000 = 39462ms
+SP	- Time = 0h 0m 39s 351		ms=39351	clock:39345154/1000000 = 39345ms
+SP	- Time = 0h 0m 41s 100		ms=41100	clock:41093992/1000000 = 41093ms
+SP	- Time = 0h 0m 39s 492		ms=39492	clock:39486321/1000000 = 39486ms
+SP	- Time = 0h 0m 39s 579		ms=39579	clock:39573307/1000000 = 39573ms
+SP	- Time = 0h 0m 40s 751		ms=40751	clock:39880340/1000000 = 39880ms
+SP	- Time = 0h 0m 39s 597		ms=39597	clock:39569952/1000000 = 39569ms
+SP	- Time = 0h 0m 40s 876		ms=40876	clock:39631311/1000000 = 39631ms
+SP	- Time = 0h 0m 41s 119		ms=41119	clock:41090632/1000000 = 41090ms
+Total	- Time = 0h 16m 3s 677		ms=963677	clock:961391165/1000000 = 961391ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-sdarc-minla-bellman.txt ./benchmark ../datasets/edgelist-sdarc-94M-1G-minla.txt -a bellman -o ../results/r4410/time-sdarc-minla-bellman.txt -l 10

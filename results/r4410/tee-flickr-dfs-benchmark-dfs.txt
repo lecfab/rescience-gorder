@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-dfs.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 259		ms=7259	clock:7253961/1000000 = 7253ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 453		ms=453	clock:453490/1000000 = 453ms
+Total	- Time = 0h 0m 7s 713		ms=7713	clock:7707774/1000000 = 7707ms
+DFS	- Time = 0h 0m 0s 253		ms=253	clock:253022/1000000 = 253ms
+DFS	- Time = 0h 0m 0s 244		ms=244	clock:244119/1000000 = 244ms
+DFS	- Time = 0h 0m 0s 244		ms=244	clock:244145/1000000 = 244ms
+DFS	- Time = 0h 0m 0s 243		ms=243	clock:243558/1000000 = 243ms
+DFS	- Time = 0h 0m 0s 244		ms=244	clock:243471/1000000 = 243ms
+DFS	- Time = 0h 0m 0s 247		ms=247	clock:247929/1000000 = 247ms
+DFS	- Time = 0h 0m 0s 246		ms=246	clock:246629/1000000 = 246ms
+DFS	- Time = 0h 0m 0s 248		ms=248	clock:248571/1000000 = 248ms
+DFS	- Time = 0h 0m 0s 246		ms=246	clock:246015/1000000 = 246ms
+DFS	- Time = 0h 0m 0s 244		ms=244	clock:244230/1000000 = 244ms
+Total	- Time = 0h 0m 10s 177		ms=10177	clock:10169543/1000000 = 10169ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-dfs-dfs.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-dfs.txt -a dfs -o ../results/r4410/time-flickr-dfs-dfs.txt -l 10

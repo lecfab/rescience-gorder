@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-ldg.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 38s 465		ms=398465	clock:398199605/1000000 = 398199ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 219		ms=19219	clock:19208514/1000000 = 19208ms
+Total	- Time = 0h 6m 57s 685		ms=417685	clock:417408382/1000000 = 417408ms
+DFS	- Time = 0h 0m 24s 589		ms=24589	clock:24576886/1000000 = 24576ms
+DFS	- Time = 0h 0m 26s 200		ms=26200	clock:26189746/1000000 = 26189ms
+DFS	- Time = 0h 0m 26s 730		ms=26730	clock:26718708/1000000 = 26718ms
+DFS	- Time = 0h 0m 26s 697		ms=26697	clock:26686326/1000000 = 26686ms
+DFS	- Time = 0h 0m 26s 698		ms=26698	clock:26687188/1000000 = 26687ms
+DFS	- Time = 0h 0m 26s 748		ms=26748	clock:26736029/1000000 = 26736ms
+DFS	- Time = 0h 0m 28s 435		ms=28435	clock:28424017/1000000 = 28424ms
+DFS	- Time = 0h 0m 27s 797		ms=27797	clock:27785475/1000000 = 27785ms
+DFS	- Time = 0h 0m 27s 812		ms=27812	clock:27802504/1000000 = 27802ms
+DFS	- Time = 0h 0m 27s 837		ms=27837	clock:27826466/1000000 = 27826ms
+Total	- Time = 0h 11m 27s 233		ms=687233	clock:686841725/1000000 = 686841ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-ldg-dfs.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-ldg.txt -a dfs -o ../results/r4410/time-twitter-ldg-dfs.txt -l 10

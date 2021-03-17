@@ -1,0 +1,14 @@
+read	97	97393
+adjlist	7	7182
+prepare	104	106
+bfs	3	3990
+bfs	3	3618
+bfs	3	3604
+bfs	3	3619
+bfs	3	3591
+bfs	3	3623
+bfs	3	3607
+bfs	3	3598
+bfs	3	3623
+bfs	3	3599
+total	141	16

@@ -1,0 +1,17 @@
+# started on Thu Mar  4 23:08:17 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-slashburn.txt -a bfs -o ../results/r4410/time-sdarc-slashburn-bfs.txt -l 10':
+
+     705028.312393      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,974,083,595,721      cpu-cycles                #    2.800 GHz                    
+ 3,348,974,746,105      instructions              #    1.70  insns per cycle        
+ 1,030,750,716,703      L1-dcache-loads           # 1461.999 M/sec                  
+    20,605,742,828      L1-dcache-load-misses     #    2.00% of all L1-dcache hits  
+    11,398,268,537      LLC-loads                 #   16.167 M/sec                  
+     4,496,738,098      LLC-load-misses           #   39.45% of all LL-cache hits   
+   458,466,022,312      cycle_activity_cycles_l1d_pending #  650.280 M/sec                  
+   495,150,571,822      cycle_activity_cycles_l2_pending #  702.313 M/sec                  
+
+     705.485469952 seconds time elapsed
+

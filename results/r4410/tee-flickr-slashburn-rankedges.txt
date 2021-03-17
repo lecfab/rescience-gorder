@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read edges	- Time = 0h 0m 7s 787		ms=7787	clock:7783046/1000000 = 7783ms
+	Info: Reading rank from file ord.tmp-slashburn.txt
+Read rank	- Time = 0h 0m 0s 296		ms=296	clock:295856/1000000 = 295ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 0m 1s 265		ms=1265	clock:1264265/1000000 = 1264ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 0m 3s 835		ms=3835	clock:3834640/1000000 = 3834ms
+	Info: Output into file ../datasets/edgelist-flickr-2M-33M-slashburn.txt
+Output	- Time = 0h 0m 5s 669		ms=5669	clock:5666384/1000000 = 5666ms
+Total	- Time = 0h 0m 18s 853		ms=18853	clock:18844212/1000000 = 18844ms

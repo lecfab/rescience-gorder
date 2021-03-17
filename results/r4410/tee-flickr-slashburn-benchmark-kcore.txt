@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-slashburn.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 6s 907		ms=6907	clock:6903714/1000000 = 6903ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 446		ms=446	clock:445591/1000000 = 445ms
+Total	- Time = 0h 0m 7s 354		ms=7354	clock:7349658/1000000 = 7349ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 557		ms=1557	clock:1556465/1000000 = 1556ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 557		ms=1557	clock:1555432/1000000 = 1555ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 561		ms=1561	clock:1560324/1000000 = 1560ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 559		ms=1559	clock:1557727/1000000 = 1557ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 564		ms=1564	clock:1562379/1000000 = 1562ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 564		ms=1564	clock:1563015/1000000 = 1563ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 562		ms=1562	clock:1560846/1000000 = 1560ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 545		ms=1545	clock:1545151/1000000 = 1545ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 547		ms=1547	clock:1545990/1000000 = 1545ms
+	Info: Graph degeneracy 467
+Kcore	- Time = 0h 0m 1s 545		ms=1545	clock:1544223/1000000 = 1544ms
+Total	- Time = 0h 0m 22s 919		ms=22919	clock:22900959/1000000 = 22900ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-slashburn-kcore.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-slashburn.txt -a kcore -o ../results/r4410/time-flickr-slashburn-kcore.txt -l 10

@@ -1,0 +1,17 @@
+# started on Sat Feb 27 04:48:04 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-slashburn.txt -a dfs -o ../results/r4410/time-wiki-slashburn-dfs.txt -l 10':
+
+      76113.474945      task-clock (msec)         #    1.000 CPUs utilized          
+   213,116,906,523      cpu-cycles                #    2.800 GHz                    
+   391,421,586,453      instructions              #    1.84  insns per cycle        
+   127,229,452,343      L1-dcache-loads           # 1671.576 M/sec                  
+     1,930,559,301      L1-dcache-load-misses     #    1.52% of all L1-dcache hits  
+       820,062,217      LLC-loads                 #   10.774 M/sec                  
+       417,969,433      LLC-load-misses           #   50.97% of all LL-cache hits   
+    37,817,577,734      cycle_activity_cycles_l1d_pending #  496.858 M/sec                  
+    44,056,734,330      cycle_activity_cycles_l2_pending #  578.830 M/sec                  
+
+      76.121725742 seconds time elapsed
+

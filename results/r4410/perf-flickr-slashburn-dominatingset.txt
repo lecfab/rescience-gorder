@@ -1,0 +1,17 @@
+# started on Fri Feb 26 22:02:05 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-slashburn.txt -a ds -o ../results/r4410/time-flickr-slashburn-ds.txt -l 10':
+
+      22474.432619      task-clock (msec)         #    0.999 CPUs utilized          
+    62,926,169,049      cpu-cycles                #    2.800 GHz                    
+    63,625,292,488      instructions              #    1.01  insns per cycle        
+    20,383,558,008      L1-dcache-loads           #  906.967 M/sec                  
+     1,092,601,699      L1-dcache-load-misses     #    5.36% of all L1-dcache hits  
+       767,038,202      LLC-loads                 #   34.129 M/sec                  
+       214,076,771      LLC-load-misses           #   27.91% of all LL-cache hits   
+    31,807,790,494      cycle_activity_cycles_l1d_pending # 1415.288 M/sec                  
+    33,426,763,944      cycle_activity_cycles_l2_pending # 1487.324 M/sec                  
+
+      22.491450589 seconds time elapsed
+

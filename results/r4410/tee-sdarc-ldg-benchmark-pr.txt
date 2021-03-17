@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G-ldg.txt
+	Info: Number of nodes: 94946569
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 8m 56s 997		ms=536997	clock:536626384/1000000 = 536626ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 25s 562		ms=25562	clock:25547026/1000000 = 25547ms
+Total	- Time = 0h 9m 22s 560		ms=562560	clock:562173697/1000000 = 562173ms
+PR	- Time = 1h 18m 49s 493		ms=4729493	clock:4727656160/1000000 = 4727655ms
+Total	- Time = 1h 28m 12s 53		ms=5292053	clock:5289829846/1000000 = 5289829ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-sdarc-ldg-pr.txt ./benchmark ../datasets/edgelist-sdarc-94M-1G-ldg.txt -a pr -o ../results/r4410/time-sdarc-ldg-pr.txt -l 10

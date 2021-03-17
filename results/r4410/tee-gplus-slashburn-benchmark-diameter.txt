@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-slashburn.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 1m 56s 587		ms=116587	clock:116559229/1000000 = 116559ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 278		ms=6278	clock:6276958/1000000 = 6276ms
+Total	- Time = 0h 2m 2s 866		ms=122866	clock:122836535/1000000 = 122836ms
+	Info: Approximate diameter (100 runs): 19
+Diam	- Time = 0h 21m 49s 633		ms=1309633	clock:1309286491/1000000 = 1309286ms
+Total	- Time = 0h 23m 52s 500		ms=1432500	clock:1432123069/1000000 = 1432123ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-slashburn-diameter.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-slashburn.txt -a diameter -o ../results/r4410/time-gplus-slashburn-diameter.txt -l 10

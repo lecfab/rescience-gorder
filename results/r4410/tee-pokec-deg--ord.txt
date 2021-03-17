@@ -1,0 +1,8 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 321		ms=7321	clock:7317846/1000000 = 7317ms
+Order	- Time = 0h 0m 0s 530		ms=530	clock:530199/1000000 = 530ms
+	Info: Output into file ord.tmp-deg-.txt
+Output	- Time = 0h 0m 0s 183		ms=183	clock:183771/1000000 = 183ms
+Total	- Time = 0h 0m 8s 35		ms=8035	clock:8031827/1000000 = 8031ms

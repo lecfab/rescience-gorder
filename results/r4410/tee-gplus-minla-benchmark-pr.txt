@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-minla.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 1s 30		ms=121030	clock:120933319/1000000 = 120933ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 234		ms=6234	clock:6229559/1000000 = 6229ms
+Total	- Time = 0h 2m 7s 265		ms=127265	clock:127163351/1000000 = 127163ms
+PR	- Time = 0h 16m 15s 935		ms=975935	clock:975518704/1000000 = 975518ms
+Total	- Time = 0h 18m 23s 200		ms=1103200	clock:1102681912/1000000 = 1102681ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-minla-pr.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-minla.txt -a pr -o ../results/r4410/time-gplus-minla-pr.txt -l 10

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 22:30:09 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-rand.txt -a kcore -o ../results/r4410/time-livejournal-rand-kcore.txt -l 10':
+
+     104417.124920      task-clock (msec)         #    1.000 CPUs utilized          
+   292,367,293,505      cpu-cycles                #    2.800 GHz                    
+   178,689,386,494      instructions              #    0.61  insns per cycle        
+    56,358,306,004      L1-dcache-loads           #  539.742 M/sec                  
+     5,589,483,349      L1-dcache-load-misses     #    9.92% of all L1-dcache hits  
+     3,567,037,799      LLC-loads                 #   34.161 M/sec                  
+     1,362,859,197      LLC-load-misses           #   38.21% of all LL-cache hits   
+   203,128,602,468      cycle_activity_cycles_l1d_pending # 1945.357 M/sec                  
+   204,646,860,570      cycle_activity_cycles_l2_pending # 1959.897 M/sec                  
+
+     104.436861684 seconds time elapsed
+

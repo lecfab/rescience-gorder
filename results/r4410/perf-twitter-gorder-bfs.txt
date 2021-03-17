@@ -1,0 +1,17 @@
+# started on Wed Mar  3 01:15:29 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-twitter-61M-1G-gorder.txt -a bfs -o ../results/r4410/time-twitter-gorder-bfs.txt -l 10':
+
+     489206.881945      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,369,784,694,760      cpu-cycles                #    2.800 GHz                    
+ 2,473,636,448,528      instructions              #    1.81  insns per cycle        
+   762,678,568,699      L1-dcache-loads           # 1559.010 M/sec                  
+    13,317,119,414      L1-dcache-load-misses     #    1.75% of all L1-dcache hits  
+     6,484,297,290      LLC-loads                 #   13.255 M/sec                  
+     2,780,532,950      LLC-load-misses           #   42.88% of all LL-cache hits   
+   274,322,150,446      cycle_activity_cycles_l1d_pending #  560.749 M/sec                  
+   290,447,686,698      cycle_activity_cycles_l2_pending #  593.711 M/sec                  
+
+     489.522387588 seconds time elapsed
+

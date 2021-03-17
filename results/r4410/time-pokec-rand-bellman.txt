@@ -1,0 +1,14 @@
+read	7211	7206868
+adjlist	419	419934
+prepare	7631	499
+bellman	553	552228
+bellman	549	548657
+bellman	544	544434
+bellman	542	541388
+bellman	556	556713
+bellman	557	556610
+bellman	545	545580
+bellman	548	547482
+bellman	554	554925
+bellman	555	554764
+total	13140	393

@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-dfs.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 16s 128		ms=16128	clock:16116219/1000000 = 16116ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 936		ms=936	clock:936222/1000000 = 936ms
+Total	- Time = 0h 0m 17s 66		ms=17066	clock:17052819/1000000 = 17052ms
+	Info: Approximate diameter (100 runs): 18
+Diam	- Time = 0h 1m 50s 766		ms=110766	clock:110666425/1000000 = 110666ms
+Total	- Time = 0h 2m 7s 832		ms=127832	clock:127719127/1000000 = 127719ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-dfs-diameter.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-dfs.txt -a diameter -o ../results/r4410/time-livejournal-dfs-diameter.txt -l 10

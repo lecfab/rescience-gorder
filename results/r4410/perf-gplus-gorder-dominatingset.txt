@@ -1,0 +1,17 @@
+# started on Sat Feb 27 22:42:38 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-gorder.txt -a ds -o ../results/r4410/time-gplus-gorder-ds.txt -l 10':
+
+     419120.361098      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,173,515,098,300      cpu-cycles                #    2.800 GHz                    
+   983,806,703,762      instructions              #    0.84  insns per cycle        
+   312,866,821,972      L1-dcache-loads           #  746.484 M/sec                  
+    14,518,392,967      L1-dcache-load-misses     #    4.64% of all L1-dcache hits  
+    11,198,709,146      LLC-loads                 #   26.720 M/sec                  
+     6,453,969,815      LLC-load-misses           #   57.63% of all LL-cache hits   
+   692,105,638,322      cycle_activity_cycles_l1d_pending # 1651.329 M/sec                  
+   714,866,375,553      cycle_activity_cycles_l2_pending # 1705.635 M/sec                  
+
+     419.397003922 seconds time elapsed
+

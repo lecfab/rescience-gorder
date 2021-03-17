@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-gorder.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 905		ms=6905	clock:6902045/1000000 = 6902ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 411		ms=411	clock:411256/1000000 = 411ms
+Total	- Time = 0h 0m 7s 317		ms=7317	clock:7313638/1000000 = 7313ms
+BFS	- Time = 0h 0m 0s 317		ms=317	clock:317238/1000000 = 317ms
+BFS	- Time = 0h 0m 0s 307		ms=307	clock:307370/1000000 = 307ms
+BFS	- Time = 0h 0m 0s 309		ms=309	clock:308681/1000000 = 308ms
+BFS	- Time = 0h 0m 0s 309		ms=309	clock:309744/1000000 = 309ms
+BFS	- Time = 0h 0m 0s 308		ms=308	clock:308958/1000000 = 308ms
+BFS	- Time = 0h 0m 0s 305		ms=305	clock:305520/1000000 = 305ms
+BFS	- Time = 0h 0m 0s 313		ms=313	clock:312376/1000000 = 312ms
+BFS	- Time = 0h 0m 0s 312		ms=312	clock:312111/1000000 = 312ms
+BFS	- Time = 0h 0m 0s 310		ms=310	clock:310032/1000000 = 310ms
+BFS	- Time = 0h 0m 0s 306		ms=306	clock:305933/1000000 = 305ms
+Total	- Time = 0h 0m 10s 417		ms=10417	clock:10411527/1000000 = 10411ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-gorder-bfs.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-gorder.txt -a bfs -o ../results/r4410/time-pokec-gorder-bfs.txt -l 10

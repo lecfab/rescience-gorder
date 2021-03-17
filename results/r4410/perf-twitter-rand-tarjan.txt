@@ -1,0 +1,17 @@
+# started on Mon Mar  1 04:03:03 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-twitter-61M-1G-rand.txt -a tarjan -o ../results/r4410/time-twitter-rand-tarjan.txt -l 10':
+
+    1259252.398168      task-clock (msec)         #    0.998 CPUs utilized          
+ 3,525,855,719,973      cpu-cycles                #    2.800 GHz                    
+ 3,298,973,374,961      instructions              #    0.94  insns per cycle        
+ 1,170,979,940,134      L1-dcache-loads           #  929.901 M/sec                  
+    55,624,731,177      L1-dcache-load-misses     #    4.75% of all L1-dcache hits  
+    44,368,814,586      LLC-loads                 #   35.234 M/sec                  
+    20,485,713,406      LLC-load-misses           #   46.17% of all LL-cache hits   
+ 2,134,276,862,491      cycle_activity_cycles_l1d_pending # 1694.876 M/sec                  
+ 2,166,256,060,603      cycle_activity_cycles_l2_pending # 1720.272 M/sec                  
+
+    1261.172949430 seconds time elapsed
+

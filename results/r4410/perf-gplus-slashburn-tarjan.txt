@@ -1,0 +1,17 @@
+# started on Sat Feb 27 18:09:01 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-slashburn.txt -a tarjan -o ../results/r4410/time-gplus-slashburn-tarjan.txt -l 10':
+
+     368156.408539      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,030,808,492,023      cpu-cycles                #    2.800 GHz                    
+   963,711,027,419      instructions              #    0.93  insns per cycle        
+   346,148,000,711      L1-dcache-loads           #  940.220 M/sec                  
+    16,025,698,523      L1-dcache-load-misses     #    4.63% of all L1-dcache hits  
+    11,561,751,182      LLC-loads                 #   31.404 M/sec                  
+     5,238,683,282      LLC-load-misses           #   45.31% of all LL-cache hits   
+   588,608,862,059      cycle_activity_cycles_l1d_pending # 1598.801 M/sec                  
+   605,331,021,888      cycle_activity_cycles_l2_pending # 1644.222 M/sec                  
+
+     368.461339455 seconds time elapsed
+

@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-slashburn.txt
+	Info: Number of nodes: 42889797
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 34s 226		ms=154226	clock:154107320/1000000 = 154107ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 567		ms=8567	clock:8560157/1000000 = 8560ms
+Total	- Time = 0h 2m 42s 794		ms=162794	clock:162668087/1000000 = 162668ms
+NQ	- Time = 0h 0m 15s 780		ms=15780	clock:15769971/1000000 = 15769ms
+Total	- Time = 0h 2m 58s 575		ms=178575	clock:178437947/1000000 = 178437ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-slashburn-nq.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-slashburn.txt -a nq -o ../results/r4410/time-pldarc-slashburn-nq.txt -l 10

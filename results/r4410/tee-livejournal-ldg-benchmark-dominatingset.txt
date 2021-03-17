@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-ldg.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 16s 756		ms=16756	clock:16753660/1000000 = 16753ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 966		ms=966	clock:966125/1000000 = 966ms
+Total	- Time = 0h 0m 17s 724		ms=17724	clock:17720145/1000000 = 17720ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 12		ms=6012	clock:6011090/1000000 = 6011ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 5s 987		ms=5987	clock:5986244/1000000 = 5986ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 7		ms=6007	clock:6005918/1000000 = 6005ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 52		ms=6052	clock:6051382/1000000 = 6051ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 5s 992		ms=5992	clock:5990782/1000000 = 5990ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 32		ms=6032	clock:6031597/1000000 = 6031ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 201		ms=6201	clock:6200457/1000000 = 6200ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 199		ms=6199	clock:6197348/1000000 = 6197ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 143		ms=6143	clock:6142397/1000000 = 6142ms
+	Info: Dominating set 2011918
+DS	- Time = 0h 0m 6s 166		ms=6166	clock:6164752/1000000 = 6164ms
+Total	- Time = 0h 1m 18s 520		ms=78520	clock:78501943/1000000 = 78501ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-ldg-ds.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-ldg.txt -a ds -o ../results/r4410/time-livejournal-ldg-ds.txt -l 10

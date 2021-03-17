@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G-gorder.txt
+	Info: Number of nodes: 82924686
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 8m 29s 279		ms=509279	clock:508954936/1000000 = 508954ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 25s 447		ms=25447	clock:25432284/1000000 = 25432ms
+Total	- Time = 0h 8m 54s 726		ms=534726	clock:534387474/1000000 = 534387ms
+NQ	- Time = 0h 0m 33s 158		ms=33158	clock:33149031/1000000 = 33149ms
+Total	- Time = 0h 9m 27s 884		ms=567884	clock:567536488/1000000 = 567536ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-sdarc-gorder-nq.txt ./benchmark ../datasets/edgelist-sdarc-94M-1G-gorder.txt -a nq -o ../results/r4410/time-sdarc-gorder-nq.txt -l 10

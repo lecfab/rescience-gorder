@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 7s 609		ms=127609	clock:127517646/1000000 = 127517ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 19s 497		ms=19497	clock:19482146/1000000 = 19482ms
+	Info: Minla order
+	Alert: Recovered energy is 1.77004e+15 instead of 6.11479e+14
+	Info: Energy decreased from 2.55453e+15 to 6.11479e+14
+Order	- Time = 0h 9m 36s 704		ms=576704	clock:576586320/1000000 = 576586ms
+	Info: Output into file ord.tmp-minla.txt
+Output	- Time = 0h 0m 3s 353		ms=3353	clock:3351019/1000000 = 3351ms
+Total	- Time = 0h 12m 7s 165		ms=727165	clock:726937150/1000000 = 726937ms

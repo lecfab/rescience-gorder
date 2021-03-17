@@ -1,0 +1,8 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 59s 227		ms=179227	clock:179096381/1000000 = 179096ms
+Order	- Time = 0h 0m 21s 453		ms=21453	clock:21441938/1000000 = 21441ms
+	Info: Output into file ord.tmp-deg-.txt
+Output	- Time = 0h 0m 4s 965		ms=4965	clock:4962972/1000000 = 4962ms
+Total	- Time = 0h 3m 25s 646		ms=205646	clock:205501304/1000000 = 205501ms

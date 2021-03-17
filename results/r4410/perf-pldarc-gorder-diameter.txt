@@ -1,0 +1,17 @@
+# started on Sun Feb 28 22:30:55 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-gorder.txt -a diameter -o ../results/r4410/time-pldarc-gorder-diameter.txt -l 10':
+
+    1085161.124146      task-clock (msec)         #    0.999 CPUs utilized          
+ 3,038,363,804,821      cpu-cycles                #    2.800 GHz                    
+ 1,927,436,448,094      instructions              #    0.63  insns per cycle        
+   604,999,020,951      L1-dcache-loads           #  557.520 M/sec                  
+    74,488,027,468      L1-dcache-load-misses     #   12.31% of all L1-dcache hits  
+    57,485,652,401      LLC-loads                 #   52.974 M/sec                  
+    31,607,070,865      LLC-load-misses           #   54.98% of all LL-cache hits   
+ 2,268,021,665,786      cycle_activity_cycles_l1d_pending # 2090.032 M/sec                  
+ 2,318,966,912,234      cycle_activity_cycles_l2_pending # 2136.979 M/sec                  
+
+    1086.049141080 seconds time elapsed
+

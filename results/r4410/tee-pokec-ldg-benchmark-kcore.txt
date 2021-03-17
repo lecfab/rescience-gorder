@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-ldg.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 224		ms=7224	clock:7220391/1000000 = 7220ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 406		ms=406	clock:406132/1000000 = 406ms
+Total	- Time = 0h 0m 7s 631		ms=7631	clock:7626765/1000000 = 7626ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 818		ms=2818	clock:2816607/1000000 = 2816ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 813		ms=2813	clock:2812483/1000000 = 2812ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 837		ms=2837	clock:2835998/1000000 = 2835ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 840		ms=2840	clock:2837875/1000000 = 2837ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 846		ms=2846	clock:2843831/1000000 = 2843ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 848		ms=2848	clock:2846235/1000000 = 2846ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 857		ms=2857	clock:2855889/1000000 = 2855ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 839		ms=2839	clock:2838070/1000000 = 2838ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 820		ms=2820	clock:2819137/1000000 = 2819ms
+	Info: Graph degeneracy 32
+Kcore	- Time = 0h 0m 2s 821		ms=2821	clock:2819922/1000000 = 2819ms
+Total	- Time = 0h 0m 35s 976		ms=35976	clock:35952663/1000000 = 35952ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-ldg-kcore.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-ldg.txt -a kcore -o ../results/r4410/time-pokec-ldg-kcore.txt -l 10

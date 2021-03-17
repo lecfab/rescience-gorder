@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-minla.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 58s 205		ms=58205	clock:58158744/1000000 = 58158ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 38		ms=3038	clock:3035454/1000000 = 3035ms
+Total	- Time = 0h 1m 1s 243		ms=61243	clock:61194521/1000000 = 61194ms
+	Info: Approximate diameter (100 runs): 35
+Diam	- Time = 0h 14m 8s 550		ms=848550	clock:848010598/1000000 = 848010ms
+Total	- Time = 0h 15m 9s 794		ms=909794	clock:909205261/1000000 = 909205ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-minla-diameter.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-minla.txt -a diameter -o ../results/r4410/time-wiki-minla-diameter.txt -l 10

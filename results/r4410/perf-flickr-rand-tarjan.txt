@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:36:56 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-rand.txt -a tarjan -o ../results/r4410/time-flickr-rand-tarjan.txt -l 10':
+
+      20571.724150      task-clock (msec)         #    0.999 CPUs utilized          
+    57,598,999,432      cpu-cycles                #    2.800 GHz                    
+    68,873,694,068      instructions              #    1.20  insns per cycle        
+    24,828,941,675      L1-dcache-loads           # 1206.945 M/sec                  
+     1,155,119,576      L1-dcache-load-misses     #    4.65% of all L1-dcache hits  
+       755,242,456      LLC-loads                 #   36.713 M/sec                  
+       218,073,146      LLC-load-misses           #   28.87% of all LL-cache hits   
+    29,387,862,489      cycle_activity_cycles_l1d_pending # 1428.556 M/sec                  
+    30,250,075,465      cycle_activity_cycles_l2_pending # 1470.469 M/sec                  
+
+      20.589561831 seconds time elapsed
+

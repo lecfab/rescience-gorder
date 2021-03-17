@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-rcm.txt
+	Info: Number of nodes: 75879
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 108		ms=108	clock:108299/1000000 = 108ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7378/1000000 = 7ms
+Total	- Time = 0h 0m 0s 116		ms=116	clock:115801/1000000 = 115ms
+NQ	- Time = 0h 0m 0s 4		ms=4	clock:4578/1000000 = 4ms
+Total	- Time = 0h 0m 0s 120		ms=120	clock:120272/1000000 = 120ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-rcm-nq.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-rcm.txt -a nq -o ../results/r4410/time-epinion-rcm-nq.txt -l 10

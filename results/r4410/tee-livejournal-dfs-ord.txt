@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 17s 78		ms=17078	clock:17071020/1000000 = 17071ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 961		ms=961	clock:960165/1000000 = 960ms
+Order	- Time = 0h 0m 1s 217		ms=1217	clock:1217079/1000000 = 1217ms
+	Info: Output into file ord.tmp-dfs.txt
+Output	- Time = 0h 0m 0s 517		ms=517	clock:516830/1000000 = 516ms
+Total	- Time = 0h 0m 19s 775		ms=19775	clock:19765104/1000000 = 19765ms

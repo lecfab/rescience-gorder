@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Parameters for simulated annealing</title>
+    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    <style>div { float: left }</style>
+</head>
+
+<body>
+    <div id='minla'><!-- Plotly chart --></div>
+    <div id='minloga'><!-- Plotly chart --></div>
+
+    <script> // https://raw.githubusercontent.com/plotly/datasets/master/api_docs/mt_bruno_elevation.csv
+    function surface(d, div) {
+        console.log(d)
+        var z_data = []
+        var step=-1;
+        for (i = 1; i < d.length; i++) {
+            if(i==1 || d[i][0] != d[i-1][0]) { // [0] for "steps"
+                z_data.push([])
+                step++;
+            }
+            z_data[step].push((d[i][4])) // [4] for "median"
+        }
+
+        console.log(z_data)
+        var values = [{
+            z: z_data,
+            type: 'surface',
+            contours: {
+                z: {
+                    show: true, usecolormap: true, highlightcolor: "#42f462",
+                    project: { z: true }
+                }
+            }
+        }];
+
+        var layout = {
+            title: { text: "Parameters tuning for "+ d[0][0],
+                     font: { size: 25 }},
+            scene: {
+                xaxis: { title: {text: "Standard energy (log scale)"} },
+                yaxis: { title: {text: "Number of steps (log scale)"} },
+                zaxis: { title: {text: "Resulting energy"} },
+                camera: { eye: { x: -1.25, y: 1.25, z: 1.25 }}},
+            autosize: false,
+            width: 800, height: 800,
+            margin: { l: 65, r: 50, b: 65, t: 50 }
+        };
+
+        Plotly.newPlot(div, values, layout);
+    }
+    </script>
+
+    <script src="annealing/tune-minla.js"></script>
+    <script>surface(data, 'minla')</script>
+
+    <script src="annealing/tune-minloga.js"></script>
+    <script>surface(data, 'minloga')</script>
+</body>
+
+</html>

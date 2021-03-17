@@ -1,0 +1,17 @@
+# started on Sun Feb 28 11:41:35 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-deg-.txt -a kcore -o ../results/r4410/time-pldarc-deg--kcore.txt -l 10':
+
+    1076695.225761      task-clock (msec)         #    0.999 CPUs utilized          
+ 3,014,668,630,829      cpu-cycles                #    2.800 GHz                    
+ 1,615,512,145,890      instructions              #    0.54  insns per cycle        
+   507,389,086,379      L1-dcache-loads           #  471.247 M/sec                  
+    46,724,766,573      L1-dcache-load-misses     #    9.21% of all L1-dcache hits  
+    33,943,626,903      LLC-loads                 #   31.526 M/sec                  
+    15,299,560,291      LLC-load-misses           #   45.07% of all LL-cache hits   
+ 2,177,572,317,869      cycle_activity_cycles_l1d_pending # 2022.459 M/sec                  
+ 2,143,292,561,350      cycle_activity_cycles_l2_pending # 1990.621 M/sec                  
+
+    1077.518354106 seconds time elapsed
+

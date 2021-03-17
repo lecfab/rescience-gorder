@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-dfs.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 42s 169		ms=162169	clock:162041667/1000000 = 162041ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 500		ms=8500	clock:8494106/1000000 = 8494ms
+Total	- Time = 0h 2m 50s 670		ms=170670	clock:170536151/1000000 = 170536ms
+NQ	- Time = 0h 0m 16s 35		ms=16035	clock:16024950/1000000 = 16024ms
+Total	- Time = 0h 3m 6s 706		ms=186706	clock:186561093/1000000 = 186561ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-dfs-nq.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-dfs.txt -a nq -o ../results/r4410/time-pldarc-dfs-nq.txt -l 10

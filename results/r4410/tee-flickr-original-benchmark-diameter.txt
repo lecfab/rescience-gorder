@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 736		ms=7736	clock:7731724/1000000 = 7731ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 928		ms=928	clock:927630/1000000 = 927ms
+Total	- Time = 0h 0m 8s 666		ms=8666	clock:8659780/1000000 = 8659ms
+	Info: Approximate diameter (100 runs): 20
+Diam	- Time = 0h 0m 32s 525		ms=32525	clock:32496914/1000000 = 32496ms
+Total	- Time = 0h 0m 41s 191		ms=41191	clock:41156568/1000000 = 41156ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-original-diameter.txt ./benchmark ../datasets/edgelist-flickr-2M-33M.txt -a diameter -o ../results/r4410/time-flickr-original-diameter.txt -l 10

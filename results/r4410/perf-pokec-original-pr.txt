@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:50:23 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pokec-1M-30M.txt -a pr -o ../results/r4410/time-pokec-original-pr.txt -l 10':
+
+      34327.787903      task-clock (msec)         #    1.000 CPUs utilized          
+    96,117,608,044      cpu-cycles                #    2.800 GHz                    
+    75,970,198,850      instructions              #    0.79  insns per cycle        
+    27,174,110,597      L1-dcache-loads           #  791.607 M/sec                  
+     4,610,583,055      L1-dcache-load-misses     #   16.97% of all L1-dcache hits  
+     3,209,584,455      LLC-loads                 #   93.498 M/sec                  
+       765,684,787      LLC-load-misses           #   23.86% of all LL-cache hits   
+    68,697,043,394      cycle_activity_cycles_l1d_pending # 2001.208 M/sec                  
+    69,380,018,930      cycle_activity_cycles_l2_pending # 2021.104 M/sec                  
+
+      34.335725177 seconds time elapsed
+

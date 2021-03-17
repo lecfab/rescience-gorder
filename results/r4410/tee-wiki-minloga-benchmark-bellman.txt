@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-minloga.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 57s 616		ms=57616	clock:57605351/1000000 = 57605ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 61		ms=3061	clock:3060717/1000000 = 3060ms
+Total	- Time = 0h 1m 0s 678		ms=60678	clock:60666466/1000000 = 60666ms
+SP	- Time = 0h 0m 6s 960		ms=6960	clock:6957834/1000000 = 6957ms
+SP	- Time = 0h 0m 6s 167		ms=6167	clock:6166418/1000000 = 6166ms
+SP	- Time = 0h 0m 6s 879		ms=6879	clock:6877826/1000000 = 6877ms
+SP	- Time = 0h 0m 7s 567		ms=7567	clock:7565859/1000000 = 7565ms
+SP	- Time = 0h 0m 6s 93		ms=6093	clock:6092610/1000000 = 6092ms
+SP	- Time = 0h 0m 8s 494		ms=8494	clock:8492845/1000000 = 8492ms
+SP	- Time = 0h 0m 7s 57		ms=7057	clock:7055126/1000000 = 7055ms
+SP	- Time = 0h 0m 7s 898		ms=7898	clock:7897205/1000000 = 7897ms
+SP	- Time = 0h 0m 7s 585		ms=7585	clock:7584071/1000000 = 7584ms
+SP	- Time = 0h 0m 6s 810		ms=6810	clock:6807602/1000000 = 6807ms
+Total	- Time = 0h 2m 12s 193		ms=132193	clock:132163840/1000000 = 132163ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-minloga-bellman.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-minloga.txt -a bellman -o ../results/r4410/time-wiki-minloga-bellman.txt -l 10

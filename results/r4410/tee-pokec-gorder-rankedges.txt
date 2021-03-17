@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read edges	- Time = 0h 0m 7s 351		ms=7351	clock:7345945/1000000 = 7345ms
+	Info: Reading rank from file ord.tmp-gorder.txt
+Read rank	- Time = 0h 0m 0s 200		ms=200	clock:200762/1000000 = 200ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 0m 1s 372		ms=1372	clock:1371004/1000000 = 1371ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 0m 3s 147		ms=3147	clock:3145004/1000000 = 3145ms
+	Info: Output into file ../datasets/edgelist-pokec-1M-30M-gorder.txt
+Output	- Time = 0h 0m 5s 422		ms=5422	clock:5419273/1000000 = 5419ms
+Total	- Time = 0h 0m 17s 494		ms=17494	clock:17482002/1000000 = 17482ms

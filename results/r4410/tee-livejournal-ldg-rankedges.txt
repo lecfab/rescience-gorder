@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read edges	- Time = 0h 0m 17s 214		ms=17214	clock:17213598/1000000 = 17213ms
+	Info: Reading rank from file ord.tmp-ldg.txt
+Read rank	- Time = 0h 0m 0s 634		ms=634	clock:634090/1000000 = 634ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 0m 3s 619		ms=3619	clock:3619092/1000000 = 3619ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 0m 7s 921		ms=7921	clock:7919473/1000000 = 7919ms
+	Info: Output into file ../datasets/edgelist-livejournal-4M-68M-ldg.txt
+Output	- Time = 0h 0m 13s 954		ms=13954	clock:13952779/1000000 = 13952ms
+Total	- Time = 0h 0m 43s 343		ms=43343	clock:43339050/1000000 = 43339ms

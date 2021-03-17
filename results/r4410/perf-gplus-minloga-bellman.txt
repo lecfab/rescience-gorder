@@ -1,0 +1,17 @@
+# started on Sat Feb 27 12:38:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-minloga.txt -a bellman -o ../results/r4410/time-gplus-minloga-bellman.txt -l 10':
+
+     247510.827981      task-clock (msec)         #    1.000 CPUs utilized          
+   693,029,021,158      cpu-cycles                #    2.800 GHz                    
+   809,696,858,164      instructions              #    1.17  insns per cycle        
+   255,673,438,392      L1-dcache-loads           # 1032.979 M/sec                  
+    10,497,299,064      L1-dcache-load-misses     #    4.11% of all L1-dcache hits  
+     7,791,141,797      LLC-loads                 #   31.478 M/sec                  
+     4,224,914,282      LLC-load-misses           #   54.23% of all LL-cache hits   
+   326,646,116,770      cycle_activity_cycles_l1d_pending # 1319.725 M/sec                  
+   331,036,425,463      cycle_activity_cycles_l2_pending # 1337.462 M/sec                  
+
+     247.563579576 seconds time elapsed
+

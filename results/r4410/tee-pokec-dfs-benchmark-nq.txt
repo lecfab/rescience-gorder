@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-dfs.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 953		ms=6953	clock:6950140/1000000 = 6950ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 574		ms=574	clock:573256/1000000 = 573ms
+Total	- Time = 0h 0m 7s 528		ms=7528	clock:7523734/1000000 = 7523ms
+NQ	- Time = 0h 0m 0s 421		ms=421	clock:421985/1000000 = 421ms
+Total	- Time = 0h 0m 7s 950		ms=7950	clock:7945773/1000000 = 7945ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-dfs-nq.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-dfs.txt -a nq -o ../results/r4410/time-pokec-dfs-nq.txt -l 10

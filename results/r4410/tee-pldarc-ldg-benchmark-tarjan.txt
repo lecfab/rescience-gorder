@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-ldg.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 49s 908		ms=169908	clock:169876552/1000000 = 169876ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 627		ms=8627	clock:8625485/1000000 = 8625ms
+Total	- Time = 0h 2m 58s 536		ms=178536	clock:178502404/1000000 = 178502ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 37s 921		ms=37921	clock:37912518/1000000 = 37912ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 38s 21		ms=38021	clock:38012859/1000000 = 38012ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 38s 466		ms=38466	clock:38457068/1000000 = 38457ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 38s 343		ms=38343	clock:38334065/1000000 = 38334ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 38s 290		ms=38290	clock:38281171/1000000 = 38281ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 40s 616		ms=40616	clock:40606921/1000000 = 40606ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 40s 182		ms=40182	clock:40173034/1000000 = 40173ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 40s 201		ms=40201	clock:40190473/1000000 = 40190ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 41s 474		ms=41474	clock:41463909/1000000 = 41463ms
+	Info: Biggest strongly connected component has size 22274865 out of 42889800
+SCC	- Time = 0h 0m 40s 833		ms=40833	clock:40823191/1000000 = 40823ms
+Total	- Time = 0h 9m 32s 888		ms=572888	clock:572757691/1000000 = 572757ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-ldg-tarjan.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-ldg.txt -a tarjan -o ../results/r4410/time-pldarc-ldg-tarjan.txt -l 10

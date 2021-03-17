@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:57:27 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-dfs.txt -a dfs -o ../results/r4410/time-flickr-dfs-dfs.txt -l 10':
+
+      10202.578415      task-clock (msec)         #    0.999 CPUs utilized          
+    28,566,004,820      cpu-cycles                #    2.800 GHz                    
+    54,162,809,753      instructions              #    1.90  insns per cycle        
+    17,699,760,631      L1-dcache-loads           # 1734.832 M/sec                  
+       215,986,901      L1-dcache-load-misses     #    1.22% of all L1-dcache hits  
+        78,224,797      LLC-loads                 #    7.667 M/sec                  
+        42,900,958      LLC-load-misses           #   54.84% of all LL-cache hits   
+     4,060,067,610      cycle_activity_cycles_l1d_pending #  397.945 M/sec                  
+     5,037,088,254      cycle_activity_cycles_l2_pending #  493.707 M/sec                  
+
+      10.211987533 seconds time elapsed
+

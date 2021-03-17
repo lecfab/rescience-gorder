@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-gorder.txt
+	Info: Number of nodes: 75879
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 98		ms=98	clock:98121/1000000 = 98ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7050/1000000 = 7ms
+Total	- Time = 0h 0m 0s 105		ms=105	clock:105245/1000000 = 105ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 9		ms=9	clock:9044/1000000 = 9ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8753/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8632/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8626/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8569/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8569/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8608/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8589/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8543/1000000 = 8ms
+	Info: Biggest strongly connected component has size 32223 out of 75879
+SCC	- Time = 0h 0m 0s 8		ms=8	clock:8583/1000000 = 8ms
+Total	- Time = 0h 0m 0s 191		ms=191	clock:191704/1000000 = 191ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-gorder-tarjan.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-gorder.txt -a tarjan -o ../results/r4410/time-epinion-gorder-tarjan.txt -l 10

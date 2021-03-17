@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-dfs.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 41s 792		ms=161792	clock:161761918/1000000 = 161761ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 394		ms=8394	clock:8392314/1000000 = 8392ms
+Total	- Time = 0h 2m 50s 187		ms=170187	clock:170154650/1000000 = 170154ms
+BFS	- Time = 0h 0m 6s 661		ms=6661	clock:6659823/1000000 = 6659ms
+BFS	- Time = 0h 0m 6s 872		ms=6872	clock:6870283/1000000 = 6870ms
+BFS	- Time = 0h 0m 6s 674		ms=6674	clock:6673485/1000000 = 6673ms
+BFS	- Time = 0h 0m 6s 651		ms=6651	clock:6649630/1000000 = 6649ms
+BFS	- Time = 0h 0m 6s 781		ms=6781	clock:6779742/1000000 = 6779ms
+BFS	- Time = 0h 0m 6s 681		ms=6681	clock:6679264/1000000 = 6679ms
+BFS	- Time = 0h 0m 6s 628		ms=6628	clock:6626820/1000000 = 6626ms
+BFS	- Time = 0h 0m 6s 793		ms=6793	clock:6791885/1000000 = 6791ms
+BFS	- Time = 0h 0m 6s 773		ms=6773	clock:6771497/1000000 = 6771ms
+BFS	- Time = 0h 0m 6s 636		ms=6636	clock:6634760/1000000 = 6634ms
+Total	- Time = 0h 3m 57s 341		ms=237341	clock:237291716/1000000 = 237291ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-dfs-bfs.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-dfs.txt -a bfs -o ../results/r4410/time-pldarc-dfs-bfs.txt -l 10

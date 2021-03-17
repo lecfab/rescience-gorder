@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-slashburn.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 55s 10		ms=55010	clock:54970939/1000000 = 54970ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 60		ms=3060	clock:3057562/1000000 = 3057ms
+Total	- Time = 0h 0m 58s 71		ms=58071	clock:58028878/1000000 = 58028ms
+	Info: Approximate diameter (100 runs): 37
+Diam	- Time = 0h 11m 40s 966		ms=700966	clock:700587318/1000000 = 700587ms
+Total	- Time = 0h 12m 39s 37		ms=759037	clock:758616065/1000000 = 758616ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-slashburn-diameter.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-slashburn.txt -a diameter -o ../results/r4410/time-wiki-slashburn-diameter.txt -l 10

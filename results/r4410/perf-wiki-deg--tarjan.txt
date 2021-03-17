@@ -1,0 +1,17 @@
+# started on Sat Feb 27 03:44:25 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-deg-.txt -a tarjan -o ../results/r4410/time-wiki-deg--tarjan.txt -l 10':
+
+     101916.537452      task-clock (msec)         #    0.999 CPUs utilized          
+   285,356,845,417      cpu-cycles                #    2.800 GHz                    
+   451,978,732,196      instructions              #    1.58  insns per cycle        
+   162,107,407,809      L1-dcache-loads           # 1590.590 M/sec                  
+     3,773,156,774      L1-dcache-load-misses     #    2.33% of all L1-dcache hits  
+     2,045,576,265      LLC-loads                 #   20.071 M/sec                  
+       779,621,995      LLC-load-misses           #   38.11% of all LL-cache hits   
+    87,822,210,484      cycle_activity_cycles_l1d_pending #  861.707 M/sec                  
+   102,413,365,080      cycle_activity_cycles_l2_pending # 1004.875 M/sec                  
+
+     102.000315773 seconds time elapsed
+

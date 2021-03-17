@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read edges	- Time = 0h 1m 0s 963		ms=60963	clock:60925064/1000000 = 60925ms
+	Info: Reading rank from file ord.tmp-slashburn.txt
+Read rank	- Time = 0h 0m 1s 343		ms=1343	clock:1342608/1000000 = 1342ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 0m 11s 666		ms=11666	clock:11659377/1000000 = 11659ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 0m 36s 63		ms=36063	clock:36059061/1000000 = 36059ms
+	Info: Output into file ../datasets/edgelist-wiki-13M-437M-slashburn.txt
+Output	- Time = 0h 0m 45s 967		ms=45967	clock:45945663/1000000 = 45945ms
+Total	- Time = 0h 2m 36s 4		ms=156004	clock:155931791/1000000 = 155931ms

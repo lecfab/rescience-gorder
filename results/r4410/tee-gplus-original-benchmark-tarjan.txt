@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 7s 410		ms=127410	clock:127318313/1000000 = 127318ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 509		ms=19509	clock:19492328/1000000 = 19492ms
+Total	- Time = 0h 2m 26s 920		ms=146920	clock:146811279/1000000 = 146811ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 26s 398		ms=26398	clock:26376359/1000000 = 26376ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 26s 908		ms=26908	clock:26885460/1000000 = 26885ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 28s 118		ms=28118	clock:28095543/1000000 = 28095ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 28s 78		ms=28078	clock:28054573/1000000 = 28054ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 28s 5		ms=28005	clock:27982216/1000000 = 27982ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 28s 54		ms=28054	clock:28029852/1000000 = 28029ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 29s 422		ms=29422	clock:29397631/1000000 = 29397ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 29s 130		ms=29130	clock:29106132/1000000 = 29106ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 29s 134		ms=29134	clock:29110701/1000000 = 29110ms
+	Info: Biggest strongly connected component has size 22444688 out of 28943748
+SCC	- Time = 0h 0m 29s 190		ms=29190	clock:29165462/1000000 = 29165ms
+Total	- Time = 0h 7m 9s 362		ms=429362	clock:429014778/1000000 = 429014ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-original-tarjan.txt ./benchmark ../datasets/edgelist-gplus-28M-462M.txt -a tarjan -o ../results/r4410/time-gplus-original-tarjan.txt -l 10

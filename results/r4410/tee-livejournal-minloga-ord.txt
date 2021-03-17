@@ -1,0 +1,12 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 17s 65		ms=17065	clock:17053688/1000000 = 17053ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 955		ms=955	clock:954169/1000000 = 954ms
+	Info: Minloga order
+	Info: Energy decreased from -inf to -inf
+Order	- Time = 0h 3m 5s 706		ms=185706	clock:185627531/1000000 = 185627ms
+	Info: Output into file ord.tmp-minloga.txt
+Output	- Time = 0h 0m 0s 517		ms=517	clock:517140/1000000 = 517ms
+Total	- Time = 0h 3m 24s 245		ms=204245	clock:204152540/1000000 = 204152ms

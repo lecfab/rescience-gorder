@@ -1,0 +1,17 @@
+# started on Fri Feb 26 23:56:46 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-gorder.txt -a dfs -o ../results/r4410/time-livejournal-gorder-dfs.txt -l 10':
+
+      26166.154037      task-clock (msec)         #    1.000 CPUs utilized          
+    73,265,075,572      cpu-cycles                #    2.800 GHz                    
+   118,940,503,637      instructions              #    1.62  insns per cycle        
+    38,695,294,421      L1-dcache-loads           # 1478.830 M/sec                  
+       660,281,487      L1-dcache-load-misses     #    1.71% of all L1-dcache hits  
+       403,553,099      LLC-loads                 #   15.423 M/sec                  
+       209,210,653      LLC-load-misses           #   51.84% of all LL-cache hits   
+    19,566,586,831      cycle_activity_cycles_l1d_pending #  747.782 M/sec                  
+    21,655,681,617      cycle_activity_cycles_l2_pending #  827.622 M/sec                  
+
+      26.172077541 seconds time elapsed
+

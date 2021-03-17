@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G.txt
+	Info: Number of nodes: 94946569
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 9m 22s 364		ms=562364	clock:562021063/1000000 = 562021ms
+	Info: Applying RCM order
+	Info: Transfering degrees instead of recomputing
+	Info: Converting to bidirected adjacency list
+	Info: Transfering degrees instead of recomputing
+	Info: Applying Gorder with window 5
+Order	- Time = 7h 47m 22s 120		ms=28042120	clock:28028295162/1000000 = 28028295ms
+	Info: Output into file ord.tmp-gorder.txt
+Output	- Time = 0h 0m 11s 407		ms=11407	clock:11401443/1000000 = 11401ms
+Total	- Time = 7h 56m 55s 892		ms=28615892	clock:28601717677/1000000 = 28601716ms

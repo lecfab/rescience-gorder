@@ -1,0 +1,17 @@
+# started on Sat Feb 27 23:30:01 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M.txt -a tarjan -o ../results/r4410/time-pldarc-original-tarjan.txt -l 10':
+
+     568136.084377      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,590,736,947,371      cpu-cycles                #    2.800 GHz                    
+ 1,407,135,822,600      instructions              #    0.88  insns per cycle        
+   498,411,362,581      L1-dcache-loads           #  877.275 M/sec                  
+    23,716,798,487      L1-dcache-load-misses     #    4.76% of all L1-dcache hits  
+    17,737,366,313      LLC-loads                 #   31.220 M/sec                  
+     8,314,536,352      LLC-load-misses           #   46.88% of all LL-cache hits   
+   945,369,653,979      cycle_activity_cycles_l1d_pending # 1663.985 M/sec                  
+   975,009,846,630      cycle_activity_cycles_l2_pending # 1716.155 M/sec                  
+
+     568.582030582 seconds time elapsed
+

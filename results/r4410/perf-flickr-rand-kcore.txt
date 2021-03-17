@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:38:54 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-rand.txt -a kcore -o ../results/r4410/time-flickr-rand-kcore.txt -l 10':
+
+      34795.765922      task-clock (msec)         #    1.000 CPUs utilized          
+    97,427,699,585      cpu-cycles                #    2.800 GHz                    
+    80,341,278,390      instructions              #    0.82  insns per cycle        
+    25,435,613,516      L1-dcache-loads           #  730.997 M/sec                  
+     2,108,077,187      L1-dcache-load-misses     #    8.29% of all L1-dcache hits  
+     1,301,306,071      LLC-loads                 #   37.398 M/sec                  
+       276,853,884      LLC-load-misses           #   21.28% of all LL-cache hits   
+    56,082,862,736      cycle_activity_cycles_l1d_pending # 1611.773 M/sec                  
+    57,899,711,928      cycle_activity_cycles_l2_pending # 1663.987 M/sec                  
+
+      34.806214423 seconds time elapsed
+
