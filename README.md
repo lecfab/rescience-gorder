@@ -4,19 +4,21 @@ This is the source code of the 2021 replication for ReScience of the paper _Spee
 
 
 ## Quick guide
-`$ git clone https://github.com/lecfab/rescience-gorder.git` to clone the repository locally.
+* `$ git clone https://github.com/lecfab/rescience-gorder.git` to clone the repository locally.
 
-`$ git clone https://github.com/lecfab/pmu-tools.git` to download a wrapper for linux perftools.
+* `$ git clone https://github.com/lecfab/pmu-tools.git` to download a wrapper for linux perftools.
 
-`$ cd src` to enter the folder with executables.
+* Download datasets in `datasets/dl/` and use `datasets/normalise.py` to match the edgelist format. Note that _epinion_ is readily available for quick testing.
 
-`$ make` to compile the C++ code. Use `$ make mrproper` to remove compiled files to obtain a cleaner directory.
+* `$ cd src` to enter the folder with executables.
 
-`$ ./run-window.sh` to tune window size in Gorder.
+* `$ make` to compile the C++ code. Use `$ make mrproper` to remove compiled files to obtain a cleaner directory.
 
-`$ ./run-annealing.sh` to tune simulated annealing for MinLA and MinLogA.
+* `$ ./run-window.sh` to tune window size in Gorder.
 
-`$ ./run-cache.sh` to measure the runtime of all orders and algorithms on all datasets.
+* `$ ./run-annealing.sh` to tune simulated annealing for MinLA and MinLogA.
+
+* `$ ./run-cache.sh` to measure the runtime of all orders and algorithms on all datasets.
 
 ## Tools and versions
 The C++ code uses 2014 standard library and is compiled with GCC 9.3. Flags are managed by [CLI11 1.9.1](https://github.com/CLIUtils/CLI11) (included in the code). The makefile has been tested with GNU Make 4.2.1. Visualisation tools use Python 3.8.5 and plotly.js v1.58.4. The system used for development is Linux 5.4 with Ubuntu 20.04.1.
@@ -26,7 +28,7 @@ The C++ code uses 2014 standard library and is compiled with GCC 9.3. Flags are 
 ### Datasets in `datasets/`
 From various sources described in our replication paper, they all follow the same format: a graph representation for nodes [0 to N-1] in a text file where each line corresponds to a directed edge of the form `a b` (i.e. a SPACE b, with a and b long unsigned integers). They can be downloaded with the provided URLs, but their format may not be exactly compatible with the present tools (presence of headers or comments, non-consecutive numbering...).
 
-To obtain the exact format, we used `datasets/normalise-dataset.py NAME` where `NAME` is one of the datasets of the paper (epinion, pokec, flickr, livejournal, wiki, gplus, pldarc, twitter, sdarc). The initial raw files have to be stored in a `dl/` subfolder (open the Python file to see or change the exact file names). It outputs a text file that can be used in all the experiments.
+To obtain the exact format, we used `datasets/normalise.py NAME` where `NAME` is one of the datasets of the paper (epinion, pokec, flickr, livejournal, wiki, gplus, pldarc, twitter, sdarc). The initial raw files have to be stored in a `dl/` subfolder (open the Python file to see or change the exact file names). It outputs a text file that can be used in all the experiments.
 
 ### Sources in `src/`
 #### Algorithms
