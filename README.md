@@ -35,7 +35,7 @@ To obtain the exact format, we used `datasets/normalise.py NAME` where `NAME` is
 The folder `algo` contains all the algorithms that were replicated. They serve as benchmarks to test the efficiency of different orders.
 
 #### Orders
-The folder `order` contains all the orders compared in our replication. The contribution of the initial paper is Gorder, and our code here is majorly inspired from the code the authors provide on [this link](http://github.com).
+The folder `order` contains all the orders compared in our replication. The contribution of the initial paper is Gorder, and our code here is majorly inspired from the code the authors provide on [this link](https://github.com/datourat/Gorder).
 
 #### Data structures
 The folder `utils` contains different data structures that we needed for this replication: `adjlist` and `edgelist` are two types of graph representation; `heap` and `unitheap` are data structures used for Kcore and Gorder respectively; `tools` and `inout` are general methods such as time measurement, file input and output...
