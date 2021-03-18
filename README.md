@@ -1,12 +1,12 @@
 # Replication of Gorder paper
 
-This is the source code of the replication for ReScience of the paper _Speedup Graph Processing by Graph Ordering_ by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, published in Proceedings of SIGMOD 2016.
+This is the source code of the 2021 replication for ReScience of the paper _Speedup Graph Processing by Graph Ordering_ by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, published in Proceedings of SIGMOD 2016.
 
 
 ## Quick guide
-`$ git clone https://github.com/lecfab/sono.git` to clone the repository locally.
+`$ git clone https://github.com/lecfab/rescience-gorder.git` to clone the repository locally.
 
-`$ git clone https://github.com/andikleen/pmu-tools.git` to download a wrapper for linux perftools.
+`$ git clone https://github.com/lecfab/pmu-tools.git` to download a wrapper for linux perftools.
 
 `$ cd src` to enter the folder with executables.
 
@@ -25,6 +25,8 @@ The C++ code uses 2014 standard library and is compiled with GCC 9.3. Flags are 
 ## Repository structure
 ### Datasets in `datasets/`
 From various sources described in our replication paper, they all follow the same format: a graph representation for nodes [0 to N-1] in a text file where each line corresponds to a directed edge of the form `a b` (i.e. a SPACE b, with a and b long unsigned integers). They can be downloaded with the provided URLs, but their format may not be exactly compatible with the present tools (presence of headers or comments, non-consecutive numbering...).
+
+To obtain the exact format, we used `datasets/normalise-dataset.py NAME` where `NAME` is one of the datasets of the paper (epinion, pokec, flickr, livejournal, wiki, gplus, pldarc, twitter, sdarc). The initial raw files have to be stored in a `dl/` subfolder (open the Python file to see or change the exact file names). It outputs a text file that can be used in all the experiments.
 
 ### Sources in `src/`
 #### Algorithms
