@@ -83,7 +83,7 @@ All tests must be run from the `src/` folder.
 `$ ./run-annealing.sh` tests parameters of simulated annealing (standard energy k and number of steps S). Their score is measured for MinLA and MinLogA optimisation functions, and displayed in a HTML 3D plot (to be displayed with a web browser).
 
 ### Runtime and cache performance
-`$ ./run-benchmark.sh MACHINE` runs time measurements of 9 algorithms on 9 datasets for 10 orders. Results are stored in files `results/r????/time-DATASET-ORDER-ALGO.txt` where `????` is a random directory name.
+`$ ./run-benchmark.sh [MACHINE]` runs time measurements of 9 algorithms on 9 datasets for 10 orders. Results are stored in files `results/r????/time-DATASET-ORDER-ALGO.txt` where `????` is a random directory name.
 
 `MACHINE` allows you to define a configuration for performance measurement tools. We use perf-tools (wrapped in pmu-tools ocperf), but different hardware events are available depending on the system. Type `$ ../pmu-tools/ocperf list` to see what your machine offers. An other measurement library can be plugged instead. For visualisation, the provided tools use specific performance counters, listed below.
 
