@@ -37,6 +37,10 @@ def renumber(dict, key):
 # --- specific procedure for datasets ----
 # ----------------------------------------
 
+if len(sys.argv) < 2 or sys.argv[1] not in ["epinion", "pokec", "flickr", "livejournal", "wiki", "gplus", "pldarc", "twitter", "sdarc"]:
+    print("Unknown dataset. Datasets are epinion, pokec, flickr, livejournal, wiki, gplus, pldarc, twitter, sdarc")
+    sys.exit()
+
 # epinion: http://snap.stanford.edu/data/soc-Epinions1.html
 if sys.argv[1] == "epinion":
     file = "dl/soc-Epinions1.txt"

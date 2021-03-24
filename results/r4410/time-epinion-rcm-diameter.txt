@@ -1,5 +1,0 @@
-read	106	106590
-adjlist	7	7063
-prepare	113	76
-diameter	262	262679
-total	376	30

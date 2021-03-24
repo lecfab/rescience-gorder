@@ -17,17 +17,20 @@ for dataset in datasets:
     for order in orders:
         algo_data = [0] * A
         for algo in algos:
-            for l in through_file("{}time-{}-{}-{}.txt".format(folder, dataset, order, algo)):
-                try: # if time and clock-cycles are available
-                    algo_name, time, clock = l.split("\n")[0].split("\t")
-                    time, clock = float(time), float(clock) / 1000
-                    if True and time / 1.5 < clock < time * 1.5: time = clock
-                except: # if only time is available
-                    algo_name, time = l.split("\n")[0].split("\t")
-                    time = int(time)
-                if algo_name == algo:
-                    algo_data[algos.index(algo_name)] += time / 1000 # ms to s
-
+            try:
+                for l in through_file("{}time-{}-{}-{}.txt".format(folder, dataset, order, algo), silent=True):
+                    try: # if time and clock-cycles are available
+                        algo_name, time, clock = l.split("\n")[0].split("\t")
+                        time, clock = float(time), float(clock) / 1000
+                        if True and time / 1.5 < clock < time * 1.5: time = clock
+                    except: # if only time is available
+                        algo_name, time = l.split("\n")[0].split("\t")
+                        time = int(time)
+                    if algo_name == algo:
+                        algo_data[algos.index(algo_name)] += time / 1000 # ms to s
+            except IOError as e:
+                # print(e)
+                pass
         order_data.append(algo_data)
     data.append(order_data)
 
@@ -66,16 +69,19 @@ for a in range(A):
     # ----- find Gorder (reference time) for every dataset ------
     go = orders.index("gorder")
     reference = []
+    c = 0
     for d in range(D):
         reference.append(data[d][go][a])
         if reference[d] == 0:
             reference[d] = 1
-            print("No reference duration in", o, a, d)
+            c += 1
+    if c > 0: print("Warning:", c, "datasets miss Gorder on", algo_names[algos[a]])
 
     # ----- create histogram bars for each order -----
     for o in range(O):
         if orders[o] == "gorder": continue
         performances = [data[d][o][a] / reference[d] -1 for d in range(D)]
+        performances = [(p if p > -1 else 0) for p in performances]
         offset = (o - O/2 + 1)*bar_width
         ax[sub].bar(xticks + offset, performances, bar_width, label=order_names[orders[o]])
         worse_score = max(worse_score, max(performances)+1)

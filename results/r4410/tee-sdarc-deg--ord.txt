@@ -1,8 +1,0 @@
-	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G.txt
-	Info: Number of nodes: 94946569
-	Info: Number of edges: 1937489265
-Read	- Time = 0h 9m 21s 843		ms=561843	clock:561776128/1000000 = 561776ms
-Order	- Time = 0h 0m 56s 424		ms=56424	clock:55446611/1000000 = 55446ms
-	Info: Output into file ord.tmp-deg-.txt
-Output	- Time = 0h 0m 11s 348		ms=11348	clock:11343503/1000000 = 11343ms
-Total	- Time = 0h 10m 29s 617		ms=629617	clock:628566251/1000000 = 628566ms

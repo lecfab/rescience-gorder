@@ -1,8 +1,0 @@
-	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
-	Info: Number of nodes: 4847571
-	Info: Number of edges: 68993773
-Read	- Time = 0h 0m 17s 85		ms=17085	clock:17075422/1000000 = 17075ms
-Order	- Time = 0h 0m 1s 406		ms=1406	clock:1404541/1000000 = 1404ms
-	Info: Output into file ord.tmp-deg-.txt
-Output	- Time = 0h 0m 0s 520		ms=520	clock:520823/1000000 = 520ms
-Total	- Time = 0h 0m 19s 12		ms=19012	clock:19000799/1000000 = 19000ms

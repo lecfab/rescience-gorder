@@ -1,15 +1,18 @@
 #!/bin/bash
 # comparison of runtime for different sizes of window in Gorder
 
-# dataset=edgelist-epinion-75k-508k # note that epinion is too small to obtain relevant resluts here
-# dataset_name=epinion
-dataset=edgelist-flickr-2M-33M
-dataset_name=flickr
 algo=pr
+
+dataset=edgelist-epinion-75k-508k # note that epinion is too small to obtain relevant resluts here
+dataset_name=epinion
+max_window=75000
+
+# dataset=edgelist-flickr-2M-33M
+# dataset_name=flickr
+# max_window=2000000
+
 declare -i loops=10
-if (( $# > 0 )); then
-    loops=$1
-fi
+if (( $# > 0 )); then loops=$1; fi
 declare -i loop=0
 
 dirr=../results/gorder-window
@@ -27,7 +30,7 @@ for loop in $(seq 0 $(($loops - 1))); do
     echo "----------------------"
 
     window=1
-    while (( $window < 2000000 )); do
+    while (( $window < $max_window )); do
         echo "    --------- Window=${window} ---------"
         input=../datasets/${dataset}.txt
         rank=ord.auto.txt
@@ -70,4 +73,4 @@ done
 # -------- call to plot functions --------
 # ----------------------------------------
 echo "Creating figures for window tuning"
-python3 $python_draw
+python3 $python_draw $dataset_name $algo

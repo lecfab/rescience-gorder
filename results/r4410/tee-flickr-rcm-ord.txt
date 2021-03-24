@@ -1,9 +1,0 @@
-	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M.txt
-	Info: Number of nodes: 2302925
-	Info: Number of edges: 33140017
-Read	- Time = 0h 0m 7s 786		ms=7786	clock:7781769/1000000 = 7781ms
-	Info: Transfering degrees instead of recomputing
-Order	- Time = 0h 0m 3s 198		ms=3198	clock:3195425/1000000 = 3195ms
-	Info: Output into file ord.tmp-rcm.txt
-Output	- Time = 0h 0m 0s 248		ms=248	clock:248134/1000000 = 248ms
-Total	- Time = 0h 0m 11s 232		ms=11232	clock:11225339/1000000 = 11225ms

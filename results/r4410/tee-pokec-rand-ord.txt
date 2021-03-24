@@ -1,5 +1,0 @@
-Read	- Time = 0h 0m 7s 35		ms=7035	clock:7033475/1000000 = 7033ms
-Order	- Time = 0h 0m 0s 42		ms=42	clock:42019/1000000 = 42ms
-	Info: Output into file ord.tmp-rand.txt
-Output	- Time = 0h 0m 0s 183		ms=183	clock:183780/1000000 = 183ms
-Total	- Time = 0h 0m 7s 260		ms=7260	clock:7259292/1000000 = 7259ms

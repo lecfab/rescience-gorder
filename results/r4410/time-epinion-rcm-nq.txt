@@ -1,5 +1,0 @@
-read	108	108359
-adjlist	7	7326
-prepare	116	127
-nq	4	4575
-total	120	19

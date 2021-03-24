@@ -10,17 +10,18 @@ import re
 # ----------------------------------------
 # ---- define datasets, orders, algos ----
 # ----------------------------------------
-datasets = [
-    "epinion",
-    "pokec",
-    "flickr",
-    "livejournal",
-    "wiki",
-    "gplus",
-    "pldarc",
-    "twitter",
-    "sdarc"
-]
+datasets_stat = {
+    "epinion": {"n": 75879, "m": 508837},
+    "pokec": {"n": 1632803, "m": 30622564},
+    "flickr": {"n": 2302925, "m": 33140017},
+    "livejournal": {"n": 4847571, "m": 68993773},
+    "wiki": {"n": 10248152, "m": 229101833},
+    "gplus": {"n": 28943739, "m": 462994069},
+    "pldarc": {"n": 39497204, "m": 623056313},
+    "twitter": {"n": 41652230, "m": 1468365182},
+    "sdarc": {"n": 82924686, "m": 1937489265}
+}
+datasets = list(datasets_stat.keys())
 D = len(datasets)
 
 order_names = {  "original": "Original",
@@ -64,15 +65,23 @@ def r____():
         folder = relative("r{}/".format(folder_n))
     return folder
 
-def through_file(file):
+def through_file(file, silent=False):
     try:
         with open(file) as f:
             for l in f:
                 yield l
             f.close()
+
     except IOError:
-        print("Error with", file)
-        return
+        if not silent: print("Error with", file)
+        raise IOError("Error with "+ file)
+    except FileNotFoundError:
+        if not silent: print("Unknown file", file)
+        raise IOError("Unknown file "+ file)
+    except GeneratorExit:
+        pass
+    except:
+        raise Exception("error " + str(sys.exc_info()[0]))
 
 def save_img(img_file):
     plt.savefig(img_file, dpi=300, bbox_inches='tight')
@@ -81,11 +90,13 @@ def save_img(img_file):
 def extract_perf(file, perf):
     specs = []
     for spec in perf:
-        for l in through_file(file):
-            if spec not in l: continue
-            l = l.split("\n")[0]
-            l = re.sub(r'[^0-9,]+{}.*'.format(spec), '', l)
-            l = re.sub(r',','', l)
-            specs.append(int(l)) # print(spec, int(l))
-            break
+        try:
+            for l in through_file(file):
+                if spec not in l: continue
+                l = l.split("\n")[0]
+                l = re.sub(r'[^0-9,]+{}.*'.format(spec), '', l)
+                l = re.sub(r',','', l)
+                specs.append(int(l)) # print(spec, int(l))
+                break
+        except: pass
     return specs

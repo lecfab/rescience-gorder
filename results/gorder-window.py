@@ -2,28 +2,34 @@
 # Plot duration wrt window size to help tuning parameter w
 
 from gordermain import *
+import math
 
 folder = relative("gorder-window/")
 
-dataset = "flickr"
-algo = "pr"
+dataset = sys.argv[1] if len(sys.argv) > 1 else "flickr"
+algo = sys.argv[2] if len(sys.argv) > 1 else "pr"
+
+print("Creating window tuning figure for ", dataset, algo)
 
 data = []
-wmax = 21 # test w ranging from 1 to 2^wmax
+wmax = int(math.log2(datasets_stat[dataset]['n'])) # test w ranging from 1 to 2^wmax
+
 for logw in range(wmax):
     w = 2**logw
     loop=0
-    while loop < 100: # each experiment was repeated 100 times for stability
-        file = "{}window-{}-{}-{}.{}.txt".format(folder, dataset, algo, w, loop)
-        loop+=1
-        for l in through_file(file):
-            algo_name, time = l[:-1].split("\t")[:2]
-            if algo_name == algo:
-                data.append((w, int(time) / 1000)) # ms to s
+    while True: # each experiment was repeated 100 times for stability
+        try:
+            file = "{}window-{}-{}-{}.{}.txt".format(folder, dataset, algo, w, loop)
+            loop+=1
+            for l in through_file(file, silent=True):
+                algo_name, time = l[:-1].split("\t")[:2]
+                if algo_name == algo:
+                    data.append((w, int(time) / 1000)) # ms to s
+        except IOError:
+            break
 
 quartile = lambda q : [np.percentile([t for w,t in data if w==2**x], q) for x in range(wmax)]
 median, high, low = quartile(50), quartile(95), quartile(5)
-
 
 fig, ax = plt.subplots(figsize=(4,3))
 # ax.set_title('Duration of {} on ${}$ dataset for various window sizes'.format(algo.capitalize(), dataset))
@@ -38,5 +44,5 @@ ax.set_ylim([min([t for w,t in data])-.1,max([t for w,t in data])])
 plt.plot(median)
 plt.fill_between(np.arange(len(median)), low, high, alpha=.4)
 
-print([(2**i,median[i]) for i in range(len(median))])
+# print([(2**i,median[i]) for i in range(len(median))])
 save_img("{}tune-w-{}-{}.pdf".format(folder, dataset, algo))

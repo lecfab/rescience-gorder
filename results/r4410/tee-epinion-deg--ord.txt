@@ -1,8 +1,0 @@
-	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k.txt
-	Info: Number of nodes: 75888
-	Info: Number of edges: 508837
-Read	- Time = 0h 0m 0s 102		ms=102	clock:102108/1000000 = 102ms
-Order	- Time = 0h 0m 0s 10		ms=10	clock:10295/1000000 = 10ms
-	Info: Output into file ord.tmp-deg-.txt
-Output	- Time = 0h 0m 0s 8		ms=8	clock:8744/1000000 = 8ms
-Total	- Time = 0h 0m 0s 121		ms=121	clock:121150/1000000 = 121ms
