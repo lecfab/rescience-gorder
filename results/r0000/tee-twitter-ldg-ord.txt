@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 7m 3s 415		ms=423415	clock:423140966/1000000 = 423140ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 19s 372		ms=19372	clock:19361974/1000000 = 19361ms
+	Info: Applying BFS order
+	Info: Reordering adjacency list
+	Info: Applying LDG
+Order	- Time = 0h 6m 44s 306		ms=404306	clock:404140800/1000000 = 404140ms
+	Info: Output into file ord.tmp-ldg.txt
+Output	- Time = 0h 0m 7s 137		ms=7137	clock:7131322/1000000 = 7131ms
+Total	- Time = 0h 14m 14s 232		ms=854232	clock:853775074/1000000 = 853775ms

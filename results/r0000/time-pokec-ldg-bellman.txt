@@ -1,0 +1,14 @@
+read	7224	7219934
+adjlist	415	414479
+prepare	7640	394
+bellman	532	532086
+bellman	531	530870
+bellman	535	535368
+bellman	532	531865
+bellman	531	531516
+bellman	529	529284
+bellman	528	528977
+bellman	530	529162
+bellman	530	530286
+bellman	533	532636
+total	12956	299

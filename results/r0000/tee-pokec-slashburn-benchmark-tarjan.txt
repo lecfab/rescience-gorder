@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-slashburn.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 867		ms=6867	clock:6866772/1000000 = 6866ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 422		ms=422	clock:422099/1000000 = 422ms
+Total	- Time = 0h 0m 7s 290		ms=7290	clock:7289532/1000000 = 7289ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 879		ms=879	clock:879707/1000000 = 879ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 864		ms=864	clock:864577/1000000 = 864ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 862		ms=862	clock:862381/1000000 = 862ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 849		ms=849	clock:849014/1000000 = 849ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 848		ms=848	clock:848701/1000000 = 848ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 844		ms=844	clock:843838/1000000 = 843ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 832		ms=832	clock:832910/1000000 = 832ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 841		ms=841	clock:841452/1000000 = 841ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 840		ms=840	clock:840047/1000000 = 840ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 0s 835		ms=835	clock:835117/1000000 = 835ms
+Total	- Time = 0h 0m 15s 788		ms=15788	clock:15786706/1000000 = 15786ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-slashburn-tarjan.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-slashburn.txt -a tarjan -o ../results/r4410/time-pokec-slashburn-tarjan.txt -l 10

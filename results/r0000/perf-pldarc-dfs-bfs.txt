@@ -1,0 +1,17 @@
+# started on Sun Feb 28 12:38:43 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-dfs.txt -a bfs -o ../results/r4410/time-pldarc-dfs-bfs.txt -l 10':
+
+     237909.413017      task-clock (msec)         #    1.000 CPUs utilized          
+   666,147,165,360      cpu-cycles                #    2.800 GHz                    
+ 1,114,880,537,701      instructions              #    1.67  insns per cycle        
+   343,229,242,327      L1-dcache-loads           # 1442.689 M/sec                  
+     7,378,289,778      L1-dcache-load-misses     #    2.15% of all L1-dcache hits  
+     4,648,910,322      LLC-loads                 #   19.541 M/sec                  
+     1,588,280,416      LLC-load-misses           #   34.16% of all LL-cache hits   
+   156,461,704,354      cycle_activity_cycles_l1d_pending #  657.652 M/sec                  
+   168,916,747,034      cycle_activity_cycles_l2_pending #  710.004 M/sec                  
+
+     237.956033676 seconds time elapsed
+

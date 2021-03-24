@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read edges	- Time = 0h 2m 8s 215		ms=128215	clock:128189207/1000000 = 128189ms
+	Info: Reading rank from file ord.tmp-rand.txt
+Read rank	- Time = 0h 0m 3s 973		ms=3973	clock:3973019/1000000 = 3973ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 0m 51s 162		ms=51162	clock:51150616/1000000 = 51150ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 1m 1s 287		ms=61287	clock:61273030/1000000 = 61273ms
+	Info: Output into file ../datasets/edgelist-gplus-28M-462M-rand.txt
+Output	- Time = 0h 1m 41s 821		ms=101821	clock:101799344/1000000 = 101799ms
+Total	- Time = 0h 5m 46s 461		ms=346461	clock:346385230/1000000 = 346385ms

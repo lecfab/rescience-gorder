@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-minloga.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 57s 714		ms=57714	clock:57678885/1000000 = 57678ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 55		ms=3055	clock:3052619/1000000 = 3052ms
+Total	- Time = 0h 1m 0s 770		ms=60770	clock:60732032/1000000 = 60732ms
+NQ	- Time = 0h 0m 4s 364		ms=4364	clock:4361791/1000000 = 4361ms
+Total	- Time = 0h 1m 5s 135		ms=65135	clock:65093782/1000000 = 65093ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-minloga-nq.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-minloga.txt -a nq -o ../results/r4410/time-wiki-minloga-nq.txt -l 10

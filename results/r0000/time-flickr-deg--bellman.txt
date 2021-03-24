@@ -1,0 +1,14 @@
+read	6893	6887900
+adjlist	450	450381
+prepare	7344	405
+bellman	301	301382
+bellman	300	298894
+bellman	302	302291
+bellman	296	296299
+bellman	296	295926
+bellman	292	292920
+bellman	297	297911
+bellman	293	293086
+bellman	298	297053
+bellman	298	298974
+total	10321	465

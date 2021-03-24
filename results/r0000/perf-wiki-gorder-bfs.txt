@@ -1,0 +1,17 @@
+# started on Sat Feb 27 06:17:01 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-gorder.txt -a bfs -o ../results/r4410/time-wiki-gorder-bfs.txt -l 10':
+
+      70957.411750      task-clock (msec)         #    0.999 CPUs utilized          
+   198,674,503,193      cpu-cycles                #    2.800 GHz                    
+   378,815,587,819      instructions              #    1.91  insns per cycle        
+   116,807,170,375      L1-dcache-loads           # 1646.159 M/sec                  
+     1,289,834,378      L1-dcache-load-misses     #    1.10% of all L1-dcache hits  
+       504,164,189      LLC-loads                 #    7.105 M/sec                  
+       296,257,012      LLC-load-misses           #   58.76% of all LL-cache hits   
+    24,165,078,893      cycle_activity_cycles_l1d_pending #  340.558 M/sec                  
+    29,780,132,087      cycle_activity_cycles_l2_pending #  419.690 M/sec                  
+
+      71.013173545 seconds time elapsed
+

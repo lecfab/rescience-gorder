@@ -1,0 +1,17 @@
+# started on Sat Feb 27 18:01:56 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-slashburn.txt -a bfs -o ../results/r4410/time-gplus-slashburn-bfs.txt -l 10':
+
+     198808.739731      task-clock (msec)         #    0.999 CPUs utilized          
+   556,648,893,818      cpu-cycles                #    2.800 GHz                    
+   793,132,088,097      instructions              #    1.42  insns per cycle        
+   244,292,522,133      L1-dcache-loads           # 1228.782 M/sec                  
+     6,820,775,183      L1-dcache-load-misses     #    2.79% of all L1-dcache hits  
+     4,405,640,348      LLC-loads                 #   22.160 M/sec                  
+     1,653,444,082      LLC-load-misses           #   37.53% of all LL-cache hits   
+   190,007,736,249      cycle_activity_cycles_l1d_pending #  955.731 M/sec                  
+   196,786,113,103      cycle_activity_cycles_l2_pending #  989.826 M/sec                  
+
+     198.963666606 seconds time elapsed
+

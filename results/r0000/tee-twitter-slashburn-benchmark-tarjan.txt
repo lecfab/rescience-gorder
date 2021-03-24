@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-slashburn.txt
+	Info: Number of nodes: 61578393
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 5m 58s 593		ms=358593	clock:358362523/1000000 = 358362ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 249		ms=19249	clock:19238124/1000000 = 19238ms
+Total	- Time = 0h 6m 17s 843		ms=377843	clock:377600913/1000000 = 377600ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 46s 558		ms=46558	clock:46526766/1000000 = 46526ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 46s 609		ms=46609	clock:46575928/1000000 = 46575ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 48s 379		ms=48379	clock:48345169/1000000 = 48345ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 47s 486		ms=47486	clock:47451267/1000000 = 47451ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 48s 50		ms=48050	clock:48015984/1000000 = 48015ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 47s 658		ms=47658	clock:47624259/1000000 = 47624ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 47s 616		ms=47616	clock:47582622/1000000 = 47582ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 48s 902		ms=48902	clock:48867323/1000000 = 48867ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 48s 134		ms=48134	clock:48099975/1000000 = 48099ms
+	Info: Biggest strongly connected component has size 33479734 out of 61578393
+SCC	- Time = 0h 0m 48s 523		ms=48523	clock:48488925/1000000 = 48488ms
+Total	- Time = 0h 14m 15s 763		ms=855763	clock:855179102/1000000 = 855179ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-slashburn-tarjan.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-slashburn.txt -a tarjan -o ../results/r4410/time-twitter-slashburn-tarjan.txt -l 10

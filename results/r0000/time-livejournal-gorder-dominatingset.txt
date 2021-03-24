@@ -1,0 +1,14 @@
+read	15922	15918630
+adjlist	928	928520
+prepare	16852	304
+dominatingset	4008	4007773
+dominatingset	4033	4032085
+dominatingset	4050	4049123
+dominatingset	4035	4034534
+dominatingset	4002	4001546
+dominatingset	4004	4004022
+dominatingset	4016	4015704
+dominatingset	4032	4031631
+dominatingset	4054	4053319
+dominatingset	4061	4060636
+total	57151	146

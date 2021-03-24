@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-slashburn.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 1m 56s 631		ms=116631	clock:116533341/1000000 = 116533ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 195		ms=6195	clock:6190558/1000000 = 6190ms
+Total	- Time = 0h 2m 2s 828		ms=122828	clock:122724301/1000000 = 122724ms
+PR	- Time = 0h 13m 36s 787		ms=816787	clock:816077356/1000000 = 816077ms
+Total	- Time = 0h 15m 39s 615		ms=939615	clock:938801898/1000000 = 938801ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-slashburn-pr.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-slashburn.txt -a pr -o ../results/r4410/time-gplus-slashburn-pr.txt -l 10

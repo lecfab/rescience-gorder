@@ -1,0 +1,17 @@
+# started on Sat Feb 27 02:48:55 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-minloga.txt -a kcore -o ../results/r4410/time-wiki-minloga-kcore.txt -l 10':
+
+     268051.805264      task-clock (msec)         #    0.999 CPUs utilized          
+   750,523,152,704      cpu-cycles                #    2.800 GHz                    
+   532,327,440,918      instructions              #    0.71  insns per cycle        
+   168,183,480,201      L1-dcache-loads           #  627.429 M/sec                  
+    12,559,883,798      L1-dcache-load-misses     #    7.47% of all L1-dcache hits  
+     7,689,899,241      LLC-loads                 #   28.688 M/sec                  
+     2,728,845,123      LLC-load-misses           #   35.49% of all LL-cache hits   
+   480,221,464,800      cycle_activity_cycles_l1d_pending # 1791.525 M/sec                  
+   476,736,068,536      cycle_activity_cycles_l2_pending # 1778.522 M/sec                  
+
+     268.225745810 seconds time elapsed
+

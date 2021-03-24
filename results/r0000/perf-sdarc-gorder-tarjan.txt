@@ -1,0 +1,17 @@
+# started on Fri Mar  5 19:08:48 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-gorder.txt -a tarjan -o ../results/r4410/time-sdarc-gorder-tarjan.txt -l 10':
+
+    1043674.594145      task-clock (msec)         #    0.999 CPUs utilized          
+ 2,922,288,594,364      cpu-cycles                #    2.800 GHz                    
+ 4,152,121,607,165      instructions              #    1.42  insns per cycle        
+ 1,479,854,293,464      L1-dcache-loads           # 1417.927 M/sec                  
+    30,720,314,556      L1-dcache-load-misses     #    2.08% of all L1-dcache hits  
+    18,456,601,697      LLC-loads                 #   17.684 M/sec                  
+     9,802,803,989      LLC-load-misses           #   53.11% of all LL-cache hits   
+ 1,032,840,654,492      cycle_activity_cycles_l1d_pending #  989.619 M/sec                  
+ 1,170,536,599,080      cycle_activity_cycles_l2_pending # 1121.553 M/sec                  
+
+    1044.353166619 seconds time elapsed
+

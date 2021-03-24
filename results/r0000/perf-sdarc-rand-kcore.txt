@@ -1,0 +1,17 @@
+# started on Wed Mar  3 13:38:29 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-rand.txt -a kcore -o ../results/r4410/time-sdarc-rand-kcore.txt -l 10':
+
+    4151117.307807      task-clock (msec)         #    0.999 CPUs utilized          
+11,623,232,654,812      cpu-cycles                #    2.800 GHz                    
+ 5,142,908,343,833      instructions              #    0.44  insns per cycle        
+ 1,610,238,506,117      L1-dcache-loads           #  387.905 M/sec                  
+   179,860,408,744      L1-dcache-load-misses     #   11.17% of all L1-dcache hits  
+   141,707,207,183      LLC-loads                 #   34.137 M/sec                  
+    50,696,636,517      LLC-load-misses           #   35.78% of all LL-cache hits   
+ 8,815,654,062,771      cycle_activity_cycles_l1d_pending # 2123.682 M/sec                  
+ 8,456,958,442,992      cycle_activity_cycles_l2_pending # 2037.273 M/sec                  
+
+    4153.724968587 seconds time elapsed
+

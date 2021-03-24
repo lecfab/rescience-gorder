@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 17s 66		ms=17066	clock:17053094/1000000 = 17053ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 940		ms=940	clock:939511/1000000 = 939ms
+Total	- Time = 0h 0m 18s 7		ms=18007	clock:17992929/1000000 = 17992ms
+DFS	- Time = 0h 0m 1s 166		ms=1166	clock:1165976/1000000 = 1165ms
+DFS	- Time = 0h 0m 1s 150		ms=1150	clock:1149401/1000000 = 1149ms
+DFS	- Time = 0h 0m 1s 153		ms=1153	clock:1152349/1000000 = 1152ms
+DFS	- Time = 0h 0m 1s 153		ms=1153	clock:1152678/1000000 = 1152ms
+DFS	- Time = 0h 0m 1s 154		ms=1154	clock:1153520/1000000 = 1153ms
+DFS	- Time = 0h 0m 1s 165		ms=1165	clock:1163350/1000000 = 1163ms
+DFS	- Time = 0h 0m 1s 164		ms=1164	clock:1163518/1000000 = 1163ms
+DFS	- Time = 0h 0m 1s 167		ms=1167	clock:1166455/1000000 = 1166ms
+DFS	- Time = 0h 0m 1s 163		ms=1163	clock:1161977/1000000 = 1161ms
+DFS	- Time = 0h 0m 1s 165		ms=1165	clock:1164321/1000000 = 1164ms
+Total	- Time = 0h 0m 29s 610		ms=29610	clock:29586663/1000000 = 29586ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-original-dfs.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M.txt -a dfs -o ../results/r4410/time-livejournal-original-dfs.txt -l 10

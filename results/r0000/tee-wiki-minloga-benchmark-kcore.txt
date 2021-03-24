@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-minloga.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 57s 765		ms=57765	clock:57719146/1000000 = 57719ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 23		ms=3023	clock:3021180/1000000 = 3021ms
+Total	- Time = 0h 1m 0s 789		ms=60789	clock:60740643/1000000 = 60740ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 609		ms=20609	clock:20594934/1000000 = 20594ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 597		ms=20597	clock:20582462/1000000 = 20582ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 559		ms=20559	clock:20547339/1000000 = 20547ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 731		ms=20731	clock:20718573/1000000 = 20718ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 724		ms=20724	clock:20711673/1000000 = 20711ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 726		ms=20726	clock:20714717/1000000 = 20714ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 729		ms=20729	clock:20717331/1000000 = 20717ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 785		ms=20785	clock:20770512/1000000 = 20770ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 781		ms=20781	clock:20766698/1000000 = 20766ms
+	Info: Graph degeneracy 795
+Kcore	- Time = 0h 0m 20s 925		ms=20925	clock:20910587/1000000 = 20910ms
+Total	- Time = 0h 4m 27s 961		ms=267961	clock:267775327/1000000 = 267775ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-minloga-kcore.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-minloga.txt -a kcore -o ../results/r4410/time-wiki-minloga-kcore.txt -l 10

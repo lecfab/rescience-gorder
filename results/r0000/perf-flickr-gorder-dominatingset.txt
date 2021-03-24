@@ -1,0 +1,17 @@
+# started on Fri Feb 26 22:12:29 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-gorder.txt -a ds -o ../results/r4410/time-flickr-gorder-ds.txt -l 10':
+
+      20212.750975      task-clock (msec)         #    0.999 CPUs utilized          
+    56,593,667,266      cpu-cycles                #    2.800 GHz                    
+    64,065,002,918      instructions              #    1.13  insns per cycle        
+    20,514,061,383      L1-dcache-loads           # 1014.907 M/sec                  
+       903,816,605      L1-dcache-load-misses     #    4.41% of all L1-dcache hits  
+       589,470,733      LLC-loads                 #   29.163 M/sec                  
+       187,837,273      LLC-load-misses           #   31.87% of all LL-cache hits   
+    25,312,280,015      cycle_activity_cycles_l1d_pending # 1252.293 M/sec                  
+    27,623,189,246      cycle_activity_cycles_l2_pending # 1366.622 M/sec                  
+
+      20.230826573 seconds time elapsed
+

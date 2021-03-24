@@ -1,0 +1,17 @@
+# started on Sat Feb 27 13:22:13 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-minloga.txt -a diameter -o ../results/r4410/time-gplus-minloga-diameter.txt -l 10':
+
+    1453404.382472      task-clock (msec)         #    1.000 CPUs utilized          
+ 4,069,495,695,031      cpu-cycles                #    2.800 GHz                    
+ 1,469,884,258,714      instructions              #    0.36  insns per cycle        
+   461,354,251,081      L1-dcache-loads           #  317.430 M/sec                  
+    95,076,126,906      L1-dcache-load-misses     #   20.61% of all L1-dcache hits  
+    75,926,769,299      LLC-loads                 #   52.241 M/sec                  
+    40,186,582,466      LLC-load-misses           #   52.93% of all LL-cache hits   
+ 3,467,624,155,578      cycle_activity_cycles_l1d_pending # 2385.863 M/sec                  
+ 3,476,198,856,170      cycle_activity_cycles_l2_pending # 2391.763 M/sec                  
+
+    1454.060086145 seconds time elapsed
+

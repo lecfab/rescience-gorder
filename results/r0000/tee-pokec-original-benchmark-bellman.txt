@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 297		ms=7297	clock:7293080/1000000 = 7293ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 415		ms=415	clock:414364/1000000 = 414ms
+Total	- Time = 0h 0m 7s 713		ms=7713	clock:7707763/1000000 = 7707ms
+SP	- Time = 0h 0m 0s 452		ms=452	clock:452226/1000000 = 452ms
+SP	- Time = 0h 0m 0s 453		ms=453	clock:452537/1000000 = 452ms
+SP	- Time = 0h 0m 0s 451		ms=451	clock:451396/1000000 = 451ms
+SP	- Time = 0h 0m 0s 451		ms=451	clock:451172/1000000 = 451ms
+SP	- Time = 0h 0m 0s 450		ms=450	clock:450102/1000000 = 450ms
+SP	- Time = 0h 0m 0s 454		ms=454	clock:454396/1000000 = 454ms
+SP	- Time = 0h 0m 0s 453		ms=453	clock:451986/1000000 = 451ms
+SP	- Time = 0h 0m 0s 456		ms=456	clock:456916/1000000 = 456ms
+SP	- Time = 0h 0m 0s 463		ms=463	clock:462584/1000000 = 462ms
+SP	- Time = 0h 0m 0s 463		ms=463	clock:463782/1000000 = 463ms
+Total	- Time = 0h 0m 12s 263		ms=12263	clock:12254985/1000000 = 12254ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-original-bellman.txt ./benchmark ../datasets/edgelist-pokec-1M-30M.txt -a bellman -o ../results/r4410/time-pokec-original-bellman.txt -l 10

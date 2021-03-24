@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-minla.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 50s 692		ms=170692	clock:170560405/1000000 = 170560ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 532		ms=8532	clock:8524371/1000000 = 8524ms
+Total	- Time = 0h 2m 59s 225		ms=179225	clock:179085098/1000000 = 179085ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 0m 58s 479		ms=58479	clock:58448987/1000000 = 58448ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 0m 59s 839		ms=59839	clock:59808300/1000000 = 59808ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 0m 59s 549		ms=59549	clock:59519957/1000000 = 59519ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 388		ms=60388	clock:60357444/1000000 = 60357ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 0m 59s 863		ms=59863	clock:59833558/1000000 = 59833ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 717		ms=60717	clock:60685836/1000000 = 60685ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 214		ms=60214	clock:60184685/1000000 = 60184ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 982		ms=60982	clock:60739157/1000000 = 60739ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 244		ms=60244	clock:60214287/1000000 = 60214ms
+	Info: Dominating set 20448800
+DS	- Time = 0h 1m 0s 240		ms=60240	clock:60212815/1000000 = 60212ms
+Total	- Time = 0h 12m 59s 745		ms=779745	clock:779090285/1000000 = 779090ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-minla-ds.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-minla.txt -a ds -o ../results/r4410/time-pldarc-minla-ds.txt -l 10

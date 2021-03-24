@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-gorder.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 15s 933		ms=15933	clock:15922012/1000000 = 15922ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 947		ms=947	clock:946401/1000000 = 946ms
+Total	- Time = 0h 0m 16s 881		ms=16881	clock:16868861/1000000 = 16868ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 59		ms=2059	clock:2057146/1000000 = 2057ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 52		ms=2052	clock:2050761/1000000 = 2050ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 57		ms=2057	clock:2054035/1000000 = 2054ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 55		ms=2055	clock:2053754/1000000 = 2053ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 59		ms=2059	clock:2057656/1000000 = 2057ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 71		ms=2071	clock:2069432/1000000 = 2069ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 80		ms=2080	clock:2078241/1000000 = 2078ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 75		ms=2075	clock:2073332/1000000 = 2073ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 94		ms=2094	clock:2092956/1000000 = 2092ms
+	Info: Biggest strongly connected component has size 3828682 out of 4847571
+SCC	- Time = 0h 0m 2s 91		ms=2091	clock:2089446/1000000 = 2089ms
+Total	- Time = 0h 0m 37s 577		ms=37577	clock:37545326/1000000 = 37545ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-gorder-tarjan.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-gorder.txt -a tarjan -o ../results/r4410/time-livejournal-gorder-tarjan.txt -l 10

@@ -1,0 +1,14 @@
+read	54866	54861193
+adjlist	3049	3048751
+prepare	57916	315
+dominatingset	8484	8482764
+dominatingset	8559	8556942
+dominatingset	8717	8646639
+dominatingset	8659	8652806
+dominatingset	8713	8706918
+dominatingset	8599	8594178
+dominatingset	8687	8681076
+dominatingset	8646	8640619
+dominatingset	8642	8636670
+dominatingset	8703	8696949
+total	144330	90

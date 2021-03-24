@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:48:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-dfs.txt -a bfs -o ../results/r4410/time-epinion-dfs-bfs.txt -l 10':
+
+        147.733173      task-clock (msec)         #    0.987 CPUs utilized          
+       413,539,799      cpu-cycles                #    2.799 GHz                    
+       715,178,851      instructions              #    1.73  insns per cycle        
+       222,701,886      L1-dcache-loads           # 1507.460 M/sec                  
+         2,749,108      L1-dcache-load-misses     #    1.23% of all L1-dcache hits  
+         1,344,241      LLC-loads                 #    9.099 M/sec                  
+            72,671      LLC-load-misses           #    5.41% of all LL-cache hits   
+        40,588,154      cycle_activity_cycles_l1d_pending #  274.740 M/sec                  
+        62,898,496      cycle_activity_cycles_l2_pending #  425.757 M/sec                  
+
+       0.149669371 seconds time elapsed
+

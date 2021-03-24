@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-deg-.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 54s 830		ms=54830	clock:54785129/1000000 = 54785ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 32		ms=3032	clock:3030624/1000000 = 3030ms
+Total	- Time = 0h 0m 57s 863		ms=57863	clock:57816068/1000000 = 57816ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 432		ms=4432	clock:4429167/1000000 = 4429ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 348		ms=4348	clock:4344194/1000000 = 4344ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 379		ms=4379	clock:4375450/1000000 = 4375ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 487		ms=4487	clock:4483352/1000000 = 4483ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 399		ms=4399	clock:4396396/1000000 = 4396ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 392		ms=4392	clock:4389364/1000000 = 4389ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 365		ms=4365	clock:4361344/1000000 = 4361ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 393		ms=4393	clock:4390635/1000000 = 4390ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 377		ms=4377	clock:4373423/1000000 = 4373ms
+	Info: Biggest strongly connected component has size 3391070 out of 10248152
+SCC	- Time = 0h 0m 4s 326		ms=4326	clock:4322391/1000000 = 4322ms
+Total	- Time = 0h 1m 41s 767		ms=101767	clock:101681584/1000000 = 101681ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-deg--tarjan.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-deg-.txt -a tarjan -o ../results/r4410/time-wiki-deg--tarjan.txt -l 10

@@ -1,0 +1,14 @@
+read	16918	16915748
+adjlist	943	942998
+prepare	17862	401
+dominatingset	4491	4490289
+dominatingset	4508	4507425
+dominatingset	4463	4462870
+dominatingset	4443	4443413
+dominatingset	4465	4463980
+dominatingset	4473	4471855
+dominatingset	4527	4525922
+dominatingset	4449	4448915
+dominatingset	4440	4439626
+dominatingset	4459	4458887
+total	62585	171

@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-slashburn.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 15s 828		ms=15828	clock:15817085/1000000 = 15817ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 935		ms=935	clock:934697/1000000 = 934ms
+Total	- Time = 0h 0m 16s 764		ms=16764	clock:16752120/1000000 = 16752ms
+NQ	- Time = 0h 0m 1s 446		ms=1446	clock:1445902/1000000 = 1445ms
+Total	- Time = 0h 0m 18s 210		ms=18210	clock:18198054/1000000 = 18198ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-slashburn-nq.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-slashburn.txt -a nq -o ../results/r4410/time-livejournal-slashburn-nq.txt -l 10

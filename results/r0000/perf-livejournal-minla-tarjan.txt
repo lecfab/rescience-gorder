@@ -1,0 +1,17 @@
+# started on Fri Feb 26 22:38:21 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-minla.txt -a tarjan -o ../results/r4410/time-livejournal-minla-tarjan.txt -l 10':
+
+      47268.486034      task-clock (msec)         #    1.000 CPUs utilized          
+   132,351,439,261      cpu-cycles                #    2.800 GHz                    
+   143,476,503,628      instructions              #    1.08  insns per cycle        
+    51,757,507,144      L1-dcache-loads           # 1094.969 M/sec                  
+     2,266,577,278      L1-dcache-load-misses     #    4.38% of all L1-dcache hits  
+     1,549,092,057      LLC-loads                 #   32.772 M/sec                  
+       604,745,327      LLC-load-misses           #   39.04% of all LL-cache hits   
+    70,190,441,583      cycle_activity_cycles_l1d_pending # 1484.931 M/sec                  
+    73,513,444,565      cycle_activity_cycles_l2_pending # 1555.232 M/sec                  
+
+      47.278229309 seconds time elapsed
+

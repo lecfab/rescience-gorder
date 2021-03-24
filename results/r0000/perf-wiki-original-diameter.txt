@@ -1,0 +1,17 @@
+# started on Sat Feb 27 00:25:39 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M.txt -a diameter -o ../results/r4410/time-wiki-original-diameter.txt -l 10':
+
+     797634.717337      task-clock (msec)         #    0.999 CPUs utilized          
+ 2,233,332,657,508      cpu-cycles                #    2.800 GHz                    
+ 1,233,940,216,481      instructions              #    0.55  insns per cycle        
+   386,905,544,815      L1-dcache-loads           #  485.066 M/sec                  
+    55,571,834,133      L1-dcache-load-misses     #   14.36% of all L1-dcache hits  
+    38,789,513,150      LLC-loads                 #   48.631 M/sec                  
+    19,790,443,729      LLC-load-misses           #   51.02% of all LL-cache hits   
+ 1,855,607,130,517      cycle_activity_cycles_l1d_pending # 2326.387 M/sec                  
+ 1,887,332,935,846      cycle_activity_cycles_l2_pending # 2366.162 M/sec                  
+
+     798.076904501 seconds time elapsed
+

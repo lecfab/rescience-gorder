@@ -1,0 +1,12 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 7m 2s 257		ms=422257	clock:421978719/1000000 = 421978ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 19s 115		ms=19115	clock:19104326/1000000 = 19104ms
+	Info: Minloga order
+	Info: Energy decreased from -inf to -inf
+Order	- Time = 2h 30m 26s 767		ms=9026767	clock:9025479771/1000000 = 9025479ms
+	Info: Output into file ord.tmp-minloga.txt
+Output	- Time = 0h 0m 7s 161		ms=7161	clock:7156405/1000000 = 7156ms
+Total	- Time = 2h 37m 55s 302		ms=9475302	clock:9473719232/1000000 = 9473719ms

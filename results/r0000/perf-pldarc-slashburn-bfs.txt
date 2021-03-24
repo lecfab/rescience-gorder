@@ -1,0 +1,17 @@
+# started on Sun Feb 28 14:23:51 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-slashburn.txt -a bfs -o ../results/r4410/time-pldarc-slashburn-bfs.txt -l 10':
+
+     233027.720096      task-clock (msec)         #    1.000 CPUs utilized          
+   652,477,172,148      cpu-cycles                #    2.800 GHz                    
+ 1,060,647,387,133      instructions              #    1.63  insns per cycle        
+   326,988,851,451      L1-dcache-loads           # 1403.219 M/sec                  
+     7,608,780,259      L1-dcache-load-misses     #    2.33% of all L1-dcache hits  
+     4,467,977,238      LLC-loads                 #   19.174 M/sec                  
+     1,640,206,086      LLC-load-misses           #   36.71% of all LL-cache hits   
+   164,744,861,254      cycle_activity_cycles_l1d_pending #  706.975 M/sec                  
+   175,173,336,456      cycle_activity_cycles_l2_pending #  751.727 M/sec                  
+
+     233.072058683 seconds time elapsed
+

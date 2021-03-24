@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G.txt
+	Info: Number of nodes: 94946569
+	Info: Number of edges: 1937489265
+Read edges	- Time = 0h 9m 22s 421		ms=562421	clock:562078728/1000000 = 562078ms
+	Info: Reading rank from file ord.tmp-dfs.txt
+Read rank	- Time = 0h 0m 13s 282		ms=13282	clock:13274341/1000000 = 13274ms
+	Info: Applying rank on edges
+Apply	- Time = 0h 2m 57s 426		ms=177426	clock:177391846/1000000 = 177391ms
+	Info: Sorting edges according to new indices
+Sort	- Time = 0h 3m 39s 492		ms=219492	clock:219459522/1000000 = 219459ms
+	Info: Output into file ../datasets/edgelist-sdarc-94M-1G-dfs.txt
+Output	- Time = 0h 7m 59s 534		ms=479534	clock:479344862/1000000 = 479344ms
+Total	- Time = 0h 24m 12s 158		ms=1452158	clock:1451549306/1000000 = 1451549ms

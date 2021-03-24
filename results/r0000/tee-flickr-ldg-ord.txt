@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 784		ms=7784	clock:7780498/1000000 = 7780ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 940		ms=940	clock:939721/1000000 = 939ms
+	Info: Applying BFS order
+	Info: Reordering adjacency list
+	Info: Applying LDG
+Order	- Time = 0h 0m 6s 393		ms=6393	clock:6389584/1000000 = 6389ms
+	Info: Output into file ord.tmp-ldg.txt
+Output	- Time = 0h 0m 0s 256		ms=256	clock:256510/1000000 = 256ms
+Total	- Time = 0h 0m 15s 375		ms=15375	clock:15366331/1000000 = 15366ms

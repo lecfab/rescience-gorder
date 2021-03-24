@@ -1,0 +1,17 @@
+# started on Mon Mar  1 21:01:55 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-twitter-61M-1G-rcm.txt -a nq -o ../results/r4410/time-twitter-rcm-nq.txt -l 10':
+
+     444298.458946      task-clock (msec)         #    0.999 CPUs utilized          
+ 1,244,041,497,086      cpu-cycles                #    2.800 GHz                    
+ 2,567,603,847,871      instructions              #    2.06  insns per cycle        
+   808,816,163,519      L1-dcache-loads           # 1820.434 M/sec                  
+     5,818,421,098      L1-dcache-load-misses     #    0.72% of all L1-dcache hits  
+     2,706,906,405      LLC-loads                 #    6.093 M/sec                  
+     1,580,521,863      LLC-load-misses           #   58.39% of all LL-cache hits   
+    98,352,109,719      cycle_activity_cycles_l1d_pending #  221.365 M/sec                  
+   109,981,166,274      cycle_activity_cycles_l2_pending #  247.539 M/sec                  
+
+     444.599624529 seconds time elapsed
+

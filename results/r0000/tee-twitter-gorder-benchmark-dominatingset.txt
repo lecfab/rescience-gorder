@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-gorder.txt
+	Info: Number of nodes: 41652230
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 0s 91		ms=360091	clock:359855630/1000000 = 359855ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 18s 848		ms=18848	clock:18836802/1000000 = 18836ms
+Total	- Time = 0h 6m 18s 939		ms=378939	clock:378692705/1000000 = 378692ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 31s 623		ms=91623	clock:91596442/1000000 = 91596ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 30s 41		ms=90041	clock:90016476/1000000 = 90016ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 28s 316		ms=88316	clock:88291220/1000000 = 88291ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 28s 285		ms=88285	clock:88261319/1000000 = 88261ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 28s 284		ms=88284	clock:88257109/1000000 = 88257ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 28s 260		ms=88260	clock:88232115/1000000 = 88232ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 28s 740		ms=88740	clock:88711610/1000000 = 88711ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 29s 211		ms=89211	clock:89182208/1000000 = 89182ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 31s 733		ms=91733	clock:91705824/1000000 = 91705ms
+	Info: Dominating set 15271198
+DS	- Time = 0h 1m 29s 91		ms=89091	clock:89059312/1000000 = 89059ms
+Total	- Time = 0h 21m 12s 528		ms=1272528	clock:1272006286/1000000 = 1272006ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-gorder-ds.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-gorder.txt -a ds -o ../results/r4410/time-twitter-gorder-ds.txt -l 10

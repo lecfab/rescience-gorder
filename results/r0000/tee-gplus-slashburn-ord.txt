@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 7s 459		ms=127459	clock:127372268/1000000 = 127372ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 19s 859		ms=19859	clock:19844212/1000000 = 19844ms
+	Info: Directed slashburn
+Order	- Time = 0h 2m 10s 167		ms=130167	clock:130107917/1000000 = 130107ms
+	Info: Output into file ord.tmp-slashburn.txt
+Output	- Time = 0h 0m 3s 363		ms=3363	clock:3361456/1000000 = 3361ms
+Total	- Time = 0h 4m 40s 850		ms=280850	clock:280685868/1000000 = 280685ms

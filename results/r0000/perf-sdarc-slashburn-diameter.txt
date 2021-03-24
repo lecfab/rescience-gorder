@@ -1,0 +1,17 @@
+# started on Fri Mar  5 02:14:38 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-slashburn.txt -a diameter -o ../results/r4410/time-sdarc-slashburn-diameter.txt -l 10':
+
+    3558621.805401      task-clock (msec)         #    0.999 CPUs utilized          
+ 9,964,132,746,940      cpu-cycles                #    2.800 GHz                    
+ 5,711,577,625,893      instructions              #    0.57  insns per cycle        
+ 1,784,019,751,398      L1-dcache-loads           #  501.323 M/sec                  
+   246,565,272,940      L1-dcache-load-misses     #   13.82% of all L1-dcache hits  
+   177,912,395,106      LLC-loads                 #   49.995 M/sec                  
+    92,074,411,873      LLC-load-misses           #   51.75% of all LL-cache hits   
+ 7,897,474,811,509      cycle_activity_cycles_l1d_pending # 2219.251 M/sec                  
+ 7,995,829,269,394      cycle_activity_cycles_l2_pending # 2246.889 M/sec                  
+
+    3563.083974846 seconds time elapsed
+

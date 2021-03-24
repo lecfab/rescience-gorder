@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 7m 3s 758		ms=423758	clock:423470278/1000000 = 423470ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 19s 718		ms=19718	clock:19704472/1000000 = 19704ms
+	Info: Minla order
+	Alert: Recovered energy is 6.96655e+15 instead of 1.73946e+15
+	Info: Energy decreased from 2.09683e+16 to 1.73946e+15
+Order	- Time = 0h 42m 17s 840		ms=2537840	clock:2537350167/1000000 = 2537350ms
+	Info: Output into file ord.tmp-minla.txt
+Output	- Time = 0h 0m 7s 144		ms=7144	clock:7140521/1000000 = 7140ms
+Total	- Time = 0h 49m 48s 462		ms=2988462	clock:2987665452/1000000 = 2987665ms

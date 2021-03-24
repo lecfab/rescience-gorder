@@ -1,0 +1,17 @@
+# started on Wed Mar  3 19:12:10 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G-minla.txt -a pr -o ../results/r4410/time-sdarc-minla-pr.txt -l 10':
+
+    4581030.453293      task-clock (msec)         #    0.998 CPUs utilized          
+12,827,035,042,707      cpu-cycles                #    2.800 GHz                    
+ 5,400,569,215,055      instructions              #    0.42  insns per cycle        
+ 1,893,980,403,834      L1-dcache-loads           #  413.440 M/sec                  
+   403,079,640,821      L1-dcache-load-misses     #   21.28% of all L1-dcache hits  
+   341,996,717,908      LLC-loads                 #   74.655 M/sec                  
+   136,277,520,919      LLC-load-misses           #   39.85% of all LL-cache hits   
+10,718,031,250,194      cycle_activity_cycles_l1d_pending # 2339.655 M/sec                  
+10,683,713,798,459      cycle_activity_cycles_l2_pending # 2332.164 M/sec                  
+
+    4589.523827055 seconds time elapsed
+

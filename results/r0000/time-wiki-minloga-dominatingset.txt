@@ -1,0 +1,14 @@
+read	57784	57744024
+adjlist	3002	2999922
+prepare	60786	373
+dominatingset	9132	9123726
+dominatingset	9131	9124436
+dominatingset	9068	9062159
+dominatingset	9166	9160043
+dominatingset	9042	9037179
+dominatingset	9139	9132280
+dominatingset	9100	9094618
+dominatingset	9086	9080172
+dominatingset	9163	9155682
+dominatingset	9060	9053324
+total	151879	113

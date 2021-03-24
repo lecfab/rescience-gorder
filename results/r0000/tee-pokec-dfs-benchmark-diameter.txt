@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-dfs.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 945		ms=6945	clock:6941036/1000000 = 6941ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 410		ms=410	clock:410354/1000000 = 410ms
+Total	- Time = 0h 0m 7s 356		ms=7356	clock:7351722/1000000 = 7351ms
+	Info: Approximate diameter (100 runs): 14
+Diam	- Time = 0h 0m 43s 534		ms=43534	clock:43497887/1000000 = 43497ms
+Total	- Time = 0h 0m 50s 891		ms=50891	clock:50849491/1000000 = 50849ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-dfs-diameter.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-dfs.txt -a diameter -o ../results/r4410/time-pokec-dfs-diameter.txt -l 10

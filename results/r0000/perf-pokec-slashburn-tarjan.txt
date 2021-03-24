@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:20:15 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pokec-1M-30M-slashburn.txt -a tarjan -o ../results/r4410/time-pokec-slashburn-tarjan.txt -l 10':
+
+      15817.028913      task-clock (msec)         #    1.000 CPUs utilized          
+    44,287,276,236      cpu-cycles                #    2.800 GHz                    
+    60,017,719,222      instructions              #    1.36  insns per cycle        
+    21,841,070,635      L1-dcache-loads           # 1380.858 M/sec                  
+       926,370,726      L1-dcache-load-misses     #    4.24% of all L1-dcache hits  
+       572,942,846      LLC-loads                 #   36.223 M/sec                  
+       143,246,398      LLC-load-misses           #   25.00% of all LL-cache hits   
+    20,104,445,399      cycle_activity_cycles_l1d_pending # 1271.063 M/sec                  
+    21,185,747,563      cycle_activity_cycles_l2_pending # 1339.426 M/sec                  
+
+      15.821135825 seconds time elapsed
+

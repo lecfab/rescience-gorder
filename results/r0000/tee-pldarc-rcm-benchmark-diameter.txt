@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-rcm.txt
+	Info: Number of nodes: 39497204
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 50s 566		ms=170566	clock:170424747/1000000 = 170424ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 485		ms=8485	clock:8478316/1000000 = 8478ms
+Total	- Time = 0h 2m 59s 52		ms=179052	clock:178903408/1000000 = 178903ms
+	Info: Approximate diameter (100 runs): 48
+Diam	- Time = 0h 14m 58s 455		ms=898455	clock:897649284/1000000 = 897649ms
+Total	- Time = 0h 17m 57s 507		ms=1077507	clock:1076552626/1000000 = 1076552ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-rcm-diameter.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-rcm.txt -a diameter -o ../results/r4410/time-pldarc-rcm-diameter.txt -l 10

@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G.txt
+	Info: Number of nodes: 94946569
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 9m 27s 600		ms=567600	clock:567232570/1000000 = 567232ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 25s 619		ms=25619	clock:25604750/1000000 = 25604ms
+	Info: Minla order
+	Alert: Recovered energy is 1.95708e+16 instead of 6.46777e+14
+	Info: Energy decreased from 5.8285e+16 to 6.46777e+14
+Order	- Time = 0h 44m 44s 821		ms=2684821	clock:2684359460/1000000 = 2684359ms
+	Info: Output into file ord.tmp-minla.txt
+Output	- Time = 0h 0m 11s 509		ms=11509	clock:11505958/1000000 = 11505ms
+Total	- Time = 0h 54m 49s 551		ms=3289551	clock:3288702750/1000000 = 3288702ms

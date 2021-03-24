@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 1m 0s 587		ms=60587	clock:60578141/1000000 = 60578ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 23s 775		ms=23775	clock:23769834/1000000 = 23769ms
+Order	- Time = 0h 0m 2s 376		ms=2376	clock:2376252/1000000 = 2376ms
+	Info: Output into file ord.tmp-dfs.txt
+Output	- Time = 0h 0m 1s 89		ms=1089	clock:1089509/1000000 = 1089ms
+Total	- Time = 0h 1m 27s 829		ms=87829	clock:87813749/1000000 = 87813ms

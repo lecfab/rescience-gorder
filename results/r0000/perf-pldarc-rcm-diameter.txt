@@ -1,0 +1,17 @@
+# started on Sun Feb 28 10:17:17 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-rcm.txt -a diameter -o ../results/r4410/time-pldarc-rcm-diameter.txt -l 10':
+
+    1077372.620444      task-clock (msec)         #    0.999 CPUs utilized          
+ 3,016,571,041,512      cpu-cycles                #    2.800 GHz                    
+ 2,034,832,090,906      instructions              #    0.67  insns per cycle        
+   637,120,154,624      L1-dcache-loads           #  591.365 M/sec                  
+    87,503,404,375      L1-dcache-load-misses     #   13.73% of all L1-dcache hits  
+    66,814,081,089      LLC-loads                 #   62.016 M/sec                  
+    33,050,537,627      LLC-load-misses           #   49.47% of all LL-cache hits   
+ 2,229,271,174,715      cycle_activity_cycles_l1d_pending # 2069.174 M/sec                  
+ 2,271,187,963,434      cycle_activity_cycles_l2_pending # 2108.080 M/sec                  
+
+    1078.257093188 seconds time elapsed
+

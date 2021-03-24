@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-rcm.txt
+	Info: Number of nodes: 75879
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 107		ms=107	clock:107625/1000000 = 107ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 8		ms=8	clock:8429/1000000 = 8ms
+Total	- Time = 0h 0m 0s 116		ms=116	clock:116151/1000000 = 116ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3647/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3383/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3301/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3332/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3372/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3249/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3340/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3364/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3234/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3258/1000000 = 3ms
+Total	- Time = 0h 0m 0s 149		ms=149	clock:149549/1000000 = 149ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-rcm-bfs.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-rcm.txt -a bfs -o ../results/r4410/time-epinion-rcm-bfs.txt -l 10

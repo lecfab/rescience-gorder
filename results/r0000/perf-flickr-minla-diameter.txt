@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:43:58 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-minla.txt -a diameter -o ../results/r4410/time-flickr-minla-diameter.txt -l 10':
+
+      46195.623041      task-clock (msec)         #    0.999 CPUs utilized          
+   129,344,105,240      cpu-cycles                #    2.800 GHz                    
+    97,146,481,914      instructions              #    0.75  insns per cycle        
+    30,625,650,240      L1-dcache-loads           #  662.956 M/sec                  
+     5,136,702,110      L1-dcache-load-misses     #   16.77% of all L1-dcache hits  
+     3,469,048,023      LLC-loads                 #   75.095 M/sec                  
+     1,057,503,960      LLC-load-misses           #   30.48% of all LL-cache hits   
+    95,362,298,496      cycle_activity_cycles_l1d_pending # 2064.315 M/sec                  
+    96,383,871,854      cycle_activity_cycles_l2_pending # 2086.429 M/sec                  
+
+      46.234897633 seconds time elapsed
+

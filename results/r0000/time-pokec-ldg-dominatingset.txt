@@ -1,0 +1,14 @@
+read	7212	7210660
+adjlist	420	420578
+prepare	7633	468
+dominatingset	2005	2005656
+dominatingset	2058	2058284
+dominatingset	2034	2034106
+dominatingset	2019	2018823
+dominatingset	2011	2011172
+dominatingset	2011	2010951
+dominatingset	2009	2009265
+dominatingset	2015	2015359
+dominatingset	2015	2015096
+dominatingset	2031	2030952
+total	27846	218

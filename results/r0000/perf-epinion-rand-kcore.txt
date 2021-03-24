@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:47:17 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-rand.txt -a kcore -o ../results/r4410/time-epinion-rand-kcore.txt -l 10':
+
+        338.458007      task-clock (msec)         #    0.994 CPUs utilized          
+       947,542,650      cpu-cycles                #    2.800 GHz                    
+     1,360,146,232      instructions              #    1.44  insns per cycle        
+       428,039,718      L1-dcache-loads           # 1264.676 M/sec                  
+        24,297,315      L1-dcache-load-misses     #    5.68% of all L1-dcache hits  
+        10,753,718      LLC-loads                 #   31.773 M/sec                  
+            95,689      LLC-load-misses           #    0.89% of all LL-cache hits   
+       288,593,196      cycle_activity_cycles_l1d_pending #  852.671 M/sec                  
+       301,298,241      cycle_activity_cycles_l2_pending #  890.209 M/sec                  
+
+       0.340448988 seconds time elapsed
+

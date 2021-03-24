@@ -1,0 +1,14 @@
+read	106	106679
+adjlist	7	7127
+prepare	113	95
+dominatingset	18	18614
+dominatingset	17	17763
+dominatingset	18	18194
+dominatingset	18	18143
+dominatingset	18	18097
+dominatingset	18	18114
+dominatingset	18	18102
+dominatingset	18	18126
+dominatingset	18	18159
+dominatingset	18	18120
+total	295	18

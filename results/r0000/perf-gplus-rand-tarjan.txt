@@ -1,0 +1,17 @@
+# started on Sat Feb 27 08:22:56 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-rand.txt -a tarjan -o ../results/r4410/time-gplus-rand-tarjan.txt -l 10':
+
+     468074.495001      task-clock (msec)         #    1.000 CPUs utilized          
+ 1,310,604,564,956      cpu-cycles                #    2.800 GHz                    
+ 1,037,634,163,677      instructions              #    0.79  insns per cycle        
+   368,285,873,267      L1-dcache-loads           #  786.810 M/sec                  
+    20,721,994,456      L1-dcache-load-misses     #    5.63% of all L1-dcache hits  
+    16,275,710,763      LLC-loads                 #   34.772 M/sec                  
+     7,207,622,677      LLC-load-misses           #   44.28% of all LL-cache hits   
+   830,996,643,150      cycle_activity_cycles_l1d_pending # 1775.351 M/sec                  
+   843,645,592,062      cycle_activity_cycles_l2_pending # 1802.375 M/sec                  
+
+     468.143703464 seconds time elapsed
+

@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-slashburn.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 15s 790		ms=15790	clock:15779312/1000000 = 15779ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 936		ms=936	clock:936153/1000000 = 936ms
+Total	- Time = 0h 0m 16s 727		ms=16727	clock:16715785/1000000 = 16715ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 700		ms=6700	clock:6697701/1000000 = 6697ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 763		ms=6763	clock:6758325/1000000 = 6758ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 711		ms=6711	clock:6706315/1000000 = 6706ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 772		ms=6772	clock:6767842/1000000 = 6767ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 850		ms=6850	clock:6845685/1000000 = 6845ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 838		ms=6838	clock:6833252/1000000 = 6833ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 776		ms=6776	clock:6771770/1000000 = 6771ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 825		ms=6825	clock:6820026/1000000 = 6820ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 842		ms=6842	clock:6837861/1000000 = 6837ms
+	Info: Graph degeneracy 253
+Kcore	- Time = 0h 0m 6s 771		ms=6771	clock:6766746/1000000 = 6766ms
+Total	- Time = 0h 1m 24s 581		ms=84581	clock:84521122/1000000 = 84521ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-slashburn-kcore.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-slashburn.txt -a kcore -o ../results/r4410/time-livejournal-slashburn-kcore.txt -l 10

@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-minla.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 1s 311		ms=121311	clock:121214880/1000000 = 121214ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 347		ms=6347	clock:6341745/1000000 = 6341ms
+Total	- Time = 0h 2m 7s 659		ms=127659	clock:127557195/1000000 = 127557ms
+DFS	- Time = 0h 0m 11s 294		ms=11294	clock:11287021/1000000 = 11287ms
+DFS	- Time = 0h 0m 11s 430		ms=11430	clock:11423149/1000000 = 11423ms
+DFS	- Time = 0h 0m 11s 316		ms=11316	clock:11310085/1000000 = 11310ms
+DFS	- Time = 0h 0m 11s 984		ms=11984	clock:11975597/1000000 = 11975ms
+DFS	- Time = 0h 0m 12s 207		ms=12207	clock:12200453/1000000 = 12200ms
+DFS	- Time = 0h 0m 12s 306		ms=12306	clock:12297205/1000000 = 12297ms
+DFS	- Time = 0h 0m 12s 663		ms=12663	clock:12655796/1000000 = 12655ms
+DFS	- Time = 0h 0m 12s 636		ms=12636	clock:12628806/1000000 = 12628ms
+DFS	- Time = 0h 0m 12s 653		ms=12653	clock:12645377/1000000 = 12645ms
+DFS	- Time = 0h 0m 12s 581		ms=12581	clock:12573886/1000000 = 12573ms
+Total	- Time = 0h 4m 8s 734		ms=248734	clock:248554353/1000000 = 248554ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-minla-dfs.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-minla.txt -a dfs -o ../results/r4410/time-gplus-minla-dfs.txt -l 10

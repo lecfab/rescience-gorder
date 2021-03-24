@@ -1,0 +1,17 @@
+# started on Sat Feb 27 18:57:31 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-slashburn.txt -a diameter -o ../results/r4410/time-gplus-slashburn-diameter.txt -l 10':
+
+    1432636.667628      task-clock (msec)         #    1.000 CPUs utilized          
+ 4,011,366,067,285      cpu-cycles                #    2.800 GHz                    
+ 1,446,463,444,590      instructions              #    0.36  insns per cycle        
+   454,294,407,261      L1-dcache-loads           #  317.104 M/sec                  
+    95,471,508,350      L1-dcache-load-misses     #   21.02% of all L1-dcache hits  
+    74,611,356,929      LLC-loads                 #   52.080 M/sec                  
+    38,966,101,889      LLC-load-misses           #   52.23% of all LL-cache hits   
+ 3,433,906,446,192      cycle_activity_cycles_l1d_pending # 2396.914 M/sec                  
+ 3,440,149,254,729      cycle_activity_cycles_l2_pending # 2401.271 M/sec                  
+
+    1432.967122662 seconds time elapsed
+

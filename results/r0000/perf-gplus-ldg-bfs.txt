@@ -1,0 +1,17 @@
+# started on Sat Feb 27 19:34:28 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-gplus-28M-462M-ldg.txt -a bfs -o ../results/r4410/time-gplus-ldg-bfs.txt -l 10':
+
+     216055.837000      task-clock (msec)         #    1.000 CPUs utilized          
+   604,953,183,744      cpu-cycles                #    2.800 GHz                    
+   868,211,826,295      instructions              #    1.44  insns per cycle        
+   266,774,345,993      L1-dcache-loads           # 1234.747 M/sec                  
+     7,773,431,407      L1-dcache-load-misses     #    2.91% of all L1-dcache hits  
+     5,345,695,382      LLC-loads                 #   24.742 M/sec                  
+     1,767,205,324      LLC-load-misses           #   33.06% of all LL-cache hits   
+   209,693,174,807      cycle_activity_cycles_l1d_pending #  970.551 M/sec                  
+   218,960,612,860      cycle_activity_cycles_l2_pending # 1013.445 M/sec                  
+
+     216.101427674 seconds time elapsed
+

@@ -1,0 +1,17 @@
+# started on Fri Feb 26 23:32:22 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-livejournal-4M-68M-slashburn.txt -a bellman -o ../results/r4410/time-livejournal-slashburn-bellman.txt -l 10':
+
+      29628.344567      task-clock (msec)         #    0.999 CPUs utilized          
+    82,957,029,655      cpu-cycles                #    2.800 GHz                    
+   111,316,510,752      instructions              #    1.34  insns per cycle        
+    35,422,718,138      L1-dcache-loads           # 1195.569 M/sec                  
+     1,317,397,044      L1-dcache-load-misses     #    3.72% of all L1-dcache hits  
+       894,475,087      LLC-loads                 #   30.190 M/sec                  
+       415,173,430      LLC-load-misses           #   46.42% of all LL-cache hits   
+    33,947,321,626      cycle_activity_cycles_l1d_pending # 1145.772 M/sec                  
+    34,596,780,516      cycle_activity_cycles_l2_pending # 1167.692 M/sec                  
+
+      29.653975057 seconds time elapsed
+

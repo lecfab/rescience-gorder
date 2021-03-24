@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M-minloga.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 1m 59s 416		ms=119416	clock:119323525/1000000 = 119323ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 6s 257		ms=6257	clock:6251458/1000000 = 6251ms
+Total	- Time = 0h 2m 5s 674		ms=125674	clock:125575487/1000000 = 125575ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 35		ms=42035	clock:42005541/1000000 = 42005ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 589		ms=42589	clock:42563092/1000000 = 42563ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 344		ms=42344	clock:42316826/1000000 = 42316ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 296		ms=42296	clock:42269636/1000000 = 42269ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 457		ms=42457	clock:42431412/1000000 = 42431ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 384		ms=42384	clock:42354568/1000000 = 42354ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 42s 632		ms=42632	clock:42600750/1000000 = 42600ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 43s 220		ms=43220	clock:43188640/1000000 = 43188ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 43s 212		ms=43212	clock:43177860/1000000 = 43177ms
+	Info: Dominating set 9626154
+DS	- Time = 0h 0m 43s 488		ms=43488	clock:43459869/1000000 = 43459ms
+Total	- Time = 0h 9m 12s 337		ms=552337	clock:551943424/1000000 = 551943ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-gplus-minloga-ds.txt ./benchmark ../datasets/edgelist-gplus-28M-462M-minloga.txt -a ds -o ../results/r4410/time-gplus-minloga-ds.txt -l 10

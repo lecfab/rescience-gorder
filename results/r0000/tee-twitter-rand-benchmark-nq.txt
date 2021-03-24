@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-rand.txt
+	Info: Number of nodes: 61578403
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 40s 245		ms=400245	clock:399934686/1000000 = 399934ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 684		ms=19684	clock:19669298/1000000 = 19669ms
+Total	- Time = 0h 6m 59s 931		ms=419931	clock:419604394/1000000 = 419604ms
+NQ	- Time = 0h 0m 43s 111		ms=43111	clock:43094587/1000000 = 43094ms
+Total	- Time = 0h 7m 43s 42		ms=463042	clock:462699234/1000000 = 462699ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-rand-nq.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-rand.txt -a nq -o ../results/r4410/time-twitter-rand-nq.txt -l 10

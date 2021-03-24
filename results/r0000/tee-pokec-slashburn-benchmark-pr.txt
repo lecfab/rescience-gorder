@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-slashburn.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 6s 898		ms=6898	clock:6894089/1000000 = 6894ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 411		ms=411	clock:411037/1000000 = 411ms
+Total	- Time = 0h 0m 7s 311		ms=7311	clock:7305563/1000000 = 7305ms
+PR	- Time = 0h 0m 27s 356		ms=27356	clock:27343205/1000000 = 27343ms
+Total	- Time = 0h 0m 34s 667		ms=34667	clock:34648650/1000000 = 34648ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-slashburn-pr.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-slashburn.txt -a pr -o ../results/r4410/time-pokec-slashburn-pr.txt -l 10

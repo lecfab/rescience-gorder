@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-rcm.txt
+	Info: Number of nodes: 41652230
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 6m 38s 410		ms=398410	clock:398140292/1000000 = 398140ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 18s 863		ms=18863	clock:18852544/1000000 = 18852ms
+Total	- Time = 0h 6m 57s 274		ms=417274	clock:416993105/1000000 = 416993ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 25s 167		ms=145167	clock:145073753/1000000 = 145073ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 25s 695		ms=145695	clock:145600517/1000000 = 145600ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 26s 257		ms=146257	clock:146162754/1000000 = 146162ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 26s 751		ms=146751	clock:146656734/1000000 = 146656ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 27s 235		ms=147235	clock:147138985/1000000 = 147138ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 25s 892		ms=145892	clock:145794822/1000000 = 145794ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 26s 129		ms=146129	clock:146030752/1000000 = 146030ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 26s 732		ms=146732	clock:146632081/1000000 = 146632ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 27s 418		ms=147418	clock:147319782/1000000 = 147319ms
+	Info: Graph degeneracy 1965
+Kcore	- Time = 0h 2m 26s 27		ms=146027	clock:145929362/1000000 = 145929ms
+Total	- Time = 0h 31m 20s 581		ms=1880581	clock:1879332598/1000000 = 1879332ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-rcm-kcore.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-rcm.txt -a kcore -o ../results/r4410/time-twitter-rcm-kcore.txt -l 10

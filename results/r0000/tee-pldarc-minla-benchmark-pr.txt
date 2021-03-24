@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-minla.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 50s 719		ms=170719	clock:170577303/1000000 = 170577ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 449		ms=8449	clock:8443008/1000000 = 8443ms
+Total	- Time = 0h 2m 59s 169		ms=179169	clock:179020694/1000000 = 179020ms
+PR	- Time = 0h 23m 30s 752		ms=1410752	clock:1410270154/1000000 = 1410270ms
+Total	- Time = 0h 26m 29s 922		ms=1589922	clock:1589291028/1000000 = 1589291ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-minla-pr.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-minla.txt -a pr -o ../results/r4410/time-pldarc-minla-pr.txt -l 10

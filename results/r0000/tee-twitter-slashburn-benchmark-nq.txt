@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-twitter-61M-1G-slashburn.txt
+	Info: Number of nodes: 61578393
+	Info: Number of edges: 1468365182
+Read	- Time = 0h 5m 58s 910		ms=358910	clock:358673571/1000000 = 358673ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 19s 247		ms=19247	clock:19235854/1000000 = 19235ms
+Total	- Time = 0h 6m 18s 158		ms=378158	clock:377909691/1000000 = 377909ms
+NQ	- Time = 0h 0m 28s 904		ms=28904	clock:28893879/1000000 = 28893ms
+Total	- Time = 0h 6m 47s 63		ms=407063	clock:406803568/1000000 = 406803ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-twitter-slashburn-nq.txt ./benchmark ../datasets/edgelist-twitter-61M-1G-slashburn.txt -a nq -o ../results/r4410/time-twitter-slashburn-nq.txt -l 10

@@ -1,0 +1,17 @@
+# started on Sat Feb 27 00:49:08 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-rand.txt -a bellman -o ../results/r4410/time-wiki-rand-bellman.txt -l 10':
+
+     171423.021920      task-clock (msec)         #    1.000 CPUs utilized          
+   479,983,482,876      cpu-cycles                #    2.800 GHz                    
+   454,908,775,813      instructions              #    0.95  insns per cycle        
+   143,501,111,309      L1-dcache-loads           #  837.117 M/sec                  
+     9,591,246,317      L1-dcache-load-misses     #    6.68% of all L1-dcache hits  
+     5,954,978,768      LLC-loads                 #   34.739 M/sec                  
+     2,883,930,764      LLC-load-misses           #   48.43% of all LL-cache hits   
+   291,991,670,813      cycle_activity_cycles_l1d_pending # 1703.340 M/sec                  
+   293,196,805,291      cycle_activity_cycles_l2_pending # 1710.370 M/sec                  
+
+     171.458740267 seconds time elapsed
+

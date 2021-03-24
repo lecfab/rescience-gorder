@@ -1,0 +1,17 @@
+# started on Sun Feb 28 21:35:50 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pldarc-42M-623M-gorder.txt -a bfs -o ../results/r4410/time-pldarc-gorder-bfs.txt -l 10':
+
+     223556.331601      task-clock (msec)         #    0.999 CPUs utilized          
+   625,939,185,734      cpu-cycles                #    2.800 GHz                    
+ 1,078,935,885,756      instructions              #    1.72  insns per cycle        
+   332,463,585,239      L1-dcache-loads           # 1487.158 M/sec                  
+     5,621,451,537      L1-dcache-load-misses     #    1.69% of all L1-dcache hits  
+     3,113,094,281      LLC-loads                 #   13.925 M/sec                  
+     1,414,998,649      LLC-load-misses           #   45.45% of all LL-cache hits   
+   129,819,184,119      cycle_activity_cycles_l1d_pending #  580.700 M/sec                  
+   142,000,206,168      cycle_activity_cycles_l2_pending #  635.188 M/sec                  
+
+     223.729988662 seconds time elapsed
+

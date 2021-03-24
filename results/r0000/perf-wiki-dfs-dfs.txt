@@ -1,0 +1,17 @@
+# started on Sat Feb 27 04:16:20 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-dfs.txt -a dfs -o ../results/r4410/time-wiki-dfs-dfs.txt -l 10':
+
+      75046.983033      task-clock (msec)         #    1.000 CPUs utilized          
+   210,131,294,634      cpu-cycles                #    2.800 GHz                    
+   406,405,392,068      instructions              #    1.93  insns per cycle        
+   131,705,064,977      L1-dcache-loads           # 1754.968 M/sec                  
+     1,636,499,070      L1-dcache-load-misses     #    1.24% of all L1-dcache hits  
+       658,382,413      LLC-loads                 #    8.773 M/sec                  
+       328,829,574      LLC-load-misses           #   49.95% of all LL-cache hits   
+    28,260,708,913      cycle_activity_cycles_l1d_pending #  376.574 M/sec                  
+    34,818,636,633      cycle_activity_cycles_l2_pending #  463.958 M/sec                  
+
+      75.062920008 seconds time elapsed
+

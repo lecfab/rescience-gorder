@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-ldg.txt
+	Info: Number of nodes: 75888
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 107		ms=107	clock:107061/1000000 = 107ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7067/1000000 = 7ms
+Total	- Time = 0h 0m 0s 114		ms=114	clock:114194/1000000 = 114ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18488/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 17		ms=17	clock:17644/1000000 = 17ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18146/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18155/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18151/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18216/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18107/1000000 = 18ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 17		ms=17	clock:17996/1000000 = 17ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 17		ms=17	clock:17987/1000000 = 17ms
+	Info: Dominating set 47022
+DS	- Time = 0h 0m 0s 18		ms=18	clock:18042/1000000 = 18ms
+Total	- Time = 0h 0m 0s 295		ms=295	clock:295077/1000000 = 295ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-ldg-ds.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-ldg.txt -a ds -o ../results/r4410/time-epinion-ldg-ds.txt -l 10

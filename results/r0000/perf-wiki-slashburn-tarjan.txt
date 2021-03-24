@@ -1,0 +1,17 @@
+# started on Sat Feb 27 04:49:22 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-wiki-13M-437M-slashburn.txt -a tarjan -o ../results/r4410/time-wiki-slashburn-tarjan.txt -l 10':
+
+     103364.025149      task-clock (msec)         #    0.999 CPUs utilized          
+   289,410,413,969      cpu-cycles                #    2.800 GHz                    
+   453,240,448,433      instructions              #    1.57  insns per cycle        
+   162,486,447,520      L1-dcache-loads           # 1571.983 M/sec                  
+     4,461,942,977      L1-dcache-load-misses     #    2.75% of all L1-dcache hits  
+     2,215,883,527      LLC-loads                 #   21.438 M/sec                  
+       801,716,642      LLC-load-misses           #   36.18% of all LL-cache hits   
+    96,475,815,926      cycle_activity_cycles_l1d_pending #  933.360 M/sec                  
+   110,358,600,623      cycle_activity_cycles_l2_pending # 1067.669 M/sec                  
+
+     103.442959015 seconds time elapsed
+

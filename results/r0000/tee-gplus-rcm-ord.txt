@@ -1,0 +1,9 @@
+	Info: Reading edgelist from file ../datasets/edgelist-gplus-28M-462M.txt
+	Info: Number of nodes: 28943748
+	Info: Number of edges: 462994069
+Read	- Time = 0h 2m 7s 895		ms=127895	clock:127816450/1000000 = 127816ms
+	Info: Transfering degrees instead of recomputing
+Order	- Time = 0h 1m 7s 521		ms=67521	clock:67484398/1000000 = 67484ms
+	Info: Output into file ord.tmp-rcm.txt
+Output	- Time = 0h 0m 3s 215		ms=3215	clock:3212684/1000000 = 3212ms
+Total	- Time = 0h 3m 18s 631		ms=198631	clock:198513544/1000000 = 198513ms

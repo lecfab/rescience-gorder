@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-minloga.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 157		ms=7157	clock:7152511/1000000 = 7152ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 455		ms=455	clock:454802/1000000 = 454ms
+Total	- Time = 0h 0m 7s 613		ms=7613	clock:7607775/1000000 = 7607ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 974		ms=974	clock:973681/1000000 = 973ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 941		ms=941	clock:940461/1000000 = 940ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 936		ms=936	clock:935134/1000000 = 935ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 941		ms=941	clock:941071/1000000 = 941ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 937		ms=937	clock:936557/1000000 = 936ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 938		ms=938	clock:939000/1000000 = 939ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 940		ms=940	clock:940162/1000000 = 940ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 940		ms=940	clock:939625/1000000 = 939ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 940		ms=940	clock:939706/1000000 = 939ms
+	Info: Biggest strongly connected component has size 1605184 out of 2302925
+SCC	- Time = 0h 0m 0s 944		ms=944	clock:943747/1000000 = 943ms
+Total	- Time = 0h 0m 17s 50		ms=17050	clock:17036589/1000000 = 17036ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-minloga-tarjan.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-minloga.txt -a tarjan -o ../results/r4410/time-flickr-minloga-tarjan.txt -l 10

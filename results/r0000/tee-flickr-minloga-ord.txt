@@ -1,0 +1,13 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 7s 821		ms=7821	clock:7817505/1000000 = 7817ms
+	Info: Converting to adjacency list
+Adjlist	- Time = 0h 0m 0s 933		ms=933	clock:932299/1000000 = 932ms
+	Info: Minloga order
+	Alert: Recovered energy is 5.07546e+08 instead of 4.88888e+08
+	Info: Energy decreased from 5.43498e+08 to 4.88888e+08
+Order	- Time = 0h 1m 10s 974		ms=70974	clock:70968715/1000000 = 70968ms
+	Info: Output into file ord.tmp-minloga.txt
+Output	- Time = 0h 0m 0s 256		ms=256	clock:255952/1000000 = 255ms
+Total	- Time = 0h 1m 19s 985		ms=79985	clock:79974484/1000000 = 79974ms

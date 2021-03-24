@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:22:19 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pokec-1M-30M-slashburn.txt -a diameter -o ../results/r4410/time-pokec-slashburn-diameter.txt -l 10':
+
+      52768.440842      task-clock (msec)         #    0.999 CPUs utilized          
+   147,747,793,137      cpu-cycles                #    2.800 GHz                    
+    90,451,101,811      instructions              #    0.61  insns per cycle        
+    28,485,223,263      L1-dcache-loads           #  539.816 M/sec                  
+     5,293,236,729      L1-dcache-load-misses     #   18.58% of all L1-dcache hits  
+     3,845,447,974      LLC-loads                 #   72.874 M/sec                  
+     1,068,202,937      LLC-load-misses           #   27.78% of all LL-cache hits   
+   116,092,551,006      cycle_activity_cycles_l1d_pending # 2200.038 M/sec                  
+   116,444,378,155      cycle_activity_cycles_l2_pending # 2206.705 M/sec                  
+
+      52.813549871 seconds time elapsed
+

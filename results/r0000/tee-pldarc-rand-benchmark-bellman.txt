@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pldarc-42M-623M-rand.txt
+	Info: Number of nodes: 42889800
+	Info: Number of edges: 623056313
+Read	- Time = 0h 2m 50s 245		ms=170245	clock:170104407/1000000 = 170104ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 8s 604		ms=8604	clock:8597072/1000000 = 8597ms
+Total	- Time = 0h 2m 58s 849		ms=178849	clock:178702032/1000000 = 178702ms
+SP	- Time = 0h 0m 17s 220		ms=17220	clock:17204345/1000000 = 17204ms
+SP	- Time = 0h 0m 17s 934		ms=17934	clock:17917702/1000000 = 17917ms
+SP	- Time = 0h 0m 18s 993		ms=18993	clock:18977423/1000000 = 18977ms
+SP	- Time = 0h 0m 18s 403		ms=18403	clock:18388097/1000000 = 18388ms
+SP	- Time = 0h 0m 18s 538		ms=18538	clock:18520912/1000000 = 18520ms
+SP	- Time = 0h 0m 18s 357		ms=18357	clock:18342047/1000000 = 18342ms
+SP	- Time = 0h 0m 18s 462		ms=18462	clock:18446624/1000000 = 18446ms
+SP	- Time = 0h 0m 18s 339		ms=18339	clock:18323253/1000000 = 18323ms
+SP	- Time = 0h 0m 18s 581		ms=18581	clock:18566047/1000000 = 18566ms
+SP	- Time = 0h 0m 18s 473		ms=18473	clock:18456534/1000000 = 18456ms
+Total	- Time = 0h 6m 2s 155		ms=362155	clock:361844771/1000000 = 361844ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pldarc-rand-bellman.txt ./benchmark ../datasets/edgelist-pldarc-42M-623M-rand.txt -a bellman -o ../results/r4410/time-pldarc-rand-bellman.txt -l 10

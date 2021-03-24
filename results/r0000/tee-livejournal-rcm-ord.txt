@@ -1,0 +1,9 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 17s 68		ms=17068	clock:17065135/1000000 = 17065ms
+	Info: Transfering degrees instead of recomputing
+Order	- Time = 0h 0m 6s 14		ms=6014	clock:6013447/1000000 = 6013ms
+	Info: Output into file ord.tmp-rcm.txt
+Output	- Time = 0h 0m 0s 524		ms=524	clock:524450/1000000 = 524ms
+Total	- Time = 0h 0m 23s 607		ms=23607	clock:23603049/1000000 = 23603ms

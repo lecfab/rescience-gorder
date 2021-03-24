@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-rand.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 212		ms=7212	clock:7210738/1000000 = 7210ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 414		ms=414	clock:414612/1000000 = 414ms
+Total	- Time = 0h 0m 7s 627		ms=7627	clock:7625702/1000000 = 7625ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 150		ms=1150	clock:1150274/1000000 = 1150ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 162		ms=1162	clock:1162164/1000000 = 1162ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 163		ms=1163	clock:1163339/1000000 = 1163ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 168		ms=1168	clock:1168146/1000000 = 1168ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 165		ms=1165	clock:1165242/1000000 = 1165ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 149		ms=1149	clock:1148832/1000000 = 1148ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 175		ms=1175	clock:1165288/1000000 = 1165ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 170		ms=1170	clock:1169739/1000000 = 1169ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 167		ms=1167	clock:1167098/1000000 = 1167ms
+	Info: Biggest strongly connected component has size 1304537 out of 1632803
+SCC	- Time = 0h 0m 1s 169		ms=1169	clock:1168794/1000000 = 1168ms
+Total	- Time = 0h 0m 19s 270		ms=19270	clock:19254380/1000000 = 19254ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-rand-tarjan.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-rand.txt -a tarjan -o ../results/r4410/time-pokec-rand-tarjan.txt -l 10

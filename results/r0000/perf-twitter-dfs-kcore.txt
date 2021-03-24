@@ -1,0 +1,17 @@
+# started on Tue Mar  2 05:57:21 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-twitter-61M-1G-dfs.txt -a kcore -o ../results/r4410/time-twitter-dfs-kcore.txt -l 10':
+
+    2162122.437137      task-clock (msec)         #    1.000 CPUs utilized          
+ 6,053,973,360,194      cpu-cycles                #    2.800 GHz                    
+ 3,443,823,618,174      instructions              #    0.57  insns per cycle        
+ 1,088,955,657,660      L1-dcache-loads           #  503.651 M/sec                  
+    91,192,116,276      L1-dcache-load-misses     #    8.37% of all L1-dcache hits  
+    69,488,179,673      LLC-loads                 #   32.139 M/sec                  
+    32,885,155,644      LLC-load-misses           #   47.32% of all LL-cache hits   
+ 4,395,073,869,771      cycle_activity_cycles_l1d_pending # 2032.759 M/sec                  
+ 4,319,031,754,239      cycle_activity_cycles_l2_pending # 1997.589 M/sec                  
+
+    2162.840231631 seconds time elapsed
+

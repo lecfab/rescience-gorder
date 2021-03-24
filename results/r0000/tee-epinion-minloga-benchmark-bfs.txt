@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-minloga.txt
+	Info: Number of nodes: 75888
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 99		ms=99	clock:99021/1000000 = 99ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7180/1000000 = 7ms
+Total	- Time = 0h 0m 0s 106		ms=106	clock:106300/1000000 = 106ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4515/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4150/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4146/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4164/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4127/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4152/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4163/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4148/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4136/1000000 = 4ms
+BFS	- Time = 0h 0m 0s 4		ms=4	clock:4151/1000000 = 4ms
+Total	- Time = 0h 0m 0s 148		ms=148	clock:148067/1000000 = 148ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-minloga-bfs.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-minloga.txt -a bfs -o ../results/r4410/time-epinion-minloga-bfs.txt -l 10

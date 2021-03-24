@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-ldg.txt
+	Info: Number of nodes: 75888
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 107		ms=107	clock:107380/1000000 = 107ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 8		ms=8	clock:8438/1000000 = 8ms
+Total	- Time = 0h 0m 0s 115		ms=115	clock:115921/1000000 = 115ms
+PR	- Time = 0h 0m 0s 188		ms=188	clock:188005/1000000 = 188ms
+Total	- Time = 0h 0m 0s 303		ms=303	clock:303858/1000000 = 303ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-ldg-pr.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-ldg.txt -a pr -o ../results/r4410/time-epinion-ldg-pr.txt -l 10

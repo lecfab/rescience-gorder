@@ -1,0 +1,14 @@
+read	98	98936
+adjlist	7	7113
+prepare	106	93
+tarjan	10	10470
+tarjan	10	10098
+tarjan	10	10002
+tarjan	9	9950
+tarjan	10	10018
+tarjan	10	10046
+tarjan	9	9950
+tarjan	9	9964
+tarjan	9	9935
+tarjan	10	10028
+total	206	21

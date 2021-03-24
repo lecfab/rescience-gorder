@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-pokec-1M-30M-minla.txt
+	Info: Number of nodes: 1632803
+	Info: Number of edges: 30622564
+Read	- Time = 0h 0m 7s 0		ms=7000	clock:6996418/1000000 = 6996ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 411		ms=411	clock:411287/1000000 = 411ms
+Total	- Time = 0h 0m 7s 412		ms=7412	clock:7408022/1000000 = 7408ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 816		ms=1816	clock:1815779/1000000 = 1815ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 862		ms=1862	clock:1861289/1000000 = 1861ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 844		ms=1844	clock:1843534/1000000 = 1843ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 858		ms=1858	clock:1858059/1000000 = 1858ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 857		ms=1857	clock:1856801/1000000 = 1856ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 852		ms=1852	clock:1851995/1000000 = 1851ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 863		ms=1863	clock:1863023/1000000 = 1863ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 859		ms=1859	clock:1859200/1000000 = 1859ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 847		ms=1847	clock:1847271/1000000 = 1847ms
+	Info: Dominating set 532450
+DS	- Time = 0h 0m 1s 846		ms=1846	clock:1846143/1000000 = 1846ms
+Total	- Time = 0h 0m 25s 922		ms=25922	clock:25910991/1000000 = 25910ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-pokec-minla-ds.txt ./benchmark ../datasets/edgelist-pokec-1M-30M-minla.txt -a ds -o ../results/r4410/time-pokec-minla-ds.txt -l 10

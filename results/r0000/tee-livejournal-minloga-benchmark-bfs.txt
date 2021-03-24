@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-minloga.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 16s 236		ms=16236	clock:16226933/1000000 = 16226ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 974		ms=974	clock:973216/1000000 = 973ms
+Total	- Time = 0h 0m 17s 210		ms=17210	clock:17200636/1000000 = 17200ms
+BFS	- Time = 0h 0m 1s 14		ms=1014	clock:1013616/1000000 = 1013ms
+BFS	- Time = 0h 0m 1s 10		ms=1010	clock:1009880/1000000 = 1009ms
+BFS	- Time = 0h 0m 0s 992		ms=992	clock:991854/1000000 = 991ms
+BFS	- Time = 0h 0m 0s 997		ms=997	clock:996303/1000000 = 996ms
+BFS	- Time = 0h 0m 0s 993		ms=993	clock:992966/1000000 = 992ms
+BFS	- Time = 0h 0m 0s 989		ms=989	clock:988949/1000000 = 988ms
+BFS	- Time = 0h 0m 0s 992		ms=992	clock:992181/1000000 = 992ms
+BFS	- Time = 0h 0m 0s 990		ms=990	clock:990317/1000000 = 990ms
+BFS	- Time = 0h 0m 0s 990		ms=990	clock:989403/1000000 = 989ms
+BFS	- Time = 0h 0m 0s 997		ms=997	clock:996703/1000000 = 996ms
+Total	- Time = 0h 0m 27s 178		ms=27178	clock:27162612/1000000 = 27162ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-minloga-bfs.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-minloga.txt -a bfs -o ../results/r4410/time-livejournal-minloga-bfs.txt -l 10

@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-sdarc-94M-1G-gorder.txt
+	Info: Number of nodes: 82924686
+	Info: Number of edges: 1937489265
+Read	- Time = 0h 8m 28s 478		ms=508478	clock:508394788/1000000 = 508394ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 25s 609		ms=25609	clock:25605444/1000000 = 25605ms
+Total	- Time = 0h 8m 54s 87		ms=534087	clock:534000508/1000000 = 534000ms
+	Info: Approximate diameter (100 runs): 141
+Diam	- Time = 0h 32m 39s 586		ms=1959586	clock:1957330909/1000000 = 1957330ms
+Total	- Time = 0h 41m 33s 674		ms=2493674	clock:2491331336/1000000 = 2491331ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-sdarc-gorder-diameter.txt ./benchmark ../datasets/edgelist-sdarc-94M-1G-gorder.txt -a diameter -o ../results/r4410/time-sdarc-gorder-diameter.txt -l 10

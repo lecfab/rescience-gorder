@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:31:45 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-pokec-1M-30M-gorder.txt -a diameter -o ../results/r4410/time-pokec-gorder-diameter.txt -l 10':
+
+      45475.613220      task-clock (msec)         #    0.999 CPUs utilized          
+   127,327,625,310      cpu-cycles                #    2.800 GHz                    
+    90,674,234,838      instructions              #    0.71  insns per cycle        
+    28,552,058,151      L1-dcache-loads           #  627.854 M/sec                  
+     4,117,274,333      L1-dcache-load-misses     #   14.42% of all L1-dcache hits  
+     2,951,878,652      LLC-loads                 #   64.911 M/sec                  
+       961,610,304      LLC-load-misses           #   32.58% of all LL-cache hits   
+    95,093,284,306      cycle_activity_cycles_l1d_pending # 2091.083 M/sec                  
+    96,191,029,792      cycle_activity_cycles_l2_pending # 2115.222 M/sec                  
+
+      45.511539584 seconds time elapsed
+

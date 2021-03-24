@@ -1,0 +1,17 @@
+# started on Fri Feb 26 21:50:30 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-flickr-2M-33M-rcm.txt -a bfs -o ../results/r4410/time-flickr-rcm-bfs.txt -l 10':
+
+      10603.671969      task-clock (msec)         #    0.999 CPUs utilized          
+    29,689,144,580      cpu-cycles                #    2.800 GHz                    
+    57,982,159,025      instructions              #    1.95  insns per cycle        
+    17,908,669,870      L1-dcache-loads           # 1688.912 M/sec                  
+       196,297,174      L1-dcache-load-misses     #    1.10% of all L1-dcache hits  
+        74,430,813      LLC-loads                 #    7.019 M/sec                  
+        38,808,028      LLC-load-misses           #   52.14% of all LL-cache hits   
+     3,525,565,709      cycle_activity_cycles_l1d_pending #  332.485 M/sec                  
+     4,370,901,104      cycle_activity_cycles_l2_pending #  412.206 M/sec                  
+
+      10.613620828 seconds time elapsed
+

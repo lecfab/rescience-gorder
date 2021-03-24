@@ -1,0 +1,14 @@
+read	107	107850
+adjlist	8	8653
+prepare	116	167
+dfs	5	5822
+dfs	5	5511
+dfs	5	5259
+dfs	5	5289
+dfs	5	5259
+dfs	5	5256
+dfs	5	5294
+dfs	5	5253
+dfs	5	5252
+dfs	5	5281
+total	170	19

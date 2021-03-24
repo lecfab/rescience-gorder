@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k-gorder.txt
+	Info: Number of nodes: 75879
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 98		ms=98	clock:98595/1000000 = 98ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7129/1000000 = 7ms
+Total	- Time = 0h 0m 0s 105		ms=105	clock:105834/1000000 = 105ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3899/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3562/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3576/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3561/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3543/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3569/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3555/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3550/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3583/1000000 = 3ms
+BFS	- Time = 0h 0m 0s 3		ms=3	clock:3594/1000000 = 3ms
+Total	- Time = 0h 0m 0s 141		ms=141	clock:141729/1000000 = 141ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-gorder-bfs.txt ./benchmark ../datasets/edgelist-epinion-75k-508k-gorder.txt -a bfs -o ../results/r4410/time-epinion-gorder-bfs.txt -l 10

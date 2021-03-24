@@ -1,0 +1,14 @@
+read	7881	7876736
+adjlist	452	452031
+prepare	8334	413
+dominatingset	2049	2047074
+dominatingset	2036	2034716
+dominatingset	2055	2053884
+dominatingset	2045	2043059
+dominatingset	2045	2043301
+dominatingset	2023	2021034
+dominatingset	2030	2028801
+dominatingset	2019	2017473
+dominatingset	2023	2021969
+dominatingset	2022	2020408
+total	28684	135

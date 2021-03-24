@@ -1,0 +1,10 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-minla.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 16s 416		ms=16416	clock:16407410/1000000 = 16407ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 1s 212		ms=1212	clock:1211772/1000000 = 1211ms
+Total	- Time = 0h 0m 17s 629		ms=17629	clock:17619517/1000000 = 17619ms
+NQ	- Time = 0h 0m 1s 592		ms=1592	clock:1590471/1000000 = 1590ms
+Total	- Time = 0h 0m 19s 221		ms=19221	clock:19210017/1000000 = 19210ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-minla-nq.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-minla.txt -a nq -o ../results/r4410/time-livejournal-minla-nq.txt -l 10

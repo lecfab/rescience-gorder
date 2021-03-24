@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-wiki-13M-437M-dfs.txt
+	Info: Number of nodes: 10248152
+	Info: Number of edges: 229101833
+Read	- Time = 0h 0m 57s 66		ms=57066	clock:57029408/1000000 = 57029ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 3s 15		ms=3015	clock:3013633/1000000 = 3013ms
+Total	- Time = 0h 1m 0s 82		ms=60082	clock:60043350/1000000 = 60043ms
+BFS	- Time = 0h 0m 1s 306		ms=1306	clock:1305251/1000000 = 1305ms
+BFS	- Time = 0h 0m 1s 326		ms=1326	clock:1325462/1000000 = 1325ms
+BFS	- Time = 0h 0m 1s 318		ms=1318	clock:1318186/1000000 = 1318ms
+BFS	- Time = 0h 0m 1s 336		ms=1336	clock:1335113/1000000 = 1335ms
+BFS	- Time = 0h 0m 1s 339		ms=1339	clock:1338254/1000000 = 1338ms
+BFS	- Time = 0h 0m 1s 308		ms=1308	clock:1307293/1000000 = 1307ms
+BFS	- Time = 0h 0m 1s 312		ms=1312	clock:1311171/1000000 = 1311ms
+BFS	- Time = 0h 0m 1s 347		ms=1347	clock:1345827/1000000 = 1345ms
+BFS	- Time = 0h 0m 1s 352		ms=1352	clock:1352118/1000000 = 1352ms
+BFS	- Time = 0h 0m 1s 342		ms=1342	clock:1341310/1000000 = 1341ms
+Total	- Time = 0h 1m 13s 373		ms=73373	clock:73323459/1000000 = 73323ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-wiki-dfs-bfs.txt ./benchmark ../datasets/edgelist-wiki-13M-437M-dfs.txt -a bfs -o ../results/r4410/time-wiki-dfs-bfs.txt -l 10

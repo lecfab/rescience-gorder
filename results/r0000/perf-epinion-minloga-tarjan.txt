@@ -1,0 +1,17 @@
+# started on Fri Feb 26 20:47:40 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-epinion-75k-508k-minloga.txt -a tarjan -o ../results/r4410/time-epinion-minloga-tarjan.txt -l 10':
+
+        213.516751      task-clock (msec)         #    0.991 CPUs utilized          
+       597,703,531      cpu-cycles                #    2.799 GHz                    
+       944,234,070      instructions              #    1.58  insns per cycle        
+       349,682,660      L1-dcache-loads           # 1637.729 M/sec                  
+        10,091,197      L1-dcache-load-misses     #    2.89% of all L1-dcache hits  
+         5,122,360      LLC-loads                 #   23.990 M/sec                  
+            80,885      LLC-load-misses           #    1.58% of all LL-cache hits   
+       140,285,237      cycle_activity_cycles_l1d_pending #  657.022 M/sec                  
+       174,272,073      cycle_activity_cycles_l2_pending #  816.199 M/sec                  
+
+       0.215359592 seconds time elapsed
+

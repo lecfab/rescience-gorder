@@ -1,0 +1,11 @@
+	Info: Reading edgelist from file ../datasets/edgelist-epinion-75k-508k.txt
+	Info: Number of nodes: 75888
+	Info: Number of edges: 508837
+Read	- Time = 0h 0m 0s 102		ms=102	clock:102517/1000000 = 102ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 7		ms=7	clock:7731/1000000 = 7ms
+Total	- Time = 0h 0m 0s 110		ms=110	clock:110343/1000000 = 110ms
+	Info: Approximate diameter (100 runs): 13
+Diam	- Time = 0h 0m 0s 302		ms=302	clock:301597/1000000 = 301ms
+Total	- Time = 0h 0m 0s 412		ms=412	clock:411876/1000000 = 411ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-epinion-original-diameter.txt ./benchmark ../datasets/edgelist-epinion-75k-508k.txt -a diameter -o ../results/r4410/time-epinion-original-diameter.txt -l 10

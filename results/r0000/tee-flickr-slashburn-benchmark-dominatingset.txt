@@ -1,0 +1,29 @@
+	Info: Reading edgelist from file ../datasets/edgelist-flickr-2M-33M-slashburn.txt
+	Info: Number of nodes: 2302925
+	Info: Number of edges: 33140017
+Read	- Time = 0h 0m 6s 949		ms=6949	clock:6946382/1000000 = 6946ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 446		ms=446	clock:446447/1000000 = 446ms
+Total	- Time = 0h 0m 7s 396		ms=7396	clock:7393236/1000000 = 7393ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 499		ms=1499	clock:1499155/1000000 = 1499ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 498		ms=1498	clock:1497168/1000000 = 1497ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 507		ms=1507	clock:1506764/1000000 = 1506ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 512		ms=1512	clock:1510924/1000000 = 1510ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 504		ms=1504	clock:1503761/1000000 = 1503ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 515		ms=1515	clock:1513489/1000000 = 1513ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 511		ms=1511	clock:1509670/1000000 = 1509ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 510		ms=1510	clock:1509734/1000000 = 1509ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 503		ms=1503	clock:1502055/1000000 = 1502ms
+	Info: Dominating set 1009519
+DS	- Time = 0h 0m 1s 497		ms=1497	clock:1496376/1000000 = 1496ms
+Total	- Time = 0h 0m 22s 457		ms=22457	clock:22442061/1000000 = 22442ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-flickr-slashburn-ds.txt ./benchmark ../datasets/edgelist-flickr-2M-33M-slashburn.txt -a ds -o ../results/r4410/time-flickr-slashburn-ds.txt -l 10

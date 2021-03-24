@@ -1,0 +1,19 @@
+	Info: Reading edgelist from file ../datasets/edgelist-livejournal-4M-68M-gorder.txt
+	Info: Number of nodes: 4847571
+	Info: Number of edges: 68993773
+Read	- Time = 0h 0m 15s 934		ms=15934	clock:15922883/1000000 = 15922ms
+	Info: Converting to directed adjacency list
+Adjlist	- Time = 0h 0m 0s 960		ms=960	clock:960069/1000000 = 960ms
+Total	- Time = 0h 0m 16s 896		ms=16896	clock:16883676/1000000 = 16883ms
+SP	- Time = 0h 0m 0s 979		ms=979	clock:978501/1000000 = 978ms
+SP	- Time = 0h 0m 0s 982		ms=982	clock:981880/1000000 = 981ms
+SP	- Time = 0h 0m 0s 984		ms=984	clock:983659/1000000 = 983ms
+SP	- Time = 0h 0m 0s 996		ms=996	clock:995365/1000000 = 995ms
+SP	- Time = 0h 0m 0s 975		ms=975	clock:974404/1000000 = 974ms
+SP	- Time = 0h 0m 0s 956		ms=956	clock:955409/1000000 = 955ms
+SP	- Time = 0h 0m 0s 967		ms=967	clock:966336/1000000 = 966ms
+SP	- Time = 0h 0m 0s 949		ms=949	clock:948576/1000000 = 948ms
+SP	- Time = 0h 0m 0s 961		ms=961	clock:960059/1000000 = 960ms
+SP	- Time = 0h 0m 0s 970		ms=970	clock:969677/1000000 = 969ms
+Total	- Time = 0h 0m 26s 618		ms=26618	clock:26597110/1000000 = 26597ms
+perf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cpu/event=0xa3,umask=0x2,cmask=2,name=cycle_activity_cycles_l1d_pending/,cpu/event=0xa3,umask=0x1,cmask=1,name=cycle_activity_cycles_l2_pending/ -o ../results/r4410/perf-livejournal-gorder-bellman.txt ./benchmark ../datasets/edgelist-livejournal-4M-68M-gorder.txt -a bellman -o ../results/r4410/time-livejournal-gorder-bellman.txt -l 10

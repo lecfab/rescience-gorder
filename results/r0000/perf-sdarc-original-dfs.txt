@@ -1,0 +1,17 @@
+# started on Wed Mar  3 04:24:42 2021
+
+
+ Performance counter stats for './benchmark ../datasets/edgelist-sdarc-94M-1G.txt -a dfs -o ../results/r4410/time-sdarc-original-dfs.txt -l 10':
+
+     969697.606253      task-clock (msec)         #    1.000 CPUs utilized          
+ 2,715,189,054,149      cpu-cycles                #    2.800 GHz                    
+ 3,822,737,208,885      instructions              #    1.41  insns per cycle        
+ 1,228,337,563,618      L1-dcache-loads           # 1266.722 M/sec                  
+    30,894,656,440      L1-dcache-load-misses     #    2.52% of all L1-dcache hits  
+    19,054,370,132      LLC-loads                 #   19.650 M/sec                  
+     8,166,580,022      LLC-load-misses           #   42.86% of all LL-cache hits   
+ 1,045,143,038,245      cycle_activity_cycles_l1d_pending # 1077.803 M/sec                  
+ 1,087,938,789,333      cycle_activity_cycles_l2_pending # 1121.936 M/sec                  
+
+     969.833347686 seconds time elapsed
+
