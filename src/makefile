@@ -1,4 +1,4 @@
-CC=g++ -std=c++14 -fconcepts
+CC=g++ -std=c++14 #-fconcepts
 # CFLAGS=-O9 -lm
 
 DEBUG?=0 # debug option

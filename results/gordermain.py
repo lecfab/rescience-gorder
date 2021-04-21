@@ -100,3 +100,14 @@ def extract_perf(file, perf):
                 break
         except: pass
     return specs
+
+def time_format(s):
+    if s < 1 / 1000:
+        return str(int(s*1e6)) + "µs"
+    if s < 1:
+        return str(int(s*1e3))+ "ms"
+    if s < 100:
+        return str(int(s)) + "s"
+    if s < 60 * 100:
+        return str(int(s / 60)) + "m"
+    return str(int(s / 3600)) +"h"
