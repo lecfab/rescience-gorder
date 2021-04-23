@@ -16,17 +16,26 @@ This is the source code of the 2021 replication for ReScience of the paper _Spee
 
 * `$ ./run-annealing.sh` to tune simulated annealing for MinLA and MinLogA.
 
-* `$ ./run-benchmark.sh` to measure the runtime of all orderings and algorithms on all datasets.
+* `$ ./run-benchmark.sh` to measure the runtime of all orderings and algorithms on all datasets. Add `basic` or `advanced` to get cache metrics as well.
 
 ## Tools and versions
-The C++ code uses 2014 standard library and is compiled with GCC 9.3. Flags are managed by [CLI11 1.9.1](https://github.com/CLIUtils/CLI11) (included in the code). The makefile has been tested with GNU Make 4.2.1. Visualisation tools use Python 3.8.5 and plotly.js v1.58.4. The system used for development is Linux 5.4 with Ubuntu 20.04.1.
+The system used for development is Linux 5.4 with Ubuntu 20.04.1. The C++ code uses 2014 standard library and is compiled with GCC 9.3. Flags are managed by [CLI11 1.9.1](https://github.com/CLIUtils/CLI11) (included in the code). The makefile has been tested with GNU Make 4.2.1. Visualisation tools use plotly.js v1.58.4 and Python 3.8.5 with two modules (they can be installed with `pip3 install matplotlib numpy`). Cache measurement uses linux-perf: install it with `sudo apt install linux-tools-common` and give it necessary permissions with `echo 0 > /proc/sys/kernel/perf_event_paranoid`.
 
 
 ## Repository structure
 ### Datasets in `datasets/`
-From various sources described in our replication paper, they all follow the same format: a graph representation for nodes [0 to N-1] in a text file where each line corresponds to a directed edge of the form `a b` (i.e. a SPACE b, with a and b long unsigned integers). They can be downloaded with the provided URLs, but their format may not be exactly compatible with the present tools (presence of headers or comments, non-consecutive numbering...).
+From various sources described in our replication paper, they all follow the same format: a graph representation for nodes [0 to N-1] in a text file where each line corresponds to a directed edge of the form `a b` (i.e. a SPACE b, with a and b long unsigned integers). They can be downloaded by clicking on one `NAME`: [`epinion`](http://snap.stanford.edu/data/soc-Epinions1.txt.gz),
+[`pokec`](http://snap.stanford.edu/data/soc-pokec-relationships.txt.gz),
+[`flickr`](http://socialnetworks.mpi-sws.mpg.de/data/flickr-growth.txt.gz),
+[`livejournal`](http://snap.stanford.edu/data/soc-LiveJournal1.txt.gz),
+[`wiki`](http://konect.cc/files/download.tsv.wikipedia_link_en.tar.bz2),
+[`gplus`](https://drive.google.com/file/d/0B5ok9oCZslVoYXVDM1hUakhRWWM/view),
+[`pldarc`](http://data.dws.informatik.uni-mannheim.de/hyperlinkgraph/2012-08/pld-arc.gz),
+[`twitter`](http://an.kaist.ac.kr/~haewoon/release/twitter_social_graph/twitter_rv.tar.gz),
+[`sdarc`](http://data.dws.informatik.uni-mannheim.de/hyperlinkgraph/2012-08/sd1-arc.gz).
 
-To obtain the exact format, we used `datasets/normalise.py NAME` where `NAME` is one of the datasets of the paper (`epinion`, `pokec`, `flickr`, `livejournal`, `wiki`, `gplus`, `pldarc`, `twitter`, `sdarc`). The initial raw files have to be stored in a `dl/` subfolder (open the Python file to see or change the exact file names). It outputs a text file that can be used in all the experiments.
+Their initial format is not be exactly compatible with the present tools (presence of headers or comments, non-consecutive numbering...). To obtain the exact format, we used `datasets/normalise.py NAME`.
+The initial raw files have to be stored in a `dl/` subfolder (open the Python file to see or change the exact file names). It outputs a text file that can be used in all the experiments.
 
 ### Sources in `src/`
 #### Algorithms
@@ -83,9 +92,9 @@ All tests must be run from the `src/` folder.
 `$ ./run-annealing.sh` tests parameters of simulated annealing (standard energy k and number of steps S). Their score is measured for MinLA and MinLogA optimisation functions, and displayed in a HTML 3D plot (to be displayed with a web browser).
 
 ### Runtime and cache performance
-`$ ./run-benchmark.sh [MACHINE]` runs time measurements of 9 algorithms on 9 datasets for 10 orders. Results are stored in files `results/r????/time-DATASET-ORDER-ALGO.txt` where `????` is a random directory name.
+`$ ./run-benchmark.sh [MODE]` runs time measurements of 9 algorithms on 9 datasets for 10 orders. Results are stored in files `results/r????/time-DATASET-ORDER-ALGO.txt` where `????` is a random directory name.
 
-`MACHINE` allows you to define a configuration for performance measurement tools. We use perf-tools (wrapped in pmu-tools ocperf), but different hardware events are available depending on the system. Type `$ ../pmu-tools/ocperf list` to see what your machine offers. An other measurement library can be plugged instead. For visualisation, the provided tools use specific performance counters, listed below.
+`MODE` allows you to define a configuration for performance measurement tools. Available modes are `advanced` (all the metrics necessary to replicate our results) and `basic` (metrics existing on most computers). To go further, type `$ ../pmu-tools/ocperf list` to see what your machine offers. An other measurement library can be plugged instead. For visualisation, the provided tools use specific performance counters, listed below.
 
 
 ## Plots and result visualisation
@@ -102,10 +111,10 @@ All tests must be run from the `src/` folder.
 Example: `$ python3 ../results/gorder-speedup.py 0000`
 
 ### Cache-miss information
-`gorder-cache-table.py ????` takes the cache-performance files in folder `r????` and prints a table (in Latex format) with cache-miss rates for each ordering, on a given dataset and algorithm. It requires the following perf-tools counters: _cpu-cycles_, _L1-dcache-loads_, _L1-dcache-load-misses_, _LLC-loads_, _LLC-load-misses_.
+`gorder-cache-table.py ????` takes the cache-performance files in folder `r????` and prints a table (in Latex format) with cache-miss rates for each ordering, on a given dataset and algorithm. It requires the following perf-tools counters: _cpu-cycles_, _L1-dcache-loads_, _L1-dcache-load-misses_, _LLC-loads_, _LLC-load-misses_ (obtained with `./run-benchmark.sh basic` or `advanced`).
 
 Example: `$ python3 ../results/gorder-cache-table.py 0000`
 
-`gorder-cache-bars.py ????` takes the cache-performance files in folder `r????` and plots the rate of CPU execution and cache stall for Gorder and Original for each algorithm on a given dataset. It requires the following perf-tools counters: _cpu-cycles_, _cycle_activity ⋅ cycles_l1d_pending_, _cycle_activity ⋅ cycles_l2_pending_.
+`gorder-cache-bars.py ????` takes the cache-performance files in folder `r????` and plots the rate of CPU execution and cache stall for Gorder and Original for each algorithm on a given dataset. It requires the following perf-tools counters: _cpu-cycles_, _cycle_activity ⋅ cycles_l1d_pending_, _cycle_activity ⋅ cycles_l2_pending_ (obtained with `./run-benchmark.sh advanced`).
 
 Example: `$ python3 ../results/gorder-cache-bars.py 0000`

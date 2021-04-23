@@ -27,33 +27,51 @@ from gordermain import *
 
 folder = r____()
 
-dataset = "sdarc"
 algo = "pr"
-print("Cache-miss rates for", algo, "on", dataset)
+print("Cache-miss rates for", algo_names[algo], "on all datasets")
 
+perf = ["L1-dcache-loads", "L1-dcache-load-misses", "LLC-loads", "LLC-load-misses"]
+specs = extract_perf("{}perf-{}-{}-{}.txt".format(folder, datasets[0], orders[0], algo), perf)
+missing_perf = [perf[i] for i in range(len(perf)) if specs[i] is None]
+warning = "Warning: tables are incomplete because of missing metrics " + ", ".join(missing_perf)
+if len(missing_perf): print(warning)
 
 def pc(x):
     return str(int(x*1000) / 10) + " \\%"
 def billions(x, digits=0):
-    if digits == 0: return str(int(x/ 1000000000))
-    return str(int(x/ 1000000000 * 10**digits) / 10**digits)
+    if digits == 0: return str(int(x/ 1e9))
+    return str(int(x/ 1e9 * 10**digits) / 10**digits)
 
-data = []
-for order in orders:
-    perf = ["L1-dcache-loads", "L1-dcache-load-misses", "LLC-loads", "LLC-load-misses"]
-    specs = extract_perf("{}perf-{}-{}-{}.txt".format(folder, dataset, order, algo), perf)
+def print_table(dataset):
+    data = []
+    for order in orders:
+        specs = extract_perf("{}perf-{}-{}-{}.txt".format(folder, dataset, order, algo), perf)
 
-    cols = [order_names[order],         # order name
-            billions(specs[0]),         # number of L1 references
-            pc(specs[1] / specs[0]),    # L1 miss-rate
-            billions(specs[2]),         # number of L3 references
-            pc(specs[2] / specs[0]),    # L1+L2 miss-rate
-            pc(specs[3] / specs[0])     # all-levels miss-rate
-        ]
-    # print(cols)
-    data.append(cols)
+        L1ref = "?" if specs[0] is None else billions(specs[0])
+        L1mr = "?" if (specs[0] is None or specs[1] is None) else pc(specs[1] / specs[0])
+        L3ref = "?" if specs[2] is None else billions(specs[2])
+        L3r = "?" if specs[0] is None or specs[2] is None else pc(specs[2] / specs[0])
+        Lmr = "?" if specs[0] is None or specs[3] is None else pc(specs[2] / specs[3])
 
-print("\n")
-print("Order & L1-ref (10$^9$) & L1-mr & L3-ref (10$^9$) & L3-r & Cache-mr \\\\ \hline")
-for c in data:
-    print(" & ".join(c), "\\\\")
+        cols = [order_names[order], # order name
+                L1ref,              # number of L1 references
+                L1mr,               # L1 miss-rate
+                L3ref,              # number of L3 references
+                L3r,                # L1+L2 miss-rate
+                Lmr                 # all-levels miss-rate
+            ]
+        data.append(cols)
+
+    print("\nOn dataset", dataset)
+    print("Order & L1-ref (10$^9$) & L1-mr & L3-ref (10$^9$) & L3-r & Cache-mr \\\\ \hline")
+    for c in data:
+        print(" & ".join(c), "\\\\")
+
+
+for dataset in datasets:
+    try:
+        with open("{}perf-{}-gorder-{}.txt".format(folder, dataset, algo)) as f: pass
+        print_table(dataset)
+    except: continue
+
+if len(missing_perf): print("\n", warning)

@@ -65,12 +65,11 @@ def r____():
         folder = relative("r{}/".format(folder_n))
     return folder
 
-def through_file(file, silent=False):
+def through_file(file, silent=True):
     try:
         with open(file) as f:
             for l in f:
                 yield l
-            f.close()
 
     except IOError:
         if not silent: print("Error with", file)
@@ -88,15 +87,16 @@ def save_img(img_file):
     print("Image has been saved in", img_file)
 
 def extract_perf(file, perf):
-    specs = []
-    for spec in perf:
+    specs = [None] * len(perf)
+    for i in range(len(perf)):
+        spec = perf[i]
         try:
             for l in through_file(file):
                 if spec not in l: continue
                 l = l.split("\n")[0]
                 l = re.sub(r'[^0-9,]+{}.*'.format(spec), '', l)
                 l = re.sub(r',','', l)
-                specs.append(int(l)) # print(spec, int(l))
+                specs[i] = int(l)
                 break
         except: pass
     return specs

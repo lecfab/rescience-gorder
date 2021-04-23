@@ -16,14 +16,25 @@ from gordermain import *
 
 folder = r____()
 
-dataset = "sdarc"
+for dataset in reversed(datasets):
+    try:
+        with open("{}perf-{}-gorder-{}.txt".format(folder, dataset, algos[0])) as f: break
+    except: continue
+
+
 print("CPU execution and cache stall of Gorder and Original on", dataset)
+print()
+
+perf = ["cpu-cycles", "cycle_activity_cycles_l2_pending"]
+specs = extract_perf("{}perf-{}-gorder-{}.txt".format(folder, dataset, algos[0]), perf)
+if None in specs:
+    print("Error: required metrics", ", ".join(perf))
+    exit()
 
 
 gdata_stall, gdata_cpu = [], []
 odata_stall, odata_cpu = [], []
 for algo in algos:
-    perf = ["cpu-cycles", "cycle_activity_cycles_l2_pending"]
     gperf = extract_perf("{}perf-{}-gorder-{}.txt".format(folder, dataset, algo), perf)
     operf = extract_perf("{}perf-{}-original-{}.txt".format(folder, dataset, algo), perf)
     print(algo, gperf, operf)

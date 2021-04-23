@@ -23,22 +23,28 @@ done
 # -- perftools options on this machine ---
 # ----------------------------------------
 remove=0 # should modified datasets be removed to avoid heavy disk usage? (90Gb if remove=1, 1Tb otherwise)
-if [ -z "${1}" ]; then
-    echo "Warning: impossible to measure cache in unknown machines; please install ocperf (see README) and edit this script to get cache measurements."
+perftool=""
+if ! command -v perf &> /dev/null; then
+    echo "Warning: linux-perf is not available. To get cache measurements, see README > Tools and versions to install it."
+    echo "Experiments will soon start... (runtime will be measured but not cache-miss)"
+    sleep 2
+elif [ -z "${1}" ]; then
+    echo "Missing MODE parameter. Use pre-defined cache metrics with 'basic' or 'advanced', or edit this script to add different metrics."
     # replace the following list by a cache measurement method
     # example:
     #   perftool="../pmu-tools/ocperf stat -e cpu-cycles,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cycle_activity.cycles_l1d_pending,cycle_activity.cycles_l2_pending"
     # warning: if the above performance counters are not available on your machine you can
     #   use different ones, but you will have to replace them in the visualisation tools.
     #   The list of available counters can be obtained with command $ ../pmu-tools/ocperf list
-    # If cache-miss rates are not crucial to you, it is possible to measure runtime only
-    #   by removing "exit" just after this line. In that case, gorder-cache-bars.py and
-    #   gorder-cache-table.py will not work.
-    perftool=""
+    # If cache-miss rates are not crucial to you, only runtime will be measured.
+    #   In that case, gorder-cache-bars.py and gorder-cache-table.py will not work.
     echo "Experiments will soon start... (runtime will be measured but not cache-miss)"
     sleep 2
-elif [ $1 == "mesu" ]; then
-    echo "Benchmarks on cluster Mesu..."
+elif [ $1 == "basic" ]; then
+    echo "Basic mode: cache metrics without cycle_activity."
+    perftool="../pmu-tools/ocperf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses"
+elif [ $1 == "advanced" ]; then
+    echo "Advanced mode: cache and cycle_activity metrics."
     perftool="../pmu-tools/ocperf stat -e task-clock,cpu-cycles,instructions,L1-dcache-loads,L1-dcache-load-misses,LLC-loads,LLC-load-misses,cycle_activity.cycles_l1d_pending,cycle_activity.cycles_l2_pending"
 fi
 
