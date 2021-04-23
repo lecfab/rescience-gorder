@@ -19,10 +19,17 @@
 \def \articleBIBLIOGRAPHY{bibliography.bib}
 \def \articleYEAR{2021}
 \def \reviewURL{}
-\def \articleABSTRACT{Cache systems keep data close to the processor to access it faster than main memory would. Graph algorithms benefit from this when a cache line contains highly related nodes. Hao Wei \textit{et al.} propose to reorder the nodes of a graph to optimise the proximity of nodes on a cache line. Their contribution, Gorder, creates such an ordering with a greedy procedure. In this replication, we implement ten different orderings and measure the execution time of nine standard graph algorithms on ten real-world datasets. We monitor cache performances to show that runtime variation is caused by the cache. We confirm that Gorder leads to the fastest execution in most cases due to cache-miss reduction. Our results show that simpler procedures are yet almost as efficient and much quicker to compute. This replication validates the initial results but highlights that generating a complex ordering like Gorder is time-consuming.}
-\def \replicationCITE{}
-\def \replicationBIB{}
-\def \replicationURL{}
+\def \articleABSTRACT{\added{Cache systems keep data close to the processor to access it faster than main memory would. Graph algorithms benefit from this when a cache line contains highly related nodes. Hao Wei \textit{et al.} propose to reorder the nodes of a graph to optimise the proximity of nodes on a cache line. Their contribution, Gorder, creates such an ordering with a greedy procedure. In this replication, we implement ten different orderings and measure the execution time of nine standard graph algorithms on nine real-world datasets. We monitor cache performances to show that runtime variations are caused by cache management. We confirm that Gorder leads to the fastest execution in most cases due to cache-miss reductions. Our results show that simpler procedures are yet almost as efficient and much quicker to compute. This replication validates the initial results but highlights that generating a complex ordering like Gorder is time-consuming.}}
+
+% # Information about the original article that has been replicated
+% replication:
+%  - cite: # Full textual citation
+%  - bib:  # Bibtex key (if any) in your bibliography file
+%  - url:  # URL to the PDF, try to link to a non-paywall version
+%  - doi:  # Regular digital object identifier
+\def \replicationCITE{ by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, in Proceedings of SIGMOD 2016}
+\def \replicationBIB{\cite{gorder}}
+\def \replicationURL{https://raw.githubusercontent.com/datourat/Gorder/master/paper.pdf}
 \def \replicationDOI{}
 \def \contactNAME{Fabrice Lécuyer}
 \def \contactEMAIL{fabrice.lecuyer@lip6.fr}
@@ -33,11 +40,13 @@
 \def \articleNUMBER{}
 \def \articleDOI{}
 \def \authorsFULL{Fabrice Lécuyer and Maximilien Danisch and Lionel Tabourier}
-\def \authorsABBRV{F. Lécuyer and M. Danisch and L. Tabourier}
+\def \authorsABBRV{F. Lécuyer, M. Danisch and L. Tabourier}
 \def \authorsSHORT{Lécuyer, Danisch and Tabourier}
 \title{\articleTITLE}
 \date{}
 \author[1]{Fabrice Lécuyer}
 \author[1]{Maximilien Danisch}
 \author[1,\orcid{0000-0002-9160-8083}]{Lionel Tabourier}
+\author[.]{}
+
 \affil[1]{Sorbonne Université, CNRS, LIP6, F-75005 Paris, France}
