@@ -1,0 +1,117 @@
+# To be filled by the author(s) at the time of submission
+# -------------------------------------------------------
+
+# Title of the article:
+#  - For a successful replication, it should be prefixed with "[Re]"
+#  - For a failed replication, it should be prefixed with "[¬Re]"
+#  - For other article types, no instruction (but please, not too long)
+title: "[Re] Speedup Graph Processing by Graph Ordering"
+
+# List of authors with name, orcid number, email and affiliation
+# Affiliation "*" means contact author (required even for single-authored papers)
+authors:
+  - name: Fabrice Lécuyer
+    orcid:
+    email: fabrice.lecuyer@lip6.fr
+    affiliations: 1,*
+
+  - name: Maximilien Danisch
+    orcid:
+    email:
+    affiliations: 1
+
+  - name: Lionel Tabourier
+    orcid: 0000-0002-9160-8083
+    email: lionel.tabourier@lip6.fr
+    affiliations: 1
+
+# List of affiliations with code (corresponding to author affiliations), name
+# and address. You can also use these affiliations to add text such as "Equal
+# contributions" as name (with no address).
+affiliations:
+  - code:    1
+    name:    Sorbonne Université, CNRS, LIP6
+    address: F-75005 Paris, France
+
+
+# List of keywords (adding the programming language might be a good idea)
+keywords: graph algorithm, cache optimisation, node ordering, gorder
+
+# Code URL and DOI/SWH (url is mandatory for replication, doi after acceptance)
+# You can get a DOI for your code from Zenodo, or an SWH identifier from
+# Software Heritage.
+#   see https://guides.github.com/activities/citable-code/
+code:
+  - url: https://github.com/lecfab/rescience-gorder
+  - doi:
+  - swh:
+
+# Data URL and DOI (optional if no data)
+data:
+  - url:
+  - doi:
+
+# Information about the original article that has been replicated
+replication:
+ - cite: by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, in Proceedings of SIGMOD 2016 # Full textual citation
+ - bib:  \cite{gorder} # Bibtex key (if any) in your bibliography file
+ - url:  https://raw.githubusercontent.com/datourat/Gorder/master/paper.pdf # URL to the PDF, try to link to a non-paywall version
+ - doi:  # Regular digital object identifier
+
+# Don't forget to surround abstract with double quotes
+abstract: "Cache systems keep data close to the processor to access it faster than main memory would. Graph algorithms benefit from this when a cache line contains highly related nodes. Hao Wei \textit{et al.} propose to reorder the nodes of a graph to optimise the proximity of nodes on a cache line. Their contribution, Gorder, creates such an ordering with a greedy procedure. In this replication, we implement ten different orderings and measure the execution time of nine standard graph algorithms on nine real-world datasets. We monitor cache performances to show that runtime variations are caused by cache management. We confirm that Gorder leads to the fastest execution in most cases due to cache-miss reductions. Our results show that simpler procedures are yet almost as efficient and much quicker to compute. This replication validates the initial results but highlights that generating a complex ordering like Gorder is time-consuming."
+
+# Bibliography file (yours)
+bibliography: bibliography.bib
+
+# Type of the article
+# Type can be:
+#  * Editorial
+#  * Letter
+#  * Replication
+type: Replication
+
+# Scientific domain of the article (e.g. Computational Neuroscience)
+#  (one domain only & try to be not overly specific)
+domain: Algorithmics
+
+# Coding language (main one only if several)
+language: C++
+
+
+# To be filled by the author(s) after acceptance
+# -----------------------------------------------------------------------------
+
+# For example, the URL of the GitHub issue where review actually occured
+review:
+  - url: https://github.com/ReScience/submissions/issues/52
+
+contributors:
+  - name: Nicolas P. Rougier
+    orcid: 0000-0002-6972-589X
+    role: editor
+  - name: Ozan Caglayan
+    orcid:
+    role: reviewer
+  - name: Emmanuel Hadoux
+    orcid:
+    role: reviewer
+
+# This information will be provided by the editor
+dates:
+  - received:  March 26, 2021
+  - accepted:  May 3, 2021
+  - published:
+
+# This information will be provided by the editor
+article:
+  - number: # Article number will be automatically assigned during publication
+  - doi:    # DOI from Zenodo
+  - url:    # Final PDF URL (Zenodo or rescience website?)
+
+# This information will be provided by the editor
+journal:
+  - name:   "ReScience C"
+  - issn:   2430-3658
+  - volume: 4
+  - issue:  1

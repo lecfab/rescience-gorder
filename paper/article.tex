@@ -1,0 +1,44 @@
+\documentclass{rescience}
+
+\usepackage{color}
+\usepackage{ulem}
+\usepackage{subcaption}
+\usepackage{changepage}
+
+% colour modifications
+\newcommand{\todo}[1]{\textcolor{red}{ #1}}
+\newcommand{\toimprove}[1]{\textcolor{orange}{ #1}}
+\newcommand{\added}[1]{\textcolor{brown}{#1}}
+\newcommand{\fl}[1]{\textcolor{magenta}{FL: #1}}
+\newcommand{\lt}[1]{\textcolor{blue}{LT: #1}}
+
+% vocabulary conventions
+\newcommand{\field}{graph algorithmics}
+\newcommand{\runtime}{runtime}
+\newcommand{\tarjan}{Tarjan's algorithm}
+\newcommand{\bellman}{Bellman-Ford algorithm}
+
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{S\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{S\arabic{figure}}%
+     }
+
+\setlength{\textheight}{\textheight+\footskip-20pt}
+\setlength{\footskip}{20pt}
+
+\begin{document}
+\input{header.tex}
+\input{content.tex}
+
+\hypersetup{linkcolor=black,urlcolor=darkgray}
+\renewcommand\emph[1]{{\bfseries #1}}
+\setlength\bibitemsep{0pt}
+\printbibliography
+
+
+\beginsupplement
+\input{appendix.tex}
+
+\end{document}

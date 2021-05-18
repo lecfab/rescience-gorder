@@ -1,0 +1,14 @@
+https://github.com/ReScience/submissions/issues/new/choose
+https://github.com/ReScience/submissions/issues/52
+
+[Re] Speedup Graph Processing by Graph Ordering
+
+**Original article:** [_Speedup Graph Processing by Graph Ordering_](https://raw.githubusercontent.com/datourat/Gorder/master/paper.pdf) by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, in Proceedings of SIGMOD 2016
+
+**PDF URL:** [repository/replication.pdf](https://raw.githubusercontent.com/lecfab/rescience-gorder/main/replication.pdf)
+**Metadata URL:** [repository/metadata.tex](https://github.com/lecfab/rescience-gorder/blob/main/metadata.tex)
+**Code URL:** [github repository](https://github.com/lecfab/rescience-gorder)
+
+**Scientific domain:** Algorithmics
+**Programming language:** C++, Python 3, Bash
+**Suggested editor:** Nicolas P. Rougier

@@ -1,6 +1,6 @@
 # Replication of Gorder paper
 
-This is the source code of the 2021 replication for ReScience of the paper _Speedup Graph Processing by Graph Ordering_ by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, published in Proceedings of SIGMOD 2016. Our full report is in the file `replication.pdf`.
+This is the source code of the 2021 replication by Fabrice Lécuyer, Maximilien Dabisch and Lionel Tabourier in [ReScience](https://github.com/ReScience/submissions/issues/52) of the paper _Speedup Graph Processing by Graph Ordering_ by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, published in Proceedings of SIGMOD 2016. Our full report is in the file [`replication.pdf`](https://raw.githubusercontent.com/lecfab/rescience-gorder/main/replication.pdf).
 
 
 ## Quick guide

@@ -47,11 +47,11 @@ for algo in algos:
 def plot_bars(title, cpu, stall):
     plt.figure(figsize=(100/25,80/25))
     plt.grid(axis="y", alpha=.9, color="#666")
-    plt.xticks([i for i in range(len(algos))], labels=list(algo_names.values()), rotation=45)
+    plt.xticks(np.arange(A), labels=list(algo_names.values()), rotation=45, ha="right", rotation_mode="anchor")
     plt.ylim(0,1)
     plt.ylabel("Time consumption ratio")
-    plt.bar(algos, cpu, color="#bbb", edgecolor="black", label="CPU execute")
     plt.bar(algos, stall, bottom=cpu, color="black", edgecolor="black", label="Cache stall")
+    plt.bar(algos, cpu, color="#bbb", edgecolor="black", label="CPU execute")
     plt.legend(framealpha=.9)
 
     save_img("{}img-cache-{}.pdf".format(folder, title))

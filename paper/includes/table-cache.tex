@@ -1,0 +1,35 @@
+\begin{subtable}[t]{\linewidth}
+\centering
+\begin{tabular}{r||c|c|c|c|c}
+Order & L1-ref (10$^9$) & L1-mr & L3-ref (10$^9$) & L3-r & Cache-mr \\ \hline
+Original & 29 & 15.9 \% & 2.8 & 9.8 \% & 2.5 \% \\
+Random & 30 & 20.2 \% & 4.1 & 13.6 \% & 3.6 \% \\
+MinLA & 29 & 16.2 \% & 3.3 & 11.4 \% & 2.5 \% \\
+MinLogA & 28 & 15.9 \% & 3.1 & 10.7 \% & 2.5 \% \\
+RCM & 30 & 11.5 \% & 1.8 & 5.9 \% & \textbf{1.6 \%} \\
+InDegSort & 28 & 14.7 \% & 2.5 & 9.1 \% & 2.2 \% \\
+ChDFS & 29 & 12.8 \% & 2.1 & 7.2 \% & 1.8 \% \\
+SlashBurn & 28 & 14.8 \% & 2.6 & 9.3 \% & 2.2 \% \\
+LDG & 30 & 19.2 \% & 3.7 & 12.4 \% & 3.2 \% \\
+Gorder & 28 & \textbf{10.3 \%} & \textbf{1.4} & \textbf{5.0 \%} & 1.7 \% \\
+\end{tabular}
+\caption{On \textit{flickr} dataset.}
+\label{table-cache-flickr}\end{subtable}
+
+\begin{subtable}[t]{\linewidth}
+\centering
+\begin{tabular}{r||c|c|c|c|c}
+Order & L1-ref (10$^9$) & L1-mr & L3-ref (10$^9$) & L3-r & Cache-mr \\ \hline
+Original & 1885 & 19.0 \% & 303 & 16.0 \% & 6.8 \% \\
+Random & 1886 & 23.4 \% & 397 & 21.0 \% & 9.0 \% \\
+MinLA & 1893 & 21.2 \% & 341 & 18.0 \% & 7.1 \% \\
+MinLogA & 1885 & 20.7 \% & 330 & 17.5 \% & 6.9 \% \\
+RCM & 1885 & 11.0 \% & 139 & 7.4 \% & 3.7 \% \\
+InDegSort & 1779 & 15.0 \% & 198 & 11.1 \% & 6.0 \% \\
+ChDFS & 1863 & 11.8 \% & 153 & 8.2 \% & 4.3 \% \\
+SlashBurn & 1784 & 15.3 \% & 203 & 11.4 \% & 6.0 \% \\
+LDG & 1886 & 22.9 \% & 387 & 20.5 \% & 8.8 \% \\
+Gorder & 1816 & \textbf{9.3} \% & \textbf{104} & \textbf{5.7 \%} & \textbf{3.1 \%} \\
+\end{tabular}
+\caption{On \textit{sdarc} dataset.}
+\label{table-cache-sdarc}\end{subtable}
