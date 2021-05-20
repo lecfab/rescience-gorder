@@ -1,0 +1,66 @@
+{
+    "@context": "https://doi.org/10.5063/schema/codemeta-2.0",
+    "@type": "SoftwareSourceCode",
+    "license": "https://spdx.org/licenses/MIT",
+    "codeRepository": "git+https://github.com/lecfab/rescience-gorder.git",
+    "dateCreated": "2021-01-01",
+    "datePublished": "2021-01-01",
+    "name": "Gorder replication",
+    "description": "This is the source code of the 2021 replication by Fabrice Lécuyer, Maximilien Dabisch and Lionel Tabourier in ReScience of the paper Speedup Graph Processing by Graph Ordering by Hao Wei, Jeffrey Xu Yu, Can Lu, and Xuemin Lin, published in Proceedings of SIGMOD 2016.",
+    "applicationCategory": "Algorithmics",
+    "funder": {
+        "@type": "Organization",
+        "name": "Sorbonne Université, CNRS, LIP6"
+    },
+    "keywords": [
+        "graph algorithm",
+        "cache optimisation",
+        "node ordering",
+        "gorder"
+    ],
+    "programmingLanguage": [
+        "C++",
+        "Python 3",
+        "Bash"
+    ],
+    "softwareRequirements": [
+        "CLI11 1.9.1",
+        "GNU Make 4.2.1",
+        "plotly.js v1.58.4",
+        "Python 3.8.5",
+        "matplotlib",
+        "numpy",
+        "linux-perf"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Fabrice",
+            "familyName": "Lécuyer",
+            "email": "fabrice.lecuyer@lip6.fr",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Sorbonne Université, CNRS, LIP6, F-75005 Paris, France"
+            }
+        },
+        {
+            "@type": "Person",
+            "givenName": "Maximilien",
+            "familyName": "Danisch",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Sorbonne Université, CNRS, LIP6, F-75005 Paris, France"
+            }
+        },
+        {
+            "@type": "Person",
+            "@id": "https://orcid.org/0000-0002-9160-8083",
+            "givenName": "Lionel",
+            "familyName": "Tabourier",
+            "affiliation": {
+                "@type": "Organization",
+                "name": "Sorbonne Université, CNRS, LIP6, F-75005 Paris, France"
+            }
+        }
+    ]
+}
